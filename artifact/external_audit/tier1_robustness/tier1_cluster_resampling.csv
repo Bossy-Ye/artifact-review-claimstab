@@ -1,0 +1,9 @@
+record_id,cluster_unit,num_clusters,B,sustained_prop,unresolved_prop,reversed_prop,median_preservation_rate,lower_2p5,upper_97p5,cluster_status
+EX-C1,circuit_size (benchmark size),4,10000,1.0,0.0,0.0,1.0,1.0,1.0,cluster-stable
+EX-C2,knapsack instance (16 by locked design),,,,,,,,,not-available (per-cell measurement trace for this record is not materialized in the artifact; only the locked aggregate (N=80 k=80) is available)
+EX-C3,benchmark circuit,4,10000,0.0637,0.9363,0.0,0.775,0.4375,1.0,cluster-sensitive
+EX-C4,knapsack size (5 by locked design),,,,,,,,,not-available (per-cell measurement trace for this record is not materialized in the artifact; only the locked aggregate (N=80 k=45) is available; the tie/contradiction split among the 35 non-preserved cells is not recoverable)
+EX-C5,benchmark circuit,4,10000,0.0,1.0,0.0,0.55,0.25,0.85,cluster-stable
+EX-C6,random circuit instance (random_seed),20,10000,0.0,1.0,0.0,0.425,0.35,0.5,cluster-stable
+EX-C7,benchmark circuit,4,10000,0.0,0.0,1.0,0.0,0.0,0.0,cluster-stable
+EX-C8,circuit_size (benchmark size),4,10000,0.0,0.0,1.0,0.0,0.0,0.0,cluster-stable

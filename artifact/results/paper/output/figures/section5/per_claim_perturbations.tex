@@ -1,0 +1,21 @@
+\begin{table*}[t]
+    \centering
+    \caption{Per-claim perturbation specification for 8 artifact-backed external audits.}
+    \label{tab:perturbations}
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{@{}lllllll@{}}
+        \toprule
+        \textbf{Claim} & \textbf{Scope} & \textbf{L1 (compilation)} & \textbf{L2 (execution)} & \textbf{L3 (backend)} & \textbf{Algorithmic} & \textbf{Excluded} \\
+        \midrule
+        ext\_2202\_14025v1\_legacy\_claim12 & circuit\_size: 4, 6, 8, 10 & qiskit\_optimization\_level: 0, 1, 2, 3 & repetition: 0, 1, 2, 3, 4 & none recorded & none recorded & live hardware execution; unsupported larger artifact/problem regimes \\
+        ext\_2411\_00518v2\_claim1 & instance: 16 values (n\_10\_c\_1023\_g\_3\_f\_0.3\_eps\_0\_s\_50, n\_11\_c\_1023\_g\_3\_f\_0.3\_eps\_0\_s\_50, n\_12\_c\_1023\_g\_3\_f\_0.3\_eps\_0\_s\_50, n\_13\_c\_1023\_g\_3\_f\_0.3\_eps\_0\_s\_50, n\_14\_c\_1023\_g\_3\_f\_0.3\_eps\_0\_s\_50, n\_15\_c\_1023\_g\_4\_f\_0.3\_eps\_0\_s\_50, ...); n\_items: 16 values (5, 6, 7, 8, 9, 10, ...) & none recorded & none recorded & none recorded & optimizer: powell; qtg\_depth: 1; copula\_depth: 1, 2, 3, 4, 5 & live hardware execution; unsupported larger artifact/problem regimes \\
+        ext\_2304\_08814v2\_claim5 & circuit: linear\_3\_remote\_cx, linear\_4\_bidirectional\_mix, linear\_4\_crossing\_ladder, linear\_4\_repeated\_remote & qiskit\_optimization\_level: 0, 1, 2, 3; qiskit\_seed: 0, 1, 2, 3, 4 & none recorded & architecture\_edges: [(0, 1), (1, 2), (2, 3)] & none recorded & live hardware execution; unsupported larger artifact/problem regimes \\
+        ext\_2411\_00518v2\_claim3 & instance: n\_10\_c\_1023\_g\_3\_f\_0.3\_eps\_0\_s\_50, n\_6\_c\_1023\_g\_1\_f\_0.3\_eps\_0\_s\_50, n\_7\_c\_1023\_g\_2\_f\_0.3\_eps\_0\_s\_50, n\_8\_c\_1023\_g\_2\_f\_0.3\_eps\_0\_s\_50, n\_9\_c\_1023\_g\_2\_f\_0.3\_eps\_0\_s\_50; n\_items: 6, 7, 8, 9, 10 & none recorded & none recorded & none recorded & optimizer: bfgs, powell; qtg\_depth: 1; copula\_depth: 8 values (1, 2, 3, 4, 5, 6, ...) & live hardware execution; unsupported larger artifact/problem regimes \\
+        ext\_2409\_08844v2\_claim4 & circuit: linear\_3\_remote\_cx, linear\_4\_bidirectional\_mix, linear\_4\_crossing\_ladder, linear\_4\_repeated\_remote & qiskit\_optimization\_level: 0, 1, 2, 3; qiskit\_seed: 0, 1, 2, 3, 4 & none recorded & architecture\_edges: [(0, 1), (1, 2), (2, 3)] & none recorded & live hardware execution; unsupported larger artifact/problem regimes \\
+        ext\_2202\_14025v1\_legacy\_claim6 & n\_qubits: 10 & qiskit\_optimization\_level: 0, 1, 2, 3; random\_seed: 20 values (0, 1, 2, 3, 4, 5, ...) & none recorded & removed\_edges: [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9)] & none recorded & live hardware execution; unsupported larger artifact/problem regimes \\
+        ext\_2409\_08844v2\_claim3 & circuit: linear\_3\_remote\_cx, linear\_4\_bidirectional\_mix, linear\_4\_crossing\_ladder, linear\_4\_repeated\_remote & qiskit\_optimization\_level: 0, 1, 2, 3; qiskit\_seed: 0, 1, 2, 3, 4 & none recorded & architecture\_edges: [(0, 1), (1, 2), (2, 3)] & none recorded & live hardware execution; unsupported larger artifact/problem regimes \\
+        ext\_2409\_08844v2\_claim1 & circuit\_size: 4, 6, 8, 10 & none recorded & repetition: 20 values (0, 1, 2, 3, 4, 5, ...) & none recorded & none recorded & live hardware execution; unsupported larger artifact/problem regimes \\
+        \bottomrule
+    \end{tabular}
+    }
+\end{table*}

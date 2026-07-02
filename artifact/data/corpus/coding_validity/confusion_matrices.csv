@@ -1,0 +1,17 @@
+field,first_label,recode_label,count
+claim_card_specifiable,false,false,1
+claim_card_specifiable,false,true,11
+claim_card_specifiable,true,false,1
+claim_card_specifiable,true,true,101
+scalar_directional,false,false,18
+scalar_directional,false,true,5
+scalar_directional,true,false,22
+scalar_directional,true,true,69
+planning_feasible,false,false,40
+planning_feasible,false,true,9
+planning_feasible,true,true,65
+auditable_design,no,no,4
+auditable_design,no,yes,2
+auditable_design,yes,yes,52
+proxy_free_exact_vs_non,no,no,50
+proxy_free_exact_vs_non,yes,yes,8

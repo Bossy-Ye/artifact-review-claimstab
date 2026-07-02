@@ -1,0 +1,21 @@
+\begin{table}[t]
+    \centering
+    \caption{Materialization funnel from extracted comparative claims to audited claims. Only $8/457 = 1.75\%$ of extracted claims pass both operationalizability and materializability barriers.}
+    \label{tab:materialization_funnel}
+    \resizebox{\columnwidth}{!}{%
+    \begin{tabular}{@{}lll@{}}
+        \toprule
+        \textbf{Stage} & \textbf{Count} & \textbf{Description} \\
+        \midrule
+        Extracted & 457 & Comparative claims from 119 papers \\
+        Audit-eligible & 76 (16.6\%) & Sufficient specification \\
+        T1 (artifact-backed) & 8 (10.5\% of 76) & Proxy-free executable \\
+        T2 (paper-described) & 0 (0\%) & None qualify after review \\
+        T3 (proxy/inferred) & 58 (76.3\% of 76) & Re-execution requires proxies \\
+        T4 (blocked) & 10 (13.2\% of 76) & Specification-incomplete \\
+        \midrule
+        \textbf{Audited (T1)} & \textbf{8} & All 8 audited \\
+        \bottomrule
+    \end{tabular}
+    }
+\end{table}

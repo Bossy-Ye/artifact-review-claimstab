@@ -1,0 +1,11 @@
+analysis,setting,reclassifications_vs_locked,note
+tau,0.9,0,Uses locked Wilson intervals; threshold varied only.
+tau,0.95,0,Uses locked Wilson intervals; threshold varied only.
+tau,0.99,10,Uses locked Wilson intervals; threshold varied only.
+N,40,10,Approximate sensitivity: keeps s_hat fixed and recomputes Wilson CI at N.
+N,80,1,Approximate sensitivity: keeps s_hat fixed and recomputes Wilson CI at N.
+N,120,1,Approximate sensitivity: keeps s_hat fixed and recomputes Wilson CI at N.
+N,160,0,Approximate sensitivity: keeps s_hat fixed and recomputes Wilson CI at N.
+N,240,0,Approximate sensitivity: keeps s_hat fixed and recomputes Wilson CI at N.
+N,320,0,Approximate sensitivity: keeps s_hat fixed and recomputes Wilson CI at N.
+algorithmic_stochasticity_placement,metadata_toggle,0,"No locked toggle-output file found; classification is computed from s_hat/CI, so metadata placement alone does not alter labels."

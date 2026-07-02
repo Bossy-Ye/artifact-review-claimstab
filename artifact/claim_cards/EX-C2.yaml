@@ -1,0 +1,63 @@
+claim_id: EX-C2
+domain: optimization
+source_identifier: "arXiv:2411.00518 (v2), claim ext_2411_00518v2_claim1"
+source_title: "Quantum tree generator improves QAOA state-of-the-art for the knapsack problem"
+source_venue: "arXiv 2024/2025 (peer-reviewed status not verified)"
+source_artifact: "extraction worksheet data/slr/extraction_v2/manual_path2/worksheets/2411.00518v2.md"
+source_sentence_or_claim_summary: >-
+  Verbatim: "Furthermore, we conduct numerical experiments for our method on the same benchmark
+  instances as for the Copula-QAOA and demonstrate that our method is able to provide higher
+  approximation ratios on a consistent level, that is, without the drop in quality for instance
+  sizes above ten." Summary: the QTG-QAOA method yields higher approximation ratios than Copula-QAOA.
+source_context: "QAOA for the knapsack problem; numerical experiments on the Copula-QAOA benchmark instances."
+P:
+  family: QAOA for the knapsack problem
+  instance_distribution: 16 knapsack instances (n_items 5-20+; e.g., n_10_c_1023_g_3_f_0.3_eps_0_s_50 ...)
+  algorithmic_spec: optimizer powell; qtg_depth = 1; copula_depth in {1,2,3,4,5}
+  resource_constraints: fixed-method depth (qtg_depth=1); comparator depth swept
+B_A: QTG-QAOA (quantum tree generator method)
+B_B: Copula-QAOA
+metric: approximation ratio
+direction: "B_A > B_B (QTG-QAOA higher approximation ratio than Copula-QAOA)"
+scope_dimensions: knapsack instance / n_items (16 instances)
+environment_dimensions: "ALGO = optimizer (powell), qtg_depth, copula_depth"
+axis_status:
+  S_scope:
+    status: ACTIVE
+    reason: "16 knapsack instances across n_items are varied within the stated benchmark family; the approximation ratio varies across them and the claim quantifies over them (consistent level above 10 items)."
+  L1:
+    status: FIXED-INACTIVE
+    reason: "Metric is the approximation ratio of the QAOA algorithm output; the locked perturbation record shows no compilation/transpilation variation and the reported quantity is read from the algorithm result, not a compiled-circuit property."
+  L2:
+    status: SOURCE-CHECK REQUIRED
+    reason: "The approximation ratio could be an exact/statevector value (L2 fixed) or a finite-shot estimate (L2 active); the locked data records no L2 variation and does not establish which. Recorded as a source-check requirement, marked source-check rather than guessed (likely statevector for a numerical knapsack experiment, but not confirmed)."
+  L3:
+    status: SOURCE-CHECK REQUIRED
+    reason: "Whether the evaluation is noiseless (L3 fixed) or uses a noise model is not established in the locked data; no L3 variation recorded. Source-check requirement recorded."
+  ALGO:
+    status: ACTIVE
+    reason: "Classical optimizer (powell) and the comparator depth (copula_depth) are swept; these are the algorithmic-configuration dimensions the consistency claim quantifies over."
+  resource_budget:
+    status: FIXED-INACTIVE
+    reason: "The method depth qtg_depth is fixed at 1, holding the method's resource budget constant; the copula_depth sweep is part of the comparator definition, not a free budget perturbation on the method."
+excluded_dimensions_with_reasons:
+  live_hardware_execution: "out of audited scope (excluded in the locked perturbation record)"
+  larger_problem_regimes: "unsupported larger artifact/problem regimes outside the audited instance set"
+cell_key: "knapsack_instance x copula_depth (optimizer fixed/varied per ALGO); 80 cells"
+locked_cell_log: "SOURCE-CHECK REQUIRED — no per-cell measurements CSV found in the repo for ext_2411_00518v2_claim1; only the aggregate verdict is locked (see result_source). Per-claim perturbations recorded in paper/output/figures/section5/per_claim_perturbations.csv."
+result_source: paper/output/figures/section5/external_forest_data.csv
+N: 80
+k: 80
+direction_preservation_rate: 1.0
+wilson_ci: "[0.954, 1.000]"
+wilson_verdict: "Sustained"
+bootstrap_or_dependence_check: "Cluster bootstrap agrees with Wilson classification (part of 47/47 agreement); see paper/output/figures/section5/cluster_bootstrap_47.csv"
+evidence_boundary: >-
+  Sustained over this card: QTG-QAOA-vs-Copula-QAOA approximation ratio over the audited knapsack
+  instances and ALGO sweep (80 cells). The per-cell log is not present in the repo, so the cell-level
+  basis of the verdict is not independently inspectable from the artifact (aggregate-only).
+manuscript_locations: "Section 6/RQ2 (Table per_claim_external_audit, Fig external_forest). Manuscript anonymizes baselines as 'A vs C'."
+provenance_notes: >-
+  Evidence boundary: this is one of two external claims (with EX-C4) lacking a per-cell measurements CSV; N/k/Wilson/verdict
+  copied from the locked external_forest_data.csv. L2/L3 marked SOURCE-CHECK REQUIRED (exact/statevector
+  vs finite-shot not established). Comparator identity (Copula-QAOA) from the extraction worksheet.

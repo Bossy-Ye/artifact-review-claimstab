@@ -1,0 +1,9 @@
+record_id,N,preserved,contradicted,tied,preservation_rate,wilson_lower,wilson_upper,tau,primary_verdict
+EX-C1,80,80,0,0,1.0,0.954182,1.0,0.95,Sustained
+EX-C2,80,80,0,0,1.0,0.954182,1.0,0.95,Sustained
+EX-C3,80,62,0,18,0.775,0.672132,0.852668,0.95,Unresolved
+EX-C4,80,45,,,0.5625,0.453411,0.665861,0.95,Unresolved
+EX-C5,80,44,21,15,0.55,0.441195,0.654223,0.95,Unresolved
+EX-C6,80,34,20,26,0.425,0.322566,0.534307,0.95,Unresolved
+EX-C7,80,0,62,18,0.0,0.0,0.045818,0.95,Reversed
+EX-C8,80,0,80,0,0.0,0.0,0.045818,0.95,Reversed

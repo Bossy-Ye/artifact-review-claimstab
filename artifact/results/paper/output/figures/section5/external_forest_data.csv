@@ -1,0 +1,9 @@
+figure_label,claim_id,domain,source_group,s_hat,wilson_lower,wilson_upper,classification,n_cells,k_preserved
+EX-C1,ext_2202_14025v1_legacy_claim12,compilation,P1,1.0,0.954182,1.0,Sustained,80,80
+EX-C2,ext_2411_00518v2_claim1,optimization,P4,1.0,0.954182,1.0,Sustained,80,80
+EX-C3,ext_2304_08814v2_claim5,compilation,P2,0.775,0.672132,0.852668,Unresolved,80,62
+EX-C4,ext_2411_00518v2_claim3,optimization,P4,0.5625,0.453411,0.665861,Unresolved,80,45
+EX-C5,ext_2409_08844v2_claim4,compilation,P3,0.55,0.441195,0.654223,Unresolved,80,44
+EX-C6,ext_2202_14025v1_legacy_claim6,compilation,P1,0.425,0.322566,0.534307,Unresolved,80,34
+EX-C7,ext_2409_08844v2_claim3,compilation,P3,0.0,0.0,0.045818,Reversed,80,0
+EX-C8,ext_2409_08844v2_claim1,benchmark,P3,0.0,0.0,0.045818,Reversed,80,0

@@ -1,0 +1,10 @@
+missing_element,count,T3_count,T4_count
+artifact,68,58,10
+hyperparameters,56,56,0
+baseline,43,33,10
+resource_budget,30,30,0
+instance_generator,27,24,3
+optimizer,23,23,0
+other,21,21,0
+data,13,3,10
+metric,10,6,4

@@ -1,0 +1,9 @@
+claim_id,domain,baselines,metric,perturbations,n_cells,preserve_rate,wilson_lower,wilson_upper,classification
+EX-C1,compilation,A vs B,runtime performance,L1/scope,80,1.0,0.9542,1.0,S
+EX-C2,optimization,A vs C,approximation ratio,alg/scope,80,1.0,0.9542,1.0,S
+EX-C3,compilation,A vs D,cnot gate count,L1/scope,80,0.775,0.6721,0.8527,U
+EX-C4,optimization,A vs E,probability value,alg/scope,80,0.5625,0.4534,0.6659,U
+EX-C5,compilation,A vs F,two qubit gate depth,L1/scope,80,0.55,0.4412,0.6542,U
+EX-C6,compilation,A vs G,cx depth overhead,L1/scope,80,0.425,0.3226,0.5343,U
+EX-C7,compilation,A vs H,two qubit gate count,L1/scope,80,0.0,0.0,0.0458,R
+EX-C8,benchmark,A vs I,construction time,scope/timing,80,0.0,0.0,0.0458,R

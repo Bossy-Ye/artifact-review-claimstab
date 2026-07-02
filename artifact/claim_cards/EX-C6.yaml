@@ -1,0 +1,62 @@
+claim_id: EX-C6
+domain: compilation
+source_identifier: "arXiv:2202.14025 (Arline Benchmarks), claim ext_2202_14025v1_legacy_claim6"
+source_title: "Arline Benchmarks: Automated Benchmarking Platform for Quantum Compilers"
+source_venue: "arXiv 2022 (arxiv_only; no peer-reviewed version found, see docs/related_work_matrix.csv)"
+source_artifact: "https://github.com/ArlineQ/arline_benchmarks"
+source_sentence_or_claim_summary: >-
+  Verbatim: "Both algorithms show somewhat different performance according to CX depth overhead,
+  where Transpile (Qiskit) outperforms DefaultMapping (Pytket) for densely connected graphs with
+  node degrees k >~ 8." Narrowed: for routing/mapping on densely connected random k-regular graphs,
+  Qiskit Transpile yields lower CX depth overhead than Pytket DefaultMapping.
+source_context: "Arline Section-4 routing/mapping comparison on densely connected graphs (k >~ 8)."
+P:
+  family: routing/mapping on densely connected graphs
+  instance_distribution: dense 10-qubit synthetic coupling graph (degree 8) with random CX circuits (random_seed swept)
+  algorithmic_spec: none (deterministic routing + structural overhead; no classical optimization loop)
+  resource_constraints: dense degree-8 10-qubit coupling target; Qiskit optimization-level grid
+B_A: Qiskit Transpile
+B_B: Pytket DefaultMapping
+metric: CX depth overhead
+direction: "B_A < B_B (Qiskit Transpile lower CX depth overhead than Pytket DefaultMapping)"
+scope_dimensions: random circuit instances via random_seed (20 seeds); n_qubits fixed at 10 (dense)
+environment_dimensions: L1 = Qiskit optimization level (0-3) x random_seed (routing input)
+axis_status:
+  S_scope:
+    status: ACTIVE
+    reason: "Random k-regular dense-graph circuit instances (random_seed) are varied within the stated dense regime; CX depth overhead varies across them and the claim quantifies over them."
+  L1:
+    status: ACTIVE
+    reason: "Qiskit optimization level (and the routing of each random instance) transforms the routed circuit before CX-depth overhead is measured; artifact-supported, metric-affecting, claim-preserving."
+  L2:
+    status: FIXED-INACTIVE
+    reason: "Metric is a structural CX-depth-overhead count on the routed circuit; no sampling/shots enter the measured value."
+  L3:
+    status: FIXED-INACTIVE
+    reason: "The removed-edges / dense degree-8 topology is a fixed coupling target / scope-defining configuration (master coupling-map rule), not live backend noise; a static depth-overhead count has no dependence on calibration/noise/drift."
+  ALGO:
+    status: FIXED-INACTIVE
+    reason: "No classical optimization loop enters a deterministic route-and-measure."
+  resource_budget:
+    status: FIXED-INACTIVE
+    reason: "Fixed dense degree-8 10-qubit target and optimization-level grid hold the routing budget fixed; the metric is a depth-overhead count, not a time/resource quantity."
+excluded_dimensions_with_reasons:
+  runtime_metric: "changes the metric (CX-depth-overhead claim, not a timing claim)"
+  non_dense_architecture: "changes the stated scope (claim is for dense k >~ 8 graphs)"
+  full_arline_suite_import: "outside the artifact-supported audited surface"
+  live_hardware_execution: "out of audited scope"
+cell_key: "random_circuit_seed x qiskit_optimization_level (over dense degree-8 10-qubit graph)"
+locked_cell_log: paper/output/audited_corpus_v2/full_cells/phase1_six_claims/details/ext_2202_14025v1_legacy_claim6_measurements.csv
+result_source: paper/output/figures/section5/external_forest_data.csv
+N: 80
+k: 34
+direction_preservation_rate: 0.425
+wilson_ci: "[0.323, 0.534]"
+wilson_verdict: "Unresolved"
+bootstrap_or_dependence_check: "Cluster bootstrap agrees with Wilson classification (part of 47/47 agreement); see paper/output/figures/section5/cluster_bootstrap_47.csv"
+evidence_boundary: >-
+  Unresolved over this card: Qiskit-Transpile-vs-Pytket-DefaultMapping CX depth overhead on a dense
+  degree-8 10-qubit synthetic graph, 4 Qiskit optimization levels x 20 random seeds (80 cells).
+  Synthetic dense-routing surface, not a full reproduction of the Arline benchmark suite.
+manuscript_locations: "Section 6/RQ2 (Table per_claim_external_audit, Fig external_forest). Manuscript anonymizes baselines as 'A vs G'."
+provenance_notes: "Real baselines from locked inventory. N=80 confirmed: full_cells log has 80 rows (earlier 20-row smoke log exists under audited_corpus_v2/details/; the locked surface is the 80-row log)."

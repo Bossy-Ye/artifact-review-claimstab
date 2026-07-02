@@ -1,0 +1,48 @@
+claim_id,corpus,source_group,n_cells,wilson_lower,wilson_upper,wilson_class,bootstrap_agreement,bootstrap_iterations,same_classification,classification
+Arithmetic software-stack|pytket>Qiskit|compilation_only_exact|delta=0.00,Canonical 24,canonical,84,0.95626827158534,1.0,Sustained,1,1,True,Sustained
+Arithmetic software-stack|pytket>Qiskit|compilation_only_exact|delta=1.00,Canonical 24,canonical,84,0.95626827158534,1.0,Sustained,1,1,True,Sustained
+Arithmetic software-stack|pytket>Qiskit|compilation_only_exact|delta=2.00,Canonical 24,canonical,84,0.95626827158534,1.0,Sustained,1,1,True,Sustained
+GHZ software-stack|pytket>Qiskit|compilation_only_exact|delta=0.00,Canonical 24,canonical,140,0.9732937996305868,1.0,Sustained,1,1,True,Sustained
+GHZ software-stack|pytket>Qiskit|compilation_only_exact|delta=1.00,Canonical 24,canonical,140,0.9732937996305868,1.0,Sustained,1,1,True,Sustained
+GHZ software-stack|pytket>Qiskit|compilation_only_exact|delta=2.00,Canonical 24,canonical,140,0.9732937996305868,1.0,Sustained,1,1,True,Sustained
+QFT software-stack|pytket>Qiskit|compilation_only_exact|delta=0.00,Canonical 24,canonical,140,0.9732937996305868,1.0,Sustained,1,1,True,Sustained
+QFT software-stack|pytket>Qiskit|compilation_only_exact|delta=1.00,Canonical 24,canonical,140,0.9732937996305868,1.0,Sustained,1,1,True,Sustained
+QFT software-stack|pytket>Qiskit|compilation_only_exact|delta=2.00,Canonical 24,canonical,140,0.9732937996305868,1.0,Sustained,1,1,True,Sustained
+Max-2-SAT QAOA|QAOA_p2>QAOA_p1|combined_light_exact|delta=0.00,Canonical 24,canonical,180,0.7836467596580712,0.8911115379613166,Unresolved,1,1,True,Unresolved
+Max-2-SAT QAOA|QAOA_p2>QAOA_p1|combined_light_exact|delta=0.01,Canonical 24,canonical,180,0.7836467596580712,0.8911115379613166,Unresolved,1,1,True,Unresolved
+Max-2-SAT QAOA|QAOA_p2>QAOA_p1|combined_light_exact|delta=0.05,Canonical 24,canonical,180,0.7772562866787965,0.8862560393136013,Unresolved,1,1,True,Unresolved
+Max-2-SAT QAOA|QAOA_p2>QAOA_p1|compilation_only_exact|delta=0.00,Canonical 24,canonical,162,0.9544651890044474,0.9964770829283276,Sustained,1,1,True,Sustained
+Max-2-SAT QAOA|QAOA_p2>QAOA_p1|compilation_only_exact|delta=0.01,Canonical 24,canonical,162,0.86265154132306,0.9506543491457607,Unresolved,1,1,True,Unresolved
+Max-2-SAT QAOA|QAOA_p2>QAOA_p1|compilation_only_exact|delta=0.05,Canonical 24,canonical,162,0.8474194634870891,0.940861630351922,Unresolved,1,1,True,Unresolved
+MaxCut QAOA|QAOA_p2>QAOA_p1|combined_light_exact|delta=0.00,Canonical 24,canonical,900,0.7172004771468777,0.7748796315038528,Unresolved,1,1,True,Unresolved
+MaxCut QAOA|QAOA_p2>QAOA_p1|combined_light_exact|delta=0.01,Canonical 24,canonical,900,0.6510872782635506,0.7128231276688501,Unresolved,1,1,True,Unresolved
+MaxCut QAOA|QAOA_p2>QAOA_p1|combined_light_exact|delta=0.05,Canonical 24,canonical,900,0.6241376125477609,0.6871316654824686,Unresolved,1,1,True,Unresolved
+MaxCut QAOA|QAOA_p2>QAOA_p1|compilation_only_exact|delta=0.00,Canonical 24,canonical,810,0.8839317825692881,0.924905250564767,Unresolved,1,1,True,Unresolved
+MaxCut QAOA|QAOA_p2>QAOA_p1|compilation_only_exact|delta=0.01,Canonical 24,canonical,810,0.8616686746110931,0.9063437764089404,Unresolved,1,1,True,Unresolved
+MaxCut QAOA|QAOA_p2>QAOA_p1|compilation_only_exact|delta=0.05,Canonical 24,canonical,810,0.7597615840199445,0.816885638340612,Unresolved,1,1,True,Unresolved
+MaxCut QAOA|QAOA_p2>QAOA_p1|sampling_only_exact|delta=0.00,Canonical 24,canonical,600,0.7320629454970353,0.8011853851984547,Unresolved,1,1,True,Unresolved
+MaxCut QAOA|QAOA_p2>QAOA_p1|sampling_only_exact|delta=0.01,Canonical 24,canonical,600,0.6810363569821383,0.75462404391287,Unresolved,1,1,True,Unresolved
+MaxCut QAOA|QAOA_p2>QAOA_p1|sampling_only_exact|delta=0.05,Canonical 24,canonical,600,0.6341420693118491,0.7109009681969973,Unresolved,1,1,True,Unresolved
+ext_2202_14025v1_legacy_claim12,External 8,external,80,0.954182,1.0,Sustained,1,1,True,Sustained
+ext_2411_00518v2_claim1,External 8,external,80,0.954182,1.0,Sustained,1,1,True,Sustained
+ext_2304_08814v2_claim5,External 8,external,80,0.672132,0.852668,Unresolved,1,1,True,Unresolved
+ext_2411_00518v2_claim3,External 8,external,80,0.453411,0.665861,Unresolved,1,1,True,Unresolved
+ext_2409_08844v2_claim4,External 8,external,80,0.441195,0.654223,Unresolved,1,1,True,Unresolved
+ext_2202_14025v1_legacy_claim6,External 8,external,80,0.322566,0.534307,Unresolved,1,1,True,Unresolved
+ext_2409_08844v2_claim3,External 8,external,80,0.0,0.045818,Reversed,1,1,True,Reversed
+ext_2409_08844v2_claim1,External 8,external,80,0.0,0.045818,Reversed,1,1,True,Reversed
+L1Q-C1,RQ3 suite (L1Q within-Qiskit),rq3_l1q,1200,2.168404344971009e-19,0.003191000602734924,Reversed,1000,1000,True,Reversed
+L1Q-C2,RQ3 suite (L1Q within-Qiskit),rq3_l1q,1200,0.307230713668673,0.36049961986557183,Unresolved,1000,1000,True,Unresolved
+L1Q-C3,RQ3 suite (L1Q within-Qiskit),rq3_l1q,1200,2.168404344971009e-19,0.003191000602734924,Reversed,1000,1000,True,Reversed
+L2-C1,RQ3 suite (L2 sampling),rq3_l2,1800,0.5738214107948599,0.6191002000808062,Unresolved,1000,1000,True,Unresolved
+L2-C2,RQ3 suite (L2 sampling),rq3_l2,1800,0.5643157157791477,0.6097572319649879,Unresolved,1000,1000,True,Unresolved
+L2-C3,RQ3 suite (L2 sampling),rq3_l2,1800,0.4996793854540225,0.5457791550396691,Unresolved,1000,1000,True,Unresolved
+L3-C1,"RQ3 suite (L3 noise, expanded six-regime)",rq3_l3_expanded,270,0.600845089940513,0.7132052381959254,Unresolved,1000,1000,True,Unresolved
+L3-C2,"RQ3 suite (L3 noise, expanded six-regime)",rq3_l3_expanded,270,0.5856869471139983,0.6991493970097484,Unresolved,1000,1000,True,Unresolved
+L3-C3,"RQ3 suite (L3 noise, expanded six-regime)",rq3_l3_expanded,270,0.4848320880994197,0.6028098639386561,Unresolved,1000,1000,True,Unresolved
+ALGO-C1,RQ3 suite (ALGO),rq3_algo,900,0.7795847548333985,0.8311418218388349,Unresolved,1000,1000,True,Unresolved
+ALGO-C2,RQ3 suite (ALGO),rq3_algo,900,0.7092201192197811,0.766527032898082,Unresolved,1000,1000,True,Unresolved
+ALGO-C3,RQ3 suite (ALGO),rq3_algo,900,0.6261688096465253,0.6880455884964353,Unresolved,1000,1000,True,Unresolved
+COMB-C1,RQ3 suite (combined-layer stress),rq3_comb,1440,0.5758630806738765,0.626375190166816,Unresolved,1000,1000,True,Unresolved
+COMB-C2,RQ3 suite (combined-layer stress),rq3_comb,1440,0.56466990451274,0.6154052681536301,Unresolved,1000,1000,True,Unresolved
+COMB-C3,RQ3 suite (combined-layer stress),rq3_comb,1440,0.4762875980945318,0.5278679828131536,Unresolved,1000,1000,True,Unresolved

@@ -1,0 +1,6 @@
+field,n_applicable,first_label_dist,recode_label_dist,percent_agreement,cohen_kappa,kappa_status,n_disagreements
+claim_card_specifiable,114,"{'true': 102, 'false': 12}","{'true': 112, 'false': 2}",89.47,0.1163,high-prevalence: kappa deflated by skewed marginals; read percent agreement + confusion matrix as primary,12
+scalar_directional,114,"{'true': 91, 'false': 23}","{'true': 74, 'false': 40}",76.32,0.4238,interpretable,27
+planning_feasible,114,"{'true': 65, 'false': 49}","{'true': 74, 'false': 40}",92.11,0.8352,interpretable,9
+auditable_design,58,"{'yes': 52, 'no': 6}","{'yes': 54, 'no': 4}",96.55,0.782,interpretable,2
+proxy_free_exact_vs_non,58,"{'yes': 8, 'no': 50}","{'yes': 8, 'no': 50}",100.0,1.0,interpretable,0

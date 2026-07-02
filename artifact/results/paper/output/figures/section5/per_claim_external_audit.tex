@@ -1,0 +1,21 @@
+\begin{table}[t]
+    \centering
+    \caption{Per-claim audit outcomes for 8 artifact-backed external claims.}
+    \label{tab:external_audit}
+    \resizebox{\columnwidth}{!}{%
+    \begin{tabular}{@{}llllllc@{}}
+        \toprule
+        \textbf{Claim} & \textbf{Domain} & \textbf{Baselines} & \textbf{Metric} & \textbf{Perturbations} & $\hat{s}$ \textbf{[95\% CI]} & \textbf{Class.} \\
+        \midrule
+        EX-C1 & compilation & A vs B & runtime performance & L1/scope & 1.000 [0.954, 1.000] & S \\
+        EX-C2 & optimization & A vs C & approximation ratio & alg/scope & 1.000 [0.954, 1.000] & S \\
+        EX-C3 & compilation & A vs D & cnot gate count & L1/scope & 0.775 [0.672, 0.853] & U \\
+        EX-C4 & optimization & A vs E & probability value & alg/scope & 0.562 [0.453, 0.666] & U \\
+        EX-C5 & compilation & A vs F & two qubit gate depth & L1/scope & 0.550 [0.441, 0.654] & U \\
+        EX-C6 & compilation & A vs G & cx depth overhead & L1/scope & 0.425 [0.323, 0.534] & U \\
+        EX-C7 & compilation & A vs H & two qubit gate count & L1/scope & 0.000 [0.000, 0.046] & R \\
+        EX-C8 & benchmark & A vs I & construction time & scope/timing & 0.000 [0.000, 0.046] & R \\
+        \bottomrule
+    \end{tabular}
+    }
+\end{table}

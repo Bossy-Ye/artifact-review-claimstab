@@ -1,0 +1,93 @@
+% =====================================================================
+% Tier-1 statistical robustness — LaTeX deliverables
+% Generated to accompany tab:external_audit (Table IV). Requires booktabs.
+% (1) supplemental robustness table  (2) RQ4 paragraph  (3) Threats paragraph
+% All numbers come from artifact/external_audit/tier1_robustness/*.csv.
+% =====================================================================
+
+% ---------------------------------------------------------------------
+% (1) Supplemental robustness table
+% ---------------------------------------------------------------------
+\begin{table}[t]
+    \centering
+    \caption{Robustness of the eight exact Tier-1 S/U/R verdicts to choices that
+    are \emph{policy}, not \emph{evidence}. Primary verdict is the predeclared
+    Wilson classifier at $\tau{=}0.95$ over the locked finite design.
+    \textbf{Thr.}: behaviour across $\tau\in\{0.90,0.95,0.99\}$.
+    \textbf{Clu.}: cluster bootstrap ($B{=}10{,}000$; design-motivated clusters,
+    count in parentheses). \textbf{LOCO}: leave-one-cluster-out.
+    \textbf{Tie}: ties-non-preserving (main) vs.\ ties-excluded vs.\
+    ties-half-preserving. \textbf{Bud.}: seed-budget expansion to $N{=}320$.
+    \textit{stab.}=verdict unchanged; $\to$U@.99=softens to Unresolved only at
+    $\tau{=}0.99$; \textit{sens.}=verdict changes within the resample
+    distribution; $\to$U(t)=Unresolved under ties-excluded/half;
+    $\varnothing$=no materialized per-cell trace; \textemdash=no validated larger
+    trace. EX-C2/EX-C4 lack a per-cell file, so dependence/tie checks are
+    not assessable.}
+    \label{tab:tier1_robustness}
+    \resizebox{\columnwidth}{!}{%
+    \begin{tabular}{@{}llcccccc@{}}
+        \toprule
+        \textbf{Rec.} & $\hat{s}$ \textbf{[95\% CI]} & \textbf{Cl.} &
+        \textbf{Thr.} & \textbf{Clu.} & \textbf{LOCO} & \textbf{Tie} & \textbf{Bud.} \\
+        \midrule
+        EX-C1 & 1.000 [0.954, 1.000] & S & $\to$U@.99 & stab.\,(4)  & stab. & 0 ties & \textemdash \\
+        EX-C2 & 1.000 [0.954, 1.000] & S & $\to$U@.99 & $\varnothing$ & $\varnothing$ & 0 ties & \textemdash \\
+        EX-C3 & 0.775 [0.672, 0.853] & U & stab.\ & \textbf{sens.\,(4)} & stab. & stab. & stab. \\
+        EX-C4 & 0.562 [0.453, 0.666] & U & stab.\ & $\varnothing$ & $\varnothing$ & $\varnothing$ & \textemdash \\
+        EX-C5 & 0.550 [0.441, 0.654] & U & stab.\ & stab.\,(4)  & stab. & stab. & stab. \\
+        EX-C6 & 0.425 [0.323, 0.534] & U & stab.\ & stab.\,(20) & stab. & stab. & stab. \\
+        EX-C7 & 0.000 [0.000, 0.046] & R & $\to$U@.99 & stab.\,(4) & stab. & \textbf{$\to$U(t)} & stab. \\
+        EX-C8 & 0.000 [0.000, 0.046] & R & $\to$U@.99 & stab.\,(4) & stab. & 0 ties & \textemdash \\
+        \bottomrule
+    \end{tabular}
+    }
+\end{table}
+
+% ---------------------------------------------------------------------
+% (2) RQ4 paragraph
+% ---------------------------------------------------------------------
+% --- RQ4: dependence-aware and policy-sensitivity robustness ---
+\paragraph{Robustness of the exact Tier-1 verdicts (RQ4).}
+We stress-test the eight exact scalar-directional verdicts along four axes that are
+\emph{policy} rather than \emph{evidence}: the classification threshold $\tau$, the
+tie convention, dependence between cells (cluster bootstrap with $B{=}10{,}000$ over
+design-motivated clusters, and leave-one-cluster-out), and the seed budget
+(Table~\ref{tab:tier1_robustness}). The \emph{direction} of every finite-design
+outcome is stable, but two \emph{labels} are policy-contingent at $N{=}80$. EX-C3's
+Unresolved is driven by between-circuit heterogeneity: with only four circuit
+clusters, $6.4\%$ of cluster resamples reach Sustained (resampled rate CI
+$[0.44,1.00]$), although no single-circuit deletion flips it, so it is
+bootstrap-sensitive but deletion-stable. EX-C7's Reversed holds under cluster
+resampling and under seed expansion to $N{=}320$ (Wilson upper bound shrinking
+$0.046\!\to\!0.012$), but softens to Unresolved if ties are excluded ($0/62$) or
+half-counted ($9/80$); its substantive content---$0$ preserved cells under every tie
+policy and every budget---does not. The Sustained records (EX-C1, EX-C2) and the
+middle Unresolved records (EX-C5, EX-C6) are stable on every applicable axis; the
+four extreme verdicts (S and R) all soften to Unresolved only at the stricter
+$\tau{=}0.99$, a finite-$N$ effect (the interval cannot reach within $0.01$ of the
+boundary). We therefore report a per-dimension status grid rather than a single
+``robust'' label, and EX-C2/EX-C4 are marked dependence-not-assessable because no
+per-cell trace is materialized.
+
+% ---------------------------------------------------------------------
+% (3) Threats to validity paragraph
+% ---------------------------------------------------------------------
+% --- Threats: S/U/R are scoped audit-policy outcomes ---
+\paragraph{S/U/R verdicts are scoped audit-policy outcomes, not population estimates.}
+Each verdict classifies the realized preservation rate $k/N$ of a \emph{locked, finite}
+set of audit cells; it answers ``does the asserted direction hold across \emph{this}
+enumerated design'' and must not be read as an estimate of a universal
+claim-stability probability. The Wilson interval is the predeclared policy classifier
+applied to that finite $k/N$, not a sampling-error bound on a population parameter.
+Cells within a record share circuits, instances, optimization levels, and seeds and
+are therefore not independent; our cluster bootstrap and leave-one-cluster-out probe
+this dependence but \emph{cannot establish independence}, and EX-C3 shows a verdict
+can hinge on which clusters are sampled. The tie convention and the $\tau$ and $N$
+choices are policy parameters: EX-C7 is Reversed specifically under the predeclared
+ties-non-preserving, $\tau{\le}0.95$ policy, and the extreme verdicts are
+threshold-contingent at $\tau{=}0.99$. Finally, EX-C2 and EX-C4 are backed only by
+locked aggregates on this artifact branch, so their cell-level dependence and tie
+structure are unaudited. Accordingly we state the exact Tier-1 results as
+direction-preservation outcomes over the audited designs, with the policy
+sensitivities of Table~\ref{tab:tier1_robustness} reported alongside.

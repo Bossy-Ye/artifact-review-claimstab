@@ -1,0 +1,61 @@
+claim_id: EX-C5
+domain: compilation
+source_identifier: "arXiv:2409.08844 (Benchpress), claim ext_2409_08844v2_claim4"
+source_title: "Benchmarking the performance of quantum computing software for quantum circuit creation, manipulation and compilation"
+source_venue: "Nature Computational Science 2025 (10.1038/s43588-025-00792-y); bib key nation2024benchmarking currently points to the arXiv preprint"
+source_artifact: "https://github.com/Qiskit/benchpress/tree/1.0"
+source_sentence_or_claim_summary: >-
+  Verbatim: "In contrast, while the two-qubit gate depth is worse than Qiskit for BQSKit and Staq,
+  Tket outperforms Qiskit overall, with prominent gains for more connected topologies." Narrowed:
+  for transpilation resource benchmarks, Tket yields lower two-qubit gate depth than Qiskit.
+source_context: "Benchpress transpilation resource benchmarking; multi-tool statement narrowed to Tket-vs-Qiskit."
+P:
+  family: transpilation resource benchmarking
+  instance_distribution: deterministic connectivity-stress circuits (linear_3_remote_cx, linear_4_bidirectional_mix, linear_4_crossing_ladder, linear_4_repeated_remote)
+  algorithmic_spec: none (deterministic compile + structural depth; no classical optimization loop)
+  resource_constraints: 4-node line architecture; Qiskit optimization-level/seed grid
+B_A: Tket
+B_B: Qiskit
+metric: two-qubit gate depth
+direction: "B_A < B_B (Tket lower 2Q depth than Qiskit)"
+scope_dimensions: circuit instance (4 connectivity-stress circuits)
+environment_dimensions: L1 = Qiskit optimization level (0-3) x qiskit seed (0-4)
+axis_status:
+  S_scope:
+    status: ACTIVE
+    reason: "Source-supported circuit instances within the benchmark family; 2Q depth varies across circuits and the claim quantifies over them."
+  L1:
+    status: ACTIVE
+    reason: "Qiskit optimization level and seed transform the circuit before the depth is measured; artifact-supported, metric-affecting, claim-preserving."
+  L2:
+    status: FIXED-INACTIVE
+    reason: "Metric is a structural compiler-output two-qubit depth; no sampling/shots enter the measured value."
+  L3:
+    status: FIXED-INACTIVE
+    reason: "The 4-node line coupling map is a fixed compilation target / scope-defining configuration (master coupling-map rule), not live backend noise; a static 2Q depth has no dependence on calibration/noise/drift."
+  ALGO:
+    status: FIXED-INACTIVE
+    reason: "No classical optimization loop enters a deterministic compile-and-measure; compiler stochasticity captured under the L1 seed."
+  resource_budget:
+    status: FIXED-INACTIVE
+    reason: "Fixed line architecture and optimization-level/seed grid hold the compile budget fixed; the metric is a depth count, not a time/resource quantity."
+excluded_dimensions_with_reasons:
+  BQSKit_Staq_QTS_comparators: "changes the comparator (narrowed to the Tket-vs-Qiskit pair)"
+  runtime_metric: "changes the metric (depth claim, not a timing claim)"
+  full_benchpress_suite_import: "outside the artifact-supported audited surface"
+  live_hardware_execution: "out of audited scope"
+cell_key: "circuit_instance x qiskit_optimization_level x qiskit_seed"
+locked_cell_log: paper/output/audited_corpus_v2/full_cells/phase1_six_claims/details/ext_2409_08844v2_claim4_measurements.csv
+result_source: paper/output/figures/section5/external_forest_data.csv
+N: 80
+k: 44
+direction_preservation_rate: 0.55
+wilson_ci: "[0.441, 0.654]"
+wilson_verdict: "Unresolved"
+bootstrap_or_dependence_check: "Cluster bootstrap agrees with Wilson classification (part of 47/47 agreement); see paper/output/figures/section5/cluster_bootstrap_47.csv"
+evidence_boundary: >-
+  Unresolved over this card: Tket-vs-Qiskit two-qubit gate depth on 4 connectivity-stress circuits x
+  4 Qiskit optimization levels x 5 seeds on a 4-node line (80 cells). Narrowed connectivity-stress
+  surface, not a full reproduction of the Benchpress suite.
+manuscript_locations: "Section 6/RQ2 (Table per_claim_external_audit, Fig external_forest). Manuscript anonymizes baselines as 'A vs F'."
+provenance_notes: "Real baselines from locked inventory. N=80 confirmed: full_cells log has 80 rows (earlier 8-row smoke log exists under audited_corpus_v2/details/; the locked surface is the 80-row log)."

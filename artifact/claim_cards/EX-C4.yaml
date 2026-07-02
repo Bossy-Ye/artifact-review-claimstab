@@ -1,0 +1,63 @@
+claim_id: EX-C4
+domain: optimization
+source_identifier: "arXiv:2411.00518 (v2), claim ext_2411_00518v2_claim3"
+source_title: "Quantum tree generator improves QAOA state-of-the-art for the knapsack problem"
+source_venue: "arXiv 2024/2025 (peer-reviewed status not verified)"
+source_artifact: "extraction worksheet data/slr/extraction_v2/manual_path2/worksheets/2411.00518v2.md"
+source_sentence_or_claim_summary: >-
+  Verbatim: "It should be noted, however, that it achieves significantly better probability values
+  between five and ten items compared to the QTG-based AAM-QAOA, with the global maxima being around
+  0.9 and 0.55, respectively." Summary: the QTG-QAOA method yields better probability values than the
+  QTG-based AAM-QAOA for 5-10 items.
+source_context: "QAOA for the knapsack problem; probability-value comparison for instance sizes 5-10 items."
+P:
+  family: QAOA for the knapsack problem
+  instance_distribution: 5 knapsack instances, n_items 6-10 (n_6_c_1023_g_1..., n_10_c_1023_g_3...)
+  algorithmic_spec: optimizer {bfgs, powell}; qtg_depth = 1; copula_depth (8 values)
+  resource_constraints: fixed-method depth (qtg_depth=1); comparator depth swept
+B_A: QTG-QAOA (quantum tree generator method)
+B_B: AAM-QAOA (QTG-based AAM-QAOA)
+metric: probability value (e.g., success/optimal-state probability)
+direction: "B_A > B_B (QTG-QAOA higher probability value than AAM-QAOA for 5-10 items)"
+scope_dimensions: knapsack instance / n_items (n_items 6-10, 5 instances)
+environment_dimensions: "ALGO = optimizer (bfgs, powell), qtg_depth, copula_depth"
+axis_status:
+  S_scope:
+    status: ACTIVE
+    reason: "Knapsack instances for n_items 6-10 are varied within the stated 5-10-item regime; the probability value varies across them and the claim quantifies over that regime."
+  L1:
+    status: FIXED-INACTIVE
+    reason: "Metric is a probability value read from the QAOA algorithm output; the locked perturbation record shows no compilation/transpilation variation and the quantity is not a compiled-circuit property."
+  L2:
+    status: SOURCE-CHECK REQUIRED
+    reason: "Recorded as a source-check requirement: the probability value could be an exact/statevector probability (L2 fixed) or a shot-derived frequency (L2 active); the locked data records no L2 variation and does not establish which. Marked source-check rather than guessed."
+  L3:
+    status: SOURCE-CHECK REQUIRED
+    reason: "Whether the probability is computed noiselessly (L3 fixed) or under a noise model is not established in the locked data; no L3 variation recorded. Source-check requirement recorded."
+  ALGO:
+    status: ACTIVE
+    reason: "Classical optimizer (bfgs, powell) and comparator depth (copula_depth) are swept; these are the algorithmic-configuration dimensions the claim quantifies over."
+  resource_budget:
+    status: FIXED-INACTIVE
+    reason: "The method depth qtg_depth is fixed at 1, holding the method's resource budget constant; the copula_depth sweep is part of the comparator definition, not a free budget perturbation on the method."
+excluded_dimensions_with_reasons:
+  live_hardware_execution: "out of audited scope (excluded in the locked perturbation record)"
+  larger_problem_regimes: "unsupported larger artifact/problem regimes; claim is explicitly scoped to 5-10 items"
+cell_key: "knapsack_instance x optimizer x copula_depth; 80 cells"
+locked_cell_log: "SOURCE-CHECK REQUIRED — no per-cell measurements CSV found in the repo for ext_2411_00518v2_claim3; only the aggregate verdict is locked (see result_source). Per-claim perturbations recorded in paper/output/figures/section5/per_claim_perturbations.csv."
+result_source: paper/output/figures/section5/external_forest_data.csv
+N: 80
+k: 45
+direction_preservation_rate: 0.5625
+wilson_ci: "[0.453, 0.666]"
+wilson_verdict: "Unresolved"
+bootstrap_or_dependence_check: "Cluster bootstrap agrees with Wilson classification (part of 47/47 agreement); see paper/output/figures/section5/cluster_bootstrap_47.csv"
+evidence_boundary: >-
+  Unresolved over this card: QTG-QAOA-vs-AAM-QAOA probability value over the audited 5-10-item knapsack
+  instances and ALGO sweep (80 cells). The per-cell log is not present in the repo, so the cell-level
+  basis of the verdict is not independently inspectable from the artifact (aggregate-only).
+manuscript_locations: "Section 6/RQ2 (Table per_claim_external_audit, Fig external_forest). Manuscript anonymizes baselines as 'A vs E'."
+provenance_notes: >-
+  Evidence boundary: this is one of two external claims (with EX-C2) lacking a per-cell measurements CSV; N/k/Wilson/verdict
+  copied from the locked external_forest_data.csv. Comparator identity (AAM-QAOA) from the extraction worksheet
+  claim-3 verbatim; cross-check the B_A/B_B mapping against the manuscript anonymized 'A vs E'.
