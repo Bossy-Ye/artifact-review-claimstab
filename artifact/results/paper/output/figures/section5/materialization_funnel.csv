@@ -1,0 +1,8 @@
+stage,count,percentage_of_previous,description
+Extracted,457,100%,Comparative claims from 119 papers
+Audit-eligible,76,16.6%,Sufficient specification (operationalizability filter)
+T1 (artifact-backed),8,10.5% of 76,Proxy-free executable
+T2 (paper-described),0,0%,"After review, none qualify"
+T3 (proxy/inferred),58,76.3% of 76,Re-execution requires proxies
+T4 (blocked),10,13.2% of 76,Specification-incomplete materially
+Audited,8,100% of T1,All 8 audited

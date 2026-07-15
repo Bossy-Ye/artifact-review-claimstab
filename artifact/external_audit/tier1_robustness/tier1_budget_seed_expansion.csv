@@ -1,0 +1,21 @@
+record_id,N,preserved,contradicted,tied,preservation_rate,wilson_lower,wilson_upper,verdict,changed_from_primary,note
+EX-C1,,,,,,,,,,budget-unavailable: no validated larger trace (record not in expanded_seed_sensitivity.csv)
+EX-C2,,,,,,,,,,budget-unavailable: no validated larger trace (record not in expanded_seed_sensitivity.csv)
+EX-C3,80,62,0,18,0.775,0.672132,0.852668,Unresolved,False,baseline N=80
+EX-C3,160,124,0,36,0.775,0.704287,0.832817,Unresolved,False,validated re-sampled seed expansion
+EX-C3,240,184,0,56,0.766667,0.709213,0.815718,Unresolved,False,validated re-sampled seed expansion
+EX-C3,320,243,0,77,0.759375,0.70964,0.802956,Unresolved,False,validated re-sampled seed expansion
+EX-C4,,,,,,,,,,budget-unavailable: no validated larger trace (record not in expanded_seed_sensitivity.csv)
+EX-C5,80,44,21,15,0.55,0.441195,0.654223,Unresolved,False,baseline N=80
+EX-C5,160,91,48,21,0.56875,0.491287,0.642989,Unresolved,False,validated re-sampled seed expansion
+EX-C5,240,136,72,32,0.566667,0.503411,0.627822,Unresolved,False,validated re-sampled seed expansion
+EX-C5,320,180,90,50,0.5625,0.507724,0.615793,Unresolved,False,validated re-sampled seed expansion
+EX-C6,80,34,20,26,0.425,0.322566,0.534307,Unresolved,False,baseline N=80
+EX-C6,160,69,40,51,0.43125,0.357011,0.508713,Unresolved,False,validated re-sampled seed expansion
+EX-C6,240,106,60,74,0.441667,0.38025,0.504921,Unresolved,False,validated re-sampled seed expansion
+EX-C6,320,144,82,94,0.45,0.396406,0.50478,Unresolved,False,validated re-sampled seed expansion
+EX-C7,80,0,62,18,0.0,0.0,0.045818,Reversed,False,baseline N=80
+EX-C7,160,0,124,36,0.0,0.0,0.023446,Reversed,False,validated re-sampled seed expansion
+EX-C7,240,0,184,56,0.0,0.0,0.015754,Reversed,False,validated re-sampled seed expansion
+EX-C7,320,0,243,77,0.0,0.0,0.011862,Reversed,False,validated re-sampled seed expansion
+EX-C8,,,,,,,,,,budget-unavailable: no validated larger trace (record not in expanded_seed_sensitivity.csv)

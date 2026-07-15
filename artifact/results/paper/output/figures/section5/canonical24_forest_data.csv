@@ -1,0 +1,25 @@
+figure_label,claim_id,short_label,paradigm,algorithm_family,scope,delta,s_hat,wilson_lower,wilson_upper,classification
+C1,Arithmetic software-stack|pytket>Qiskit|compilation_only_exact|delta=0.00,arith-comp-d0,software-stack,Arithmetic software-stack,compilation_only_exact,0.0,1.0,0.95626827158534,1.0,Sustained
+C2,Arithmetic software-stack|pytket>Qiskit|compilation_only_exact|delta=1.00,arith-comp-d1,software-stack,Arithmetic software-stack,compilation_only_exact,1.0,1.0,0.95626827158534,1.0,Sustained
+C3,Arithmetic software-stack|pytket>Qiskit|compilation_only_exact|delta=2.00,arith-comp-d2,software-stack,Arithmetic software-stack,compilation_only_exact,2.0,1.0,0.95626827158534,1.0,Sustained
+C4,GHZ software-stack|pytket>Qiskit|compilation_only_exact|delta=0.00,ghz-comp-d0,software-stack,GHZ software-stack,compilation_only_exact,0.0,1.0,0.9732937996305868,1.0,Sustained
+C5,GHZ software-stack|pytket>Qiskit|compilation_only_exact|delta=1.00,ghz-comp-d1,software-stack,GHZ software-stack,compilation_only_exact,1.0,1.0,0.9732937996305868,1.0,Sustained
+C6,GHZ software-stack|pytket>Qiskit|compilation_only_exact|delta=2.00,ghz-comp-d2,software-stack,GHZ software-stack,compilation_only_exact,2.0,1.0,0.9732937996305868,1.0,Sustained
+C7,QFT software-stack|pytket>Qiskit|compilation_only_exact|delta=0.00,qft-comp-d0,software-stack,QFT software-stack,compilation_only_exact,0.0,1.0,0.9732937996305868,1.0,Sustained
+C8,QFT software-stack|pytket>Qiskit|compilation_only_exact|delta=1.00,qft-comp-d1,software-stack,QFT software-stack,compilation_only_exact,1.0,1.0,0.9732937996305868,1.0,Sustained
+C9,QFT software-stack|pytket>Qiskit|compilation_only_exact|delta=2.00,qft-comp-d2,software-stack,QFT software-stack,compilation_only_exact,2.0,1.0,0.9732937996305868,1.0,Sustained
+C10,Max-2-SAT QAOA|QAOA_p2>QAOA_p1|combined_light_exact|delta=0.00,max2sat-comb-d0,optimization,Max-2-SAT QAOA,combined_light_exact,0.0,0.8448275862068966,0.7836467596580712,0.8911115379613166,Unresolved
+C11,Max-2-SAT QAOA|QAOA_p2>QAOA_p1|combined_light_exact|delta=0.01,max2sat-comb-d0.01,optimization,Max-2-SAT QAOA,combined_light_exact,0.01,0.8448275862068966,0.7836467596580712,0.8911115379613166,Unresolved
+C12,Max-2-SAT QAOA|QAOA_p2>QAOA_p1|combined_light_exact|delta=0.05,max2sat-comb-d0.05,optimization,Max-2-SAT QAOA,combined_light_exact,0.05,0.8390804597701149,0.7772562866787965,0.8862560393136013,Unresolved
+C13,Max-2-SAT QAOA|QAOA_p2>QAOA_p1|compilation_only_exact|delta=0.00,max2sat-comp-d0,optimization,Max-2-SAT QAOA,compilation_only_exact,0.0,0.9871794871794872,0.9544651890044474,0.9964770829283276,Sustained
+C14,Max-2-SAT QAOA|QAOA_p2>QAOA_p1|compilation_only_exact|delta=0.01,max2sat-comp-d0.01,optimization,Max-2-SAT QAOA,compilation_only_exact,0.01,0.9166666666666666,0.86265154132306,0.9506543491457607,Unresolved
+C15,Max-2-SAT QAOA|QAOA_p2>QAOA_p1|compilation_only_exact|delta=0.05,max2sat-comp-d0.05,optimization,Max-2-SAT QAOA,compilation_only_exact,0.05,0.903846153846154,0.8474194634870891,0.940861630351922,Unresolved
+C16,MaxCut QAOA|QAOA_p2>QAOA_p1|combined_light_exact|delta=0.00,maxcut-comb-d0,optimization,MaxCut QAOA,combined_light_exact,0.0,0.7471264367816092,0.7172004771468777,0.7748796315038528,Unresolved
+C17,MaxCut QAOA|QAOA_p2>QAOA_p1|combined_light_exact|delta=0.01,maxcut-comb-d0.01,optimization,MaxCut QAOA,combined_light_exact,0.01,0.6827586206896552,0.6510872782635506,0.7128231276688501,Unresolved
+C18,MaxCut QAOA|QAOA_p2>QAOA_p1|combined_light_exact|delta=0.05,maxcut-comb-d0.05,optimization,MaxCut QAOA,combined_light_exact,0.05,0.6563218390804598,0.6241376125477609,0.6871316654824686,Unresolved
+C19,MaxCut QAOA|QAOA_p2>QAOA_p1|compilation_only_exact|delta=0.00,maxcut-comp-d0,optimization,MaxCut QAOA,compilation_only_exact,0.0,0.9064102564102564,0.8839317825692881,0.924905250564767,Unresolved
+C20,MaxCut QAOA|QAOA_p2>QAOA_p1|compilation_only_exact|delta=0.01,maxcut-comp-d0.01,optimization,MaxCut QAOA,compilation_only_exact,0.01,0.8858974358974359,0.8616686746110931,0.9063437764089404,Unresolved
+C21,MaxCut QAOA|QAOA_p2>QAOA_p1|compilation_only_exact|delta=0.05,maxcut-comp-d0.05,optimization,MaxCut QAOA,compilation_only_exact,0.05,0.7897435897435897,0.7597615840199445,0.816885638340612,Unresolved
+C22,MaxCut QAOA|QAOA_p2>QAOA_p1|sampling_only_exact|delta=0.00,maxcut-samp-d0,optimization,MaxCut QAOA,sampling_only_exact,0.0,0.7684210526315789,0.7320629454970353,0.8011853851984547,Unresolved
+C23,MaxCut QAOA|QAOA_p2>QAOA_p1|sampling_only_exact|delta=0.01,maxcut-samp-d0.01,optimization,MaxCut QAOA,sampling_only_exact,0.01,0.7192982456140351,0.6810363569821383,0.75462404391287,Unresolved
+C24,MaxCut QAOA|QAOA_p2>QAOA_p1|sampling_only_exact|delta=0.05,maxcut-samp-d0.05,optimization,MaxCut QAOA,sampling_only_exact,0.05,0.6736842105263158,0.6341420693118491,0.7109009681969973,Unresolved

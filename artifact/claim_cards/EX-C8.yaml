@@ -1,0 +1,66 @@
+claim_id: EX-C8
+domain: benchmark
+source_identifier: "arXiv:2409.08844 (Benchpress), claim ext_2409_08844v2_claim1"
+source_title: "Benchmarking the performance of quantum computing software for quantum circuit creation, manipulation and compilation"
+source_venue: "Nature Computational Science 2025 (10.1038/s43588-025-00792-y); bib key nation2024benchmarking currently points to the arXiv preprint"
+source_artifact: "https://github.com/Qiskit/benchpress/tree/1.0"
+source_sentence_or_claim_summary: >-
+  Verbatim: "Results worth highlighting include Cirq's performance at constructing a set of
+  Hamiltonian simulation circuits (test_DTC100_set_build) in a time 55x faster than the
+  nearest competitor Qiskit." Pairwise: for Hamiltonian-simulation-like circuit construction,
+  Cirq yields lower construction time than Qiskit.
+source_context: >-
+  Benchpress circuit-construction microbenchmark (test_DTC100_set_build). Audited over a local
+  constructor-timing surface.
+P:
+  family: Hamiltonian-simulation-like circuit construction
+  instance_distribution: deterministic Hamiltonian-simulation-like circuits across sizes (circuit_size in {4,6,8,10})
+  algorithmic_spec: none (circuit-object construction timing; no classical optimization loop)
+  resource_constraints: local constructor-timing surface; timing repetitions
+B_A: Cirq
+B_B: Qiskit
+metric: circuit construction time (pre-compilation, wall-clock)
+direction: "B_A < B_B (Cirq lower construction time than Qiskit)"
+scope_dimensions: circuit_size (4, 6, 8, 10)
+environment_dimensions: L2 = timing repetition (20 repetitions)
+axis_status:
+  S_scope:
+    status: ACTIVE
+    reason: "Four circuit sizes are varied instances; construction time varies across them and the claim quantifies over them."
+  L1:
+    status: FIXED-INACTIVE
+    reason: "Metric is circuit-OBJECT construction time, which precedes transpilation; no compilation/transpilation enters the measured value."
+  L2:
+    status: ACTIVE
+    reason: "A timing-repetition dimension (20 repetitions) is varied to capture construction-time measurement variance. NOTE: host-timing repetition, not quantum sampling/shots."
+  L3:
+    status: FIXED-INACTIVE
+    reason: "No quantum backend executes during circuit construction; backend noise/calibration cannot enter construction time."
+  ALGO:
+    status: FIXED-INACTIVE
+    reason: "No variational/optimization loop enters circuit-construction timing."
+  resource_budget:
+    status: SOURCE-CHECK REQUIRED
+    reason: "EX-C8 is a construction-time claim and is host-sensitive: host/thread/load/timer policy and the repetition policy beyond cell count are not documented in the locked data. Timing repetitions are logged, but the host-environment policy that fixes their comparability is not established."
+excluded_dimensions_with_reasons:
+  full_benchpress_suite_import: "outside the artifact-supported audited surface (local constructor-timing surface, not the exact DTC100 test)"
+  memory_profiler_variation: "changes the measurement protocol"
+  hardware_execution: "out of audited scope; construction is a host-side operation"
+  live_hardware_execution: "out of audited scope"
+cell_key: "circuit_size x timing_repetition"
+locked_cell_log: artifact/external_audit/tier1_robustness/per_cell_inputs/ext_2409_08844v2_claim1_measurements.csv
+result_source: artifact/results/paper/output/figures/section5/external_forest_data.csv
+N: 80
+k: 0
+direction_preservation_rate: 0.0
+wilson_ci: "[0.000, 0.046]"
+wilson_verdict: "Reversed within audited scope"
+bootstrap_or_dependence_check: "Cluster bootstrap agrees with Wilson classification (part of 47/47 agreement); see artifact/results/paper/output/figures/section5/cluster_bootstrap_47.csv"
+evidence_boundary: >-
+  Reversed over this card: Cirq-vs-Qiskit circuit-construction time on Hamiltonian-simulation-like
+  circuits, 4 sizes x 20 timing repetitions (80 cells), on a local constructor-timing surface.
+  Construction time is host-sensitive; the verdict holds on the locked host-timing surface, not the
+  exact Benchpress DTC100 test or a host-independent guarantee. This is a scoped local audit design,
+  not full source-study replication.
+manuscript_locations: "Section 6/RQ2 (Table per_claim_external_audit, Fig external_forest); EX-C8 reads analogously to EX-C7. Manuscript anonymizes baselines as 'A vs I'."
+provenance_notes: "Real baselines from locked inventory. EX-C8 host/thread/load/timer/repetition status recorded as a source-check requirement; resource_budget = SOURCE-CHECK REQUIRED. N=80 confirmed: locked log has 80 rows."

@@ -1,0 +1,4 @@
+audit_regime,cells_per_claim,classifications,agreement_with_full,notes
+Single-run,1,19 match direction / 5 oppose direction,diagnostic only,no Wilson CI possible; no uncertainty quantification
+Seed-only max-available,max 20 (median approx. 8),24 Unresolved,"14 agree, 10 disagree",true matched-N seed-only N=80 unavailable; max-available fallback
+Full ClaimStab-QC,80,"10 Sustained, 14 Unresolved, 0 Reversed",reference,full perturbation audit

@@ -1,0 +1,4 @@
+corpus,total_considered,analyzed,skipped,classification_changes,directional_distribution,practical_distribution,notes
+Canonical 24,24,9,15,0,10S/14U/0R overall,9 analyzed remained Sustained,15 skipped due to no natural epsilon
+External (Phase 1 subset),6,4,2,0,1S/3U/2R subset,4 analyzed remained 1R/3U,2 skipped due to no natural epsilon
+Total,30,13,17,0,not aggregated across skipped claims,0 changes in analyzed subset,Practical-stability indicator does not change classifications in analyzed subset

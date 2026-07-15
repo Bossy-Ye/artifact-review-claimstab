@@ -1,0 +1,120 @@
+paper_id,title,screening_decision,final_accepted_claim_count,contributes_accepted_claims
+2407.01010v2,Multi-target quantum compilation algorithm,include,4,true
+2405.05875v2,A Genetic Approach to Minimising Gate and Qubit Teleportations for Multi-Processor Quantum Circuit Distribution,include,4,true
+2311.15123v3,Atomique: A Quantum Compiler for Reconfigurable Neutral Atom Arrays,include,7,true
+2308.02536v1,qgym: A Gym for Training and Benchmarking RL-Based Quantum Compilation,include,2,true
+2304.03829v1,Automated Quantum Oracle Synthesis with a Minimal Number of Qubits,include,4,true
+2303.02830v1,ISAAQ: Ising Machine Assisted Quantum Compiler,include,5,true
+2211.07685v3,Highly optimized quantum circuits synthesized via data-flow engines,include,4,true
+2209.02669v3,Hardware-Conscious Optimization of the Quantum Toffoli Gate,include,2,true
+2206.09938v2,Quantum circuit optimization for multiple QPUs using local structure,include,2,true
+2206.06684v1,A Pattern Matching-Based Framework for Quantum Circuit Rewriting,include,2,true
+2202.14025v1,Arline Benchmarks: Automated Benchmarking Platform for Quantum Compilers,include,24,true
+2201.06457v1,Decoding techniques applied to the compilation of CNOT circuits for NISQ architectures,include,4,true
+2108.11874v1,Noise-Adaptive Quantum Compilation Strategies Evaluated with Application-Motivated Benchmarks,include,5,true
+2108.02099v2,2QAN: A quantum compiler for 2-local qubit Hamiltonian simulation algorithms,include,5,true
+2003.08408v2,Enabling Accuracy-Aware Quantum Compilers using Symbolic Resource Estimation,include,2,true
+2304.08814v2,A Comparison of Quantum Compilers using a DAG-based or phase polynomial-based Intermediate Representation,include,9,true
+2406.06836v3,"Comparative Study of Quantum Transpilers: Evaluating the Performance of qiskit-braket-provider, qBraid-SDK, and Pytket Extensions",include,5,true
+2110.00592v2,Nuwa: A Quantum Circuit Transpiler Based on a Finite-Horizon Heuristic for Placement and Routing,include,7,true
+2011.12191v4,Reducing the CNOT count for Clifford+T circuits on NISQ architectures,include,5,true
+2409.18963v3,Transpiling quantum assembly language circuits to a qudit form,include,3,true
+2411.19388v1,Limitations of Quantum Approximate Optimization in Solving Generic Higher-Order Constraint-Satisfaction Problems,include,11,true
+2411.00518v2,Quantum tree generator improves QAOA state-of-the-art for the knapsack problem,include,5,true
+2410.22247v2,Automorphism-Assisted Quantum Approximate Optimization Algorithm for efficient graph optimization,include,3,true
+2410.15626v1,Hybrid Quantum-HPC Solutions for Max-Cut: Bridging Classical and Quantum Algorithms,include,5,true
+2410.07674v1,Inequality constraints in variational quantum circuits with qudits,include,3,true
+2409.19820v1,Qompose: A Technique to Select Optimal Algorithm- Specific Layout for Neutral Atom Quantum Architectures,include,3,true
+2409.15055v2,Efficient Large-Scale Quantum Optimization via Counterdiabatic Ansatz,include,9,true
+2409.14786v3,Performance of Parity QAOA for the Signed Max-Cut Problem,include,9,true
+2409.10739v3,Evolving a multi-population evolutionary-QAOA on distributed QPUs,include,7,true
+2408.13316v2,QuCLEAR: Clifford Extraction and Absorption for Quantum Circuit Optimization,include,2,true
+2408.09538v1,Parameter Setting Heuristics Make the Quantum Approximate Optimization Algorithm Suitable for the Early Fault-Tolerant Era,include,2,true
+2408.08365v1,Coqa: Blazing Fast Compiler Optimizations for QAOA,include,4,true
+2407.17325v2,Noise-Aware Distributed Quantum Approximate Optimization Algorithm on Near-term Quantum Hardware,include,4,true
+2407.01975v2,Imposing Constraints on Driver Hamiltonians and Mixing Operators: From Theory to Practical Implementation,include,1,true
+2405.20173v2,Eclipse Qrisp QAOA: description and preliminary comparison with Qiskit counterparts,include,2,true
+2405.11917v2,Demonstrating Quantum Scaling Advantage in Approximate Optimization for Energy Coalition Formation with 100+ Agents,include,5,true
+2405.07624v1,Towards Robust Benchmarking of Quantum Optimization Algorithms,include,9,true
+2404.17242v2,Quantum and classical correlations in shrinking algorithms for optimization,include,7,true
+2403.18395v2,Effective Embedding of Integer Linear Inequalities for Variational Quantum Algorithms,include,4,true
+2403.02045v3,Recursive Quantum Relaxation for Combinatorial Optimization Problems,include,2,true
+2402.02585v1,"Grover-QAOA for 3-SAT: Quadratic Speedup, Fair-Sampling, and Parameter Clustering",include,5,true
+2401.09849v1,Benchmarking hybrid digitized-counterdiabatic quantum optimization,include,7,true
+2401.02852v1,Quantum Approximate Optimisation for Not-All-Equal SAT,include,2,true
+2311.02151v2,Vanishing performance of the parity-encoded quantum approximate optimization algorithm applied to spin-glass models,include,3,true
+2309.16796v3,Benchmarking Metaheuristic-Integrated QAOA against Quantum Annealing,include,4,true
+2309.00047v1,Dynamic-ADAPT-QAOA: An algorithm with shallow and noise-resilient circuits,include,5,true
+2308.10383v2,A Variational Qubit-Efficient MaxCut Heuristic Algorithm,include,4,true
+2308.01789v1,Benchmarking Adaptative Variational Quantum Algorithms on QUBO Instances,include,3,true
+2307.07193v3,Exponential Qubit Reduction in Optimization for Financial Transaction Settlement,include,2,true
+2305.03390v1,Evidence that PUBO outperforms QUBO when solving continuous optimization problems with the QAOA,include,4,true
+2303.00329v2,Mean-Field Approximate Optimization Algorithm,include,2,true
+2302.04479v2,An Expressive Ansatz for Low-Depth Quantum Approximate Optimisation,include,3,true
+2302.02278v2,Optimization Applications as Quantum Performance Benchmarks,include,5,true
+2210.08039v1,Qubit-reuse compilation with mid-circuit measurement and reset,include,2,true
+2208.13380v2,Let Each Quantum Bit Choose Its Basis Gates,include,1,true
+2208.09888v1,Iterative-Free Quantum Approximate Optimization Algorithm Using Neural Networks,include,1,true
+2207.10555v1,Benchmarking the performance of portfolio optimization with QAOA,include,5,true
+2205.06845v6,The QAOA with Few Measurements,include,0,false
+2205.01192v1,Augmenting QAOA Ansatz with Multiparameter Problem-Independent Layer,include,3,true
+2202.06782v1,Wasserstein Solution Quality and the Quantum Approximate Optimization Algorithm: A Portfolio Optimization Case Study,include,1,true
+2112.03199v4,Evaluating performance of hybrid quantum optimization algorithms for MAXCUT Clustering using IBM runtime environment,include,4,true
+2111.03016v3,Graph neural network initialisation of quantum approximate optimisation,include,3,true
+2110.10788v3,Noisy intermediate-scale quantum computing algorithm for solving an $n$-vertex MaxCut problem with log($n$) qubits,include,3,true
+2108.03281v1,Globally optimizing QAOA circuit depth for constrained optimization problems,include,2,true
+2105.06240v2,Parity Quantum Optimization: Benchmarks,include,3,true
+2102.06813v1,Empirical performance bounds for quantum approximate optimization,include,4,true
+2102.05997v1,Impact of Graph Structures for QAOA on MaxCut,include,3,true
+2101.10296v3,Exploiting Symmetry Reduces the Cost of Training QAOA,include,6,true
+2101.05742v3,Quantum annealing initialization of the quantum approximate optimization algorithm,include,3,true
+2007.15671v1,Optimal Layout Synthesis for Quantum Computing,include,5,true
+2411.10062v1,Quadratic versus Polynomial Unconstrained Binary Models for Quantum Optimization illustrated on Railway Timetabling,include,3,true
+2410.04030v1,A comparison on constrain encoding methods for quantum approximate optimization algorithm,include,4,true
+2407.06663v2,Advantages of multistage quantum walks over QAOA,include,5,true
+2405.09169v3,Towards a Linear-Ramp QAOA protocol: Evidence of a scaling advantage in solving some combinatorial optimization problems,include,4,true
+2405.08941v3,Parameter optimization comparison in QAOA using Stochastic Hill Climbing with Random Re-starts and Local Search with entangled and non-entangled mixing operators,include,3,true
+2312.06922v4,Variational quantum algorithm-preserving feasible space for solving the uncapacitated facility location problem,include,2,true
+2311.16190v3,Q-Pilot: Field Programmable Qubit Array Compilation with Flying Ancillas,include,6,true
+2310.10360v2,Probabilistic tensor optimization of quantum circuits for the max-$k$-cut problem,include,2,true
+2303.17366v2,A recursively partitioned approach to architecture-aware ZX Polynomial synthesis and optimization,include,2,true
+2301.00520v2,Quantum Annealing vs. QAOA: 127 Qubit Higher-Order Ising Problems on NISQ Computers,include,5,true
+2209.03824v3,Bayesian Optimization for QAOA,include,4,true
+2205.03441v1,Comparison between the Iterative Local Search and Exhaustive Search methods applied to QAOA in Max-Cut and Ising Spin Model problems,include,5,true
+2111.12754v2,QAOA of the Highest Order,include,2,true
+2111.00796v3,Quantum optimisation via maximally amplified states,include,1,true
+2109.04482v2,Quantifying the Impact of Precision Errors on Quantum Approximate Optimization Algorithms,include,1,true
+2412.13271v1,Gaussian process model kernels for noisy optimization in variational quantum algorithms,include,5,true
+2406.14411v1,Performance and scaling analysis of variational quantum simulation,include,1,true
+2404.14531v1,Electric Field Gradient Calculations for Ice VIII and IX using Polarizable Embedding: A Comparative Study on Classical Computers and Quantum Simulators,include,3,true
+2402.12105v1,A joint optimization approach of parameterized quantum circuits with a tensor network,include,2,true
+2309.05924v1,Comparison of Quantum Simulators for Variational Quantum Search: A Benchmark Study,include,2,true
+2309.04754v1,Ansatz-Agnostic Exponential Resource Saving in Variational Quantum Algorithms Using Shallow Shadows,include,2,true
+2306.02024v1,Tensor train optimization of parametrized quantum circuits,include,2,true
+2303.08910v3,Convergence and Quantum Advantage of Trotterized MERA for Strongly-Correlated Systems,include,3,true
+2212.11405v1,A self-consistent field approach for the variational quantum eigensolver: orbital optimization goes adaptive,include,3,true
+2209.08535v4,Sequential optimal selection of a single-qubit gate and its relation to barren plateau in parameterized quantum circuits,include,1,true
+2207.05751v3,A Synergistic Compilation Workflow for Tackling Crosstalk in Quantum Machines,include,4,true
+2205.01726v1,"Accelerated Convergence of Contracted Quantum Eigensolvers through a Quasi-Second-Order, Locally Parameterized Optimization",include,5,true
+2204.10741v2,Quantum Davidson Algorithm for Excited States,include,3,true
+2112.07416v2,Quantum expectation-value estimation by computational basis sampling,include,3,true
+2111.13454v3,Performance comparison of optimization methods on variational quantum algorithms,include,4,true
+2111.08085v3,Mitigated barren plateaus in the time-nonlocal optimization of analog quantum-algorithm protocols,include,2,true
+2107.08606v3,Variational Quantum Linear Solver with Dynamic Ansatz,include,3,true
+2106.08682v1,A Comparison of Various Classical Optimizers for a Variational Quantum Linear Solver,include,2,true
+2103.08563v3,Real time evolution for ultracompact Hamiltonian eigenstates on quantum hardware,include,3,true
+2102.00345v2,Simulating Many-Body Systems with a Projective Quantum Eigensolver,include,3,true
+2101.08526v7,Variational quantum solver employing the PDS energy functional,include,2,true
+2011.08137v3,Quantum simulations of molecular systems with intrinsic atomic orbitals,include,4,true
+2009.13545v3,The Meta-Variational Quantum Eigensolver (Meta-VQE): Learning energy profiles of parameterized Hamiltonians for quantum simulation,include,3,true
+2009.13140v3,Quantum computed moments correction to variational estimates,include,2,true
+2009.03351v3,Hamiltonian operator approximation for energy measurement and ground state preparation,include,2,true
+2008.02941v2,Exploring entanglement and optimization within the Hamiltonian Variational Ansatz,include,2,true
+2006.13222v2,Certified variational quantum algorithms for eigenstate preparation,include,3,true
+2005.11011v2,Using models to improve optimizers for variational quantum algorithms,include,3,true
+2002.11724v2,Calculating transition amplitudes by variational quantum deflation,include,3,true
+2409.08844v2,Benchmarking the performance of quantum computing software,include,6,true
+2309.05157v1,Superstaq: Deep Optimization of Quantum Programs,include,6,true
+2204.13719v3,MQT Bench: Benchmarking Software and Design Automation Tools for Quantum Computing,include,3,true
+2003.10611v3,t$|$ket$\rangle$ : A Retargetable Compiler for NISQ Devices,include,5,true
+2309.01028v2,Demonstration of a Hardware-Independent Toolkit for Automated Quantum Subcircuit Synthesis,include,6,true

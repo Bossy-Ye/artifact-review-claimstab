@@ -1,0 +1,14 @@
+query,n_results,timestamp,status
+"all:""quantum compiler"" AND all:""benchmark""",51,2026-04-28T19:33:02.477184,OK
+"all:""quantum compiler"" AND all:""comparison""",11,2026-04-28T19:33:02.477184,OK
+"all:""quantum compilation"" AND all:""benchmark""",51,2026-04-28T19:33:02.477184,OK
+"all:""quantum compilation"" AND all:""comparison""",10,2026-04-28T19:33:02.477184,OK
+"all:""transpiler"" AND all:""benchmark""",43,2026-04-28T19:33:02.477184,OK
+"all:""transpiler"" AND all:""comparison""",9,2026-04-28T19:33:02.477184,OK
+"all:""QAOA"" AND all:""benchmark""",163,2026-04-28T19:33:02.477184,OK
+"all:""QAOA"" AND all:""comparison""",51,2026-04-28T19:33:02.477184,OK
+"all:""VQE"" AND all:""ansatz comparison""",0,2026-04-28T19:33:02.477184,OK
+"all:""variational quantum"" AND all:""benchmark""",200,2026-04-28T19:33:02.477184,OK
+"all:""variational quantum"" AND all:""comparison""",119,2026-04-28T19:33:02.477184,OK
+"all:""quantum software"" AND all:""benchmark""",38,2026-04-28T19:33:02.477184,OK
+"all:""quantum software"" AND all:""comparison""",9,2026-04-28T19:33:02.477184,OK

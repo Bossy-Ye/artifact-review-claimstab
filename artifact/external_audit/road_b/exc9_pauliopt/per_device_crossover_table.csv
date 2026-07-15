@@ -1,0 +1,11 @@
+card_id,device,sign_g1,sign_g2,sign_g5,sign_g10,sign_g50,sign_g100,crossover_g_star,device_concordant,reason
+C9a_ps_best_vs_tket,Johannesburg,+,+,+,+,+,-,100,True,candidate strictly below for all g>=100
+C9a_ps_best_vs_tket,Melbourne,+,+,+,+,-,-,50,True,candidate strictly below for all g>=50
+C9a_ps_best_vs_tket,Singapore,+,+,+,+,+,-,100,True,candidate strictly below for all g>=100
+C9a_ps_best_vs_tket,Valencia,+,+,+,+,-,-,50,True,candidate strictly below for all g>=50
+C9a_ps_best_vs_tket,Yorktown,+,+,+,-,-,-,10,True,candidate strictly below for all g>=10
+C9b_sgs_best_vs_tket,Johannesburg,+,+,+,+,+,-,100,True,candidate strictly below for all g>=100
+C9b_sgs_best_vs_tket,Melbourne,+,+,+,+,+,-,100,True,candidate strictly below for all g>=100
+C9b_sgs_best_vs_tket,Singapore,+,+,+,+,+,-,100,True,candidate strictly below for all g>=100
+C9b_sgs_best_vs_tket,Valencia,+,+,+,+,-,-,50,True,candidate strictly below for all g>=50
+C9b_sgs_best_vs_tket,Yorktown,+,+,+,-,-,-,10,True,candidate strictly below for all g>=10

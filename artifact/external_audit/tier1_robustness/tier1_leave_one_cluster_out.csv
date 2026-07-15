@@ -1,0 +1,41 @@
+record_id,cluster_unit,removed_cluster,N,preserved,contradicted,tied,preservation_rate,wilson_lower,wilson_upper,verdict,changed_from_primary
+EX-C1,circuit_size (benchmark size),10,60,60,0,0,1.0,0.939828,1.0,Unresolved,True
+EX-C1,circuit_size (benchmark size),4,60,60,0,0,1.0,0.939828,1.0,Unresolved,True
+EX-C1,circuit_size (benchmark size),6,60,60,0,0,1.0,0.939828,1.0,Unresolved,True
+EX-C1,circuit_size (benchmark size),8,60,60,0,0,1.0,0.939828,1.0,Unresolved,True
+EX-C3,benchmark circuit,linear_3_remote_cx,60,45,0,15,0.75,0.627679,0.842235,Unresolved,False
+EX-C3,benchmark circuit,linear_4_bidirectional_mix,60,42,0,18,0.7,0.574913,0.801018,Unresolved,False
+EX-C3,benchmark circuit,linear_4_crossing_ladder,60,57,0,3,0.95,0.862995,0.98285,Unresolved,False
+EX-C3,benchmark circuit,linear_4_repeated_remote,60,42,0,18,0.7,0.574913,0.801018,Unresolved,False
+EX-C5,benchmark circuit,linear_3_remote_cx,60,27,21,12,0.45,0.330937,0.575081,Unresolved,False
+EX-C5,benchmark circuit,linear_4_bidirectional_mix,60,27,18,15,0.45,0.330937,0.575081,Unresolved,False
+EX-C5,benchmark circuit,linear_4_crossing_ladder,60,39,6,15,0.65,0.523626,0.758322,Unresolved,False
+EX-C5,benchmark circuit,linear_4_repeated_remote,60,39,18,3,0.65,0.523626,0.758322,Unresolved,False
+EX-C6,random circuit instance (random_seed),0,76,32,19,25,0.421053,0.316486,0.533216,Unresolved,False
+EX-C6,random circuit instance (random_seed),1,76,34,19,23,0.447368,0.340807,0.558995,Unresolved,False
+EX-C6,random circuit instance (random_seed),10,76,32,19,25,0.421053,0.316486,0.533216,Unresolved,False
+EX-C6,random circuit instance (random_seed),11,76,32,19,25,0.421053,0.316486,0.533216,Unresolved,False
+EX-C6,random circuit instance (random_seed),12,76,32,19,25,0.421053,0.316486,0.533216,Unresolved,False
+EX-C6,random circuit instance (random_seed),13,76,32,19,25,0.421053,0.316486,0.533216,Unresolved,False
+EX-C6,random circuit instance (random_seed),14,76,32,19,25,0.421053,0.316486,0.533216,Unresolved,False
+EX-C6,random circuit instance (random_seed),15,76,32,19,25,0.421053,0.316486,0.533216,Unresolved,False
+EX-C6,random circuit instance (random_seed),16,76,32,19,25,0.421053,0.316486,0.533216,Unresolved,False
+EX-C6,random circuit instance (random_seed),17,76,34,19,23,0.447368,0.340807,0.558995,Unresolved,False
+EX-C6,random circuit instance (random_seed),18,76,32,19,25,0.421053,0.316486,0.533216,Unresolved,False
+EX-C6,random circuit instance (random_seed),19,76,32,19,25,0.421053,0.316486,0.533216,Unresolved,False
+EX-C6,random circuit instance (random_seed),2,76,32,19,25,0.421053,0.316486,0.533216,Unresolved,False
+EX-C6,random circuit instance (random_seed),3,76,32,19,25,0.421053,0.316486,0.533216,Unresolved,False
+EX-C6,random circuit instance (random_seed),4,76,32,19,25,0.421053,0.316486,0.533216,Unresolved,False
+EX-C6,random circuit instance (random_seed),5,76,34,19,23,0.447368,0.340807,0.558995,Unresolved,False
+EX-C6,random circuit instance (random_seed),6,76,32,19,25,0.421053,0.316486,0.533216,Unresolved,False
+EX-C6,random circuit instance (random_seed),7,76,32,19,25,0.421053,0.316486,0.533216,Unresolved,False
+EX-C6,random circuit instance (random_seed),8,76,32,19,25,0.421053,0.316486,0.533216,Unresolved,False
+EX-C6,random circuit instance (random_seed),9,76,32,19,25,0.421053,0.316486,0.533216,Unresolved,False
+EX-C7,benchmark circuit,linear_3_remote_cx,60,0,45,15,0.0,0.0,0.060172,Unresolved,True
+EX-C7,benchmark circuit,linear_4_bidirectional_mix,60,0,42,18,0.0,0.0,0.060172,Unresolved,True
+EX-C7,benchmark circuit,linear_4_crossing_ladder,60,0,57,3,0.0,0.0,0.060172,Unresolved,True
+EX-C7,benchmark circuit,linear_4_repeated_remote,60,0,42,18,0.0,0.0,0.060172,Unresolved,True
+EX-C8,circuit_size (benchmark size),10,60,0,60,0,0.0,0.0,0.060172,Unresolved,True
+EX-C8,circuit_size (benchmark size),4,60,0,60,0,0.0,0.0,0.060172,Unresolved,True
+EX-C8,circuit_size (benchmark size),6,60,0,60,0,0.0,0.0,0.060172,Unresolved,True
+EX-C8,circuit_size (benchmark size),8,60,0,60,0,0.0,0.0,0.060172,Unresolved,True

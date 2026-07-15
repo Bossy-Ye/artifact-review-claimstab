@@ -1,0 +1,458 @@
+claim_id,accepted,specifiable_relation_schema,scalar_directional,planning_feasible,scalar_oriented_planning,perturbation_audit_candidate,verification_only,materialized_rq2,tier,notes
+ext_2308_02536v1_legacy_claim2,true,true,true,true,true,true,false,false,T3,perturbation-audit candidate not materialized as RQ2 T1 card
+ext_2411_19388v1_claim1,true,true,true,false,false,false,false,false,,scalar-directional but outside planning-feasible set
+ext_2411_19388v1_claim4,true,true,true,false,false,false,false,false,,scalar-directional but outside planning-feasible set
+ext_2411_19388v1_claim5,true,true,true,false,false,false,false,false,,scalar-directional but outside planning-feasible set
+ext_2411_19388v1_claim6,true,true,true,false,false,false,false,false,,scalar-directional but outside planning-feasible set
+ext_2411_19388v1_claim7,true,true,true,false,false,false,false,false,,scalar-directional but outside planning-feasible set
+ext_2411_19388v1_claim8,true,true,true,false,false,false,false,false,,scalar-directional but outside planning-feasible set
+ext_2411_19388v1_claim9,true,false,false,false,false,false,false,false,,
+ext_2411_19388v1_claim10,true,false,false,false,false,false,false,false,,
+ext_2202_14025v1_legacy_claim1,true,true,false,true,false,false,false,false,,"relation-aware planning candidate, non-scalar"
+ext_2202_14025v1_legacy_claim2,true,false,false,false,false,false,false,false,,
+ext_2202_14025v1_legacy_claim3,true,true,false,true,false,false,false,false,,"relation-aware planning candidate, non-scalar"
+ext_2202_14025v1_legacy_claim4,true,false,false,false,false,false,false,false,,
+ext_2202_14025v1_legacy_claim5,true,false,false,false,false,false,false,false,,
+ext_2202_14025v1_legacy_claim6,true,true,true,true,true,true,false,true,T1,RQ2 scalar card
+ext_2202_14025v1_legacy_claim7,true,false,false,false,false,false,false,false,,
+ext_2202_14025v1_legacy_claim8,true,true,true,false,false,false,false,false,,scalar-directional but outside planning-feasible set
+ext_2202_14025v1_legacy_claim11,true,false,false,false,false,false,false,false,,
+ext_2202_14025v1_legacy_claim12,true,true,true,true,true,true,false,true,T1,RQ2 scalar card
+ext_2202_14025v1_legacy_claim13,true,true,false,true,false,false,false,false,,"relation-aware planning candidate, non-scalar"
+ext_2202_14025v1_legacy_claim14,true,false,false,false,false,false,false,false,,
+ext_2202_14025v1_legacy_claim15,true,false,false,false,false,false,false,false,,
+ext_2202_14025v1_legacy_claim16,true,false,false,false,false,false,false,false,,
+ext_2202_14025v1_legacy_claim17,true,false,false,false,false,false,false,false,,
+ext_2202_14025v1_legacy_claim18,true,false,false,false,false,false,false,false,,
+ext_2202_14025v1_legacy_claim19,true,false,false,false,false,false,false,false,,
+ext_2202_14025v1_legacy_claim20,true,false,false,false,false,false,false,false,,
+ext_2202_14025v1_legacy_claim21,true,false,false,false,false,false,false,false,,
+ext_2202_14025v1_legacy_claim22,true,true,true,true,true,true,false,false,T3,perturbation-audit candidate not materialized as RQ2 T1 card
+ext_2202_14025v1_legacy_claim24,true,false,false,false,false,false,false,false,,
+ext_2410_15626v1_legacy_claim1,true,false,false,false,false,false,false,false,,
+ext_2410_15626v1_legacy_claim2,true,false,false,false,false,false,false,false,,
+ext_2410_15626v1_legacy_claim3,true,false,false,false,false,false,false,false,,
+ext_2410_15626v1_legacy_claim4,true,false,false,false,false,false,false,false,,
+ext_2410_15626v1_legacy_claim5,true,true,true,false,false,false,false,false,,scalar-directional but outside planning-feasible set
+ext_2108_11874v1_legacy_claim1,true,false,false,false,false,false,false,false,,
+ext_2108_11874v1_legacy_claim2,true,false,false,false,false,false,false,false,,
+ext_2108_11874v1_legacy_claim4,true,false,false,false,false,false,false,false,,
+ext_2304_08814v2_claim1,true,false,false,false,false,false,false,false,,
+ext_2304_08814v2_claim2,true,false,false,false,false,false,false,false,,
+ext_2304_08814v2_claim4,true,false,false,false,false,false,false,false,,
+ext_2304_08814v2_claim5,true,true,true,true,true,true,false,true,T1,RQ2 scalar card
+ext_2304_08814v2_claim6,true,true,true,true,true,true,false,false,T3,perturbation-audit candidate not materialized as RQ2 T1 card
+ext_2304_08814v2_claim7,true,true,true,true,true,true,false,false,T3,perturbation-audit candidate not materialized as RQ2 T1 card
+ext_2304_08814v2_claim8,true,false,false,false,false,false,false,false,,
+ext_2304_08814v2_claim9,true,false,false,false,false,false,false,false,,
+ext_2409_14786v3_claim1,true,false,false,false,false,false,false,false,,
+ext_2409_14786v3_claim2,true,true,true,true,true,true,false,false,T3,perturbation-audit candidate not materialized as RQ2 T1 card
+ext_2409_14786v3_claim3,true,true,true,true,true,false,true,false,,verification-only deterministic record
+ext_2409_14786v3_claim4,true,true,true,true,true,false,true,false,,verification-only deterministic record
+ext_2409_14786v3_claim6,true,true,true,true,true,true,false,false,T3,perturbation-audit candidate not materialized as RQ2 T1 card
+ext_2409_14786v3_claim8,true,true,true,true,true,true,false,false,T3,perturbation-audit candidate not materialized as RQ2 T1 card
+ext_2409_14786v3_claim9,true,true,false,true,false,false,false,false,,"relation-aware planning candidate, non-scalar"
+ext_2407_01010v2_claim1,true,true,true,true,true,true,false,false,T3,perturbation-audit candidate not materialized as RQ2 T1 card
+ext_2407_01010v2_claim2,true,false,false,false,false,false,false,false,,
+ext_2407_01010v2_claim3,true,true,true,true,true,true,false,false,T3,perturbation-audit candidate not materialized as RQ2 T1 card
+ext_2405_05875v2_claim1,true,false,false,false,false,false,false,false,,
+ext_2405_05875v2_claim3,true,false,false,false,false,false,false,false,,
+ext_2406_06836v3_claim1,true,false,false,false,false,false,false,false,,
+ext_2406_06836v3_claim2,true,true,true,true,true,true,false,false,T3,perturbation-audit candidate not materialized as RQ2 T1 card
+ext_2406_06836v3_claim3,true,false,false,false,false,false,false,false,,
+ext_2406_06836v3_claim4,true,false,false,false,false,false,false,false,,
+ext_2409_10739v3_claim1,true,true,false,true,false,false,false,false,,"relation-aware planning candidate, non-scalar"
+ext_2409_10739v3_claim2,true,true,false,true,false,false,false,false,,"relation-aware planning candidate, non-scalar"
+ext_2409_10739v3_claim3,true,false,false,false,false,false,false,false,,
+ext_2409_10739v3_claim5,true,false,false,false,false,false,false,false,,
+ext_2311_15123v3_claim1,true,true,false,true,false,false,false,false,,"relation-aware planning candidate, non-scalar"
+ext_2311_15123v3_claim2,true,false,false,false,false,false,false,false,,
+ext_2311_15123v3_claim3,true,true,false,true,false,false,false,false,,"relation-aware planning candidate, non-scalar"
+ext_2311_15123v3_claim4,true,false,false,false,false,false,false,false,,
+ext_2311_15123v3_claim5,true,true,true,true,true,true,false,false,T4,perturbation-audit candidate not materialized as RQ2 T1 card
+ext_2411_00518v2_claim1,true,true,true,true,true,true,false,true,T1,RQ2 scalar card
+ext_2411_00518v2_claim2,true,false,false,false,false,false,false,false,,
+ext_2110_00592v2_claim1,true,true,true,true,true,true,false,false,T4,perturbation-audit candidate not materialized as RQ2 T1 card
+ext_2110_00592v2_claim2,true,true,true,true,true,true,false,false,T4,perturbation-audit candidate not materialized as RQ2 T1 card
+ext_2110_00592v2_claim3,true,true,true,true,true,true,false,false,T4,perturbation-audit candidate not materialized as RQ2 T1 card
+ext_2110_00592v2_claim5,true,false,false,false,false,false,false,false,,
+ext_2110_00592v2_claim6,true,false,false,false,false,false,false,false,,
+ext_2405_20173v2_claim1,true,false,false,false,false,false,false,false,,
+ext_2405_20173v2_claim2,true,true,true,true,true,true,false,false,T3,perturbation-audit candidate not materialized as RQ2 T1 card
+ext_2304_03829v1_claim1,true,false,false,false,false,false,false,false,,
+ext_2304_03829v1_claim2,true,true,true,false,false,false,false,false,,scalar-directional but outside planning-feasible set
+ext_2304_03829v1_claim3,true,true,true,false,false,false,false,false,,scalar-directional but outside planning-feasible set
+ext_2304_03829v1_claim4,true,false,false,false,false,false,false,false,,
+ext_2409_19820v1_claim1,true,false,false,false,false,false,false,false,,
+ext_2409_19820v1_claim3,true,false,false,false,false,false,false,false,,
+ext_2408_08365v1_claim1,true,true,false,false,false,false,false,false,,
+ext_2408_08365v1_claim2,true,true,true,false,false,false,false,false,,scalar-directional but outside planning-feasible set
+ext_2408_08365v1_claim3,true,true,true,false,false,false,false,false,,scalar-directional but outside planning-feasible set
+ext_2408_08365v1_claim4,true,true,true,false,false,false,false,false,,scalar-directional but outside planning-feasible set
+ext_2405_07624v1_claim1,true,false,false,false,false,false,false,false,,
+ext_2405_07624v1_claim2,true,false,false,false,false,false,false,false,,
+ext_2405_07624v1_claim4,true,false,false,false,false,false,false,false,,
+ext_2405_07624v1_claim7,true,false,false,false,false,false,false,false,,
+ext_2405_07624v1_claim8,true,false,false,false,false,false,false,false,,
+ext_2405_07624v1_claim9,true,false,false,false,false,false,false,false,,
+ext_2303_02830v1_claim1,true,true,true,true,true,true,false,false,T3,perturbation-audit candidate not materialized as RQ2 T1 card
+ext_2303_02830v1_claim2,true,false,false,false,false,false,false,false,,
+ext_2303_02830v1_claim4,true,false,false,false,false,false,false,false,,
+ext_2409_15055v2_claim1,true,true,true,false,false,false,false,false,,scalar-directional but outside planning-feasible set
+ext_2409_15055v2_claim2,true,false,false,false,false,false,false,false,,
+ext_2409_15055v2_claim3,true,false,false,false,false,false,false,false,,
+ext_2409_15055v2_claim6,true,false,false,false,false,false,false,false,,
+ext_2409_15055v2_claim7,true,false,false,false,false,false,false,false,,
+ext_2409_15055v2_claim8,true,false,false,false,false,false,false,false,,
+ext_2409_15055v2_claim9,true,true,true,false,false,false,false,false,,scalar-directional but outside planning-feasible set
+ext_2311_16190v3_claim1,true,false,false,false,false,false,false,false,,
+ext_2311_16190v3_claim2,true,false,false,false,false,false,false,false,,
+ext_2311_16190v3_claim4,true,false,false,false,false,false,false,false,,
+ext_2401_09849v1_claim1,true,true,true,false,false,false,false,false,,scalar-directional but outside planning-feasible set
+ext_2401_09849v1_claim2,true,false,false,false,false,false,false,false,,
+ext_2401_09849v1_claim3,true,true,true,false,false,false,false,false,,scalar-directional but outside planning-feasible set
+ext_2401_09849v1_claim4,true,false,false,false,false,false,false,false,,
+ext_2401_09849v1_claim5,true,false,false,false,false,false,false,false,,
+ext_2401_09849v1_claim6,true,true,true,false,false,false,false,false,,scalar-directional but outside planning-feasible set
+ext_2401_09849v1_claim7,true,false,false,false,false,false,false,false,,
+ext_2211_07685v3_claim1,true,true,true,true,true,true,false,false,T3,perturbation-audit candidate not materialized as RQ2 T1 card
+ext_2211_07685v3_claim2,true,true,true,true,true,true,false,false,T3,perturbation-audit candidate not materialized as RQ2 T1 card
+ext_2211_07685v3_claim3,true,true,true,true,true,true,false,false,T3,perturbation-audit candidate not materialized as RQ2 T1 card
+ext_2211_07685v3_claim4,true,true,true,true,true,true,false,false,T3,perturbation-audit candidate not materialized as RQ2 T1 card
+ext_2408_09538v1_claim1,true,false,false,false,false,false,false,false,,
+ext_2408_09538v1_claim2,true,false,false,false,false,false,false,false,,
+ext_2311_02151v2_claim2,true,true,true,false,false,false,false,false,,scalar-directional but outside planning-feasible set
+ext_2311_02151v2_claim3,true,false,false,false,false,false,false,false,,
+ext_2209_02669v3_claim1,true,true,true,true,true,true,false,false,T3,perturbation-audit candidate not materialized as RQ2 T1 card
+ext_2209_02669v3_claim2,true,true,true,true,true,true,false,false,T3,perturbation-audit candidate not materialized as RQ2 T1 card
+ext_2309_16796v3_claim1,true,true,true,false,false,false,false,false,,scalar-directional but outside planning-feasible set
+ext_2309_16796v3_claim2,true,true,true,false,false,false,false,false,,scalar-directional but outside planning-feasible set
+ext_2309_16796v3_claim3,true,true,true,false,false,false,false,false,,scalar-directional but outside planning-feasible set
+ext_2206_09938v2_claim1,true,false,false,false,false,false,false,false,,
+ext_2206_09938v2_claim2,true,true,true,true,true,true,false,false,T3,perturbation-audit candidate not materialized as RQ2 T1 card
+ext_2308_01789v1_claim1,true,true,true,true,true,true,false,false,T3,perturbation-audit candidate not materialized as RQ2 T1 card
+ext_2308_01789v1_claim2,true,true,true,true,true,true,false,false,T3,perturbation-audit candidate not materialized as RQ2 T1 card
+ext_2308_01789v1_claim3,true,false,false,false,false,false,false,false,,
+ext_2206_06684v1_claim1,true,true,true,true,true,true,false,false,T3,perturbation-audit candidate not materialized as RQ2 T1 card
+ext_2206_06684v1_claim2,true,true,true,true,true,true,false,false,T3,perturbation-audit candidate not materialized as RQ2 T1 card
+ext_2405_11917v2_claim1,true,false,false,false,false,false,false,false,,
+ext_2405_11917v2_claim3,true,false,false,false,false,false,false,false,,
+ext_2405_11917v2_claim4,true,false,false,false,false,false,false,false,,
+ext_2405_11917v2_claim5,true,false,false,false,false,false,false,false,,
+ext_2305_03390v1_claim1,true,false,false,false,false,false,false,false,,
+ext_2305_03390v1_claim2,true,true,true,false,false,false,false,false,,scalar-directional but outside planning-feasible set
+ext_2305_03390v1_claim4,true,false,false,false,false,false,false,false,,
+ext_2201_06457v1_claim1,true,false,false,false,false,false,false,false,,
+ext_2201_06457v1_claim3,true,false,false,false,false,false,false,false,,
+ext_2404_17242v2_claim1,true,false,false,false,false,false,false,false,,
+ext_2404_17242v2_claim2,true,true,true,false,false,false,false,false,,scalar-directional but outside planning-feasible set
+ext_2404_17242v2_claim3,true,true,true,false,false,false,false,false,,scalar-directional but outside planning-feasible set
+ext_2404_17242v2_claim4,true,false,false,false,false,false,false,false,,
+ext_2404_17242v2_claim5,true,false,false,false,false,false,false,false,,
+ext_2404_17242v2_claim6,true,false,false,false,false,false,false,false,,
+ext_2404_17242v2_claim7,true,false,false,false,false,false,false,false,,
+ext_2302_02278v2_claim1,true,false,false,false,false,false,false,false,,
+ext_2302_02278v2_claim3,true,false,false,false,false,false,false,false,,
+ext_2108_02099v2_claim1,true,false,false,false,false,false,false,false,,
+ext_2108_02099v2_claim2,true,false,false,false,false,false,false,false,,
+ext_2108_02099v2_claim3,true,false,false,false,false,false,false,false,,
+ext_2108_02099v2_claim4,true,false,false,false,false,false,false,false,,
+ext_2402_02585v1_claim1,true,false,false,false,false,false,false,false,,
+ext_2402_02585v1_claim2,true,false,false,false,false,false,false,false,,
+ext_2402_02585v1_claim3,true,true,true,false,false,false,false,false,,scalar-directional but outside planning-feasible set
+ext_2402_02585v1_claim4,true,true,true,false,false,false,false,false,,scalar-directional but outside planning-feasible set
+ext_2207_10555v1_claim1,true,false,false,false,false,false,false,false,,
+ext_2207_10555v1_claim2,true,false,false,false,false,false,false,false,,
+ext_2207_10555v1_claim3,true,false,false,false,false,false,false,false,,
+ext_2207_10555v1_claim4,true,false,false,false,false,false,false,false,,
+ext_2207_10555v1_claim5,true,false,false,false,false,false,false,false,,
+ext_2003_08408v2_claim1,true,false,false,false,false,false,false,false,,
+ext_2309_00047v1_claim1,true,true,true,false,false,false,false,false,,scalar-directional but outside planning-feasible set
+ext_2309_00047v1_claim2,true,true,true,false,false,false,false,false,,scalar-directional but outside planning-feasible set
+ext_2309_00047v1_claim3,true,true,true,false,false,false,false,false,,scalar-directional but outside planning-feasible set
+ext_2309_00047v1_claim4,true,false,false,false,false,false,false,false,,
+ext_2309_00047v1_claim5,true,true,true,false,false,false,false,false,,scalar-directional but outside planning-feasible set
+ext_2112_03199v4_claim1,true,false,false,false,false,false,false,false,,
+ext_2112_03199v4_claim2,true,true,true,true,true,true,false,false,T3,perturbation-audit candidate not materialized as RQ2 T1 card
+ext_2112_03199v4_claim3,true,true,true,false,false,false,false,false,,scalar-directional but outside planning-feasible set
+ext_2011_12191v4_claim1,true,true,true,true,true,true,false,false,T3,perturbation-audit candidate not materialized as RQ2 T1 card
+ext_2011_12191v4_claim2,true,true,true,true,true,true,false,false,T3,perturbation-audit candidate not materialized as RQ2 T1 card
+ext_2011_12191v4_claim3,true,false,false,false,false,false,false,false,,
+ext_2011_12191v4_claim4,true,false,false,false,false,false,false,false,,
+ext_2011_12191v4_claim5,true,true,true,true,true,true,false,false,T3,perturbation-audit candidate not materialized as RQ2 T1 card
+ext_2101_10296v3_claim1,true,false,false,false,false,false,false,false,,
+ext_2101_10296v3_claim2,true,false,false,false,false,false,false,false,,
+ext_2101_10296v3_claim3,true,false,false,false,false,false,false,false,,
+ext_2101_10296v3_claim4,true,false,false,false,false,false,false,false,,
+ext_2105_06240v2_claim1,true,false,false,false,false,false,false,false,,
+ext_2105_06240v2_claim2,true,false,false,false,false,false,false,false,,
+ext_2409_18963v3_claim1,true,false,false,false,false,false,false,false,,
+ext_2409_18963v3_claim2,true,false,false,false,false,false,false,false,,
+ext_2409_18963v3_claim3,true,true,true,false,false,false,false,false,,scalar-directional but outside planning-feasible set
+ext_2102_06813v1_claim1,true,false,false,false,false,false,false,false,,
+ext_2102_06813v1_claim2,true,true,true,false,false,false,false,false,,scalar-directional but outside planning-feasible set
+ext_2102_06813v1_claim3,true,false,false,false,false,false,false,false,,
+ext_2007_15671v1_claim1,true,false,false,false,false,false,false,false,,
+ext_2007_15671v1_claim2,true,true,true,true,true,true,false,false,T4,perturbation-audit candidate not materialized as RQ2 T1 card
+ext_2007_15671v1_claim3,true,true,true,true,true,true,false,false,T4,perturbation-audit candidate not materialized as RQ2 T1 card
+ext_2007_15671v1_claim4,true,true,true,true,true,true,false,false,T4,perturbation-audit candidate not materialized as RQ2 T1 card
+ext_2411_10062v1_claim1,true,false,false,false,false,false,false,false,,
+ext_2411_10062v1_claim2,true,false,false,false,false,false,false,false,,
+ext_2309_05157v1_claim1,true,true,true,true,true,true,false,false,T4,perturbation-audit candidate not materialized as RQ2 T1 card
+ext_2309_05157v1_claim2,true,true,true,true,true,true,false,false,T4,perturbation-audit candidate not materialized as RQ2 T1 card
+ext_2309_05157v1_claim3,true,false,false,false,false,false,false,false,,
+ext_2309_05157v1_claim4,true,false,false,false,false,false,false,false,,
+ext_2309_05157v1_claim5,true,false,false,false,false,false,false,false,,
+ext_2410_04030v1_claim1,true,true,true,true,true,true,false,false,T3,perturbation-audit candidate not materialized as RQ2 T1 card
+ext_2410_04030v1_claim2,true,true,true,true,true,true,false,false,T3,perturbation-audit candidate not materialized as RQ2 T1 card
+ext_2410_04030v1_claim3,true,false,false,false,false,false,false,false,,
+ext_2410_04030v1_claim4,true,false,false,false,false,false,false,false,,
+ext_2003_10611v3_claim1,true,false,false,false,false,false,false,false,,
+ext_2003_10611v3_claim2,true,false,false,false,false,false,false,false,,
+ext_2003_10611v3_claim4,true,false,false,false,false,false,false,false,,
+ext_2003_10611v3_claim5,true,false,false,false,false,false,false,false,,
+ext_2407_06663v2_claim1,true,false,false,false,false,false,false,false,,
+ext_2407_06663v2_claim2,true,false,false,false,false,false,false,false,,
+ext_2407_06663v2_claim3,true,true,true,false,false,false,false,false,,scalar-directional but outside planning-feasible set
+ext_2407_06663v2_claim4,true,true,true,false,false,false,false,false,,scalar-directional but outside planning-feasible set
+ext_2407_06663v2_claim5,true,true,true,false,false,false,false,false,,scalar-directional but outside planning-feasible set
+ext_2309_01028v2_claim1,true,false,false,false,false,false,false,false,,
+ext_2309_01028v2_claim2,true,false,false,false,false,false,false,false,,
+ext_2309_01028v2_claim3,true,false,false,false,false,false,false,false,,
+ext_2309_01028v2_claim4,true,false,false,false,false,false,false,false,,
+ext_2309_01028v2_claim5,true,false,false,false,false,false,false,false,,
+ext_2309_01028v2_claim6,true,false,false,false,false,false,false,false,,
+ext_2405_09169v3_claim1,true,true,true,true,true,true,false,false,T3,perturbation-audit candidate not materialized as RQ2 T1 card
+ext_2405_09169v3_claim2,true,false,false,false,false,false,false,false,,
+ext_2405_09169v3_claim3,true,true,true,true,true,true,false,false,T3,perturbation-audit candidate not materialized as RQ2 T1 card
+ext_2405_08941v3_claim1,true,false,false,false,false,false,false,false,,
+ext_2405_08941v3_claim3,true,false,false,false,false,false,false,false,,
+ext_2301_00520v2_claim1,true,false,false,false,false,false,false,false,,
+ext_2301_00520v2_claim2,true,false,false,false,false,false,false,false,,
+ext_2301_00520v2_claim3,true,true,true,true,true,true,false,false,T3,perturbation-audit candidate not materialized as RQ2 T1 card
+ext_2301_00520v2_claim4,true,false,false,false,false,false,false,false,,
+ext_2301_00520v2_claim5,true,true,true,false,false,false,false,false,,scalar-directional but outside planning-feasible set
+ext_2209_03824v3_claim1,true,false,false,false,false,false,false,false,,
+ext_2209_03824v3_claim2,true,false,false,false,false,false,false,false,,
+ext_2209_03824v3_claim3,true,false,false,false,false,false,false,false,,
+ext_2205_03441v1_claim1,true,false,false,false,false,false,false,false,,
+ext_2205_03441v1_claim2,true,false,false,false,false,false,false,false,,
+ext_2205_03441v1_claim3,true,false,false,false,false,false,false,false,,
+ext_2205_03441v1_claim4,true,true,true,false,false,false,false,false,,scalar-directional but outside planning-feasible set
+ext_2205_03441v1_claim5,true,false,false,false,false,false,false,false,,
+ext_2406_14411v1_claim1,true,true,true,false,false,false,false,false,,scalar-directional but outside planning-feasible set
+ext_2404_14531v1_claim3,true,false,false,false,false,false,false,false,,
+ext_2309_05924v1_claim1,true,false,false,false,false,false,false,false,,
+ext_2111_13454v3_claim1,true,false,false,false,false,false,false,false,,
+ext_2111_13454v3_claim2,true,false,false,false,false,false,false,false,,
+ext_2111_13454v3_claim3,true,false,false,false,false,false,false,false,,
+ext_2111_13454v3_claim4,true,true,false,true,false,false,false,false,,"relation-aware planning candidate, non-scalar"
+ext_2106_08682v1_claim1,true,false,false,false,false,false,false,false,,
+ext_2106_08682v1_claim2,true,false,false,false,false,false,false,false,,
+ext_2409_08844v2_claim1,true,true,true,true,true,true,false,true,T1,RQ2 scalar card
+ext_2409_08844v2_claim2,true,false,false,false,false,false,false,false,,
+ext_2409_08844v2_claim3,true,true,true,true,true,true,false,true,T1,RQ2 scalar card
+ext_2409_08844v2_claim4,true,true,true,true,true,true,false,true,T1,RQ2 scalar card
+ext_2409_08844v2_claim5,true,true,false,true,false,false,false,false,,"relation-aware planning candidate, non-scalar"
+ext_2409_08844v2_claim6,true,true,true,true,true,true,false,false,T3,perturbation-audit candidate not materialized as RQ2 T1 card
+ext_2204_13719v3_claim2,true,true,false,true,false,false,false,false,,"relation-aware planning candidate, non-scalar"
+ext_2408_13316v2_claim1,true,false,false,false,false,false,false,false,,
+ext_2410_22247v2_claim1,true,false,false,false,false,false,false,false,,
+ext_2410_22247v2_claim2,true,true,true,false,false,false,false,false,,scalar-directional but outside planning-feasible set
+ext_2410_22247v2_claim3,true,true,true,false,false,false,false,false,,scalar-directional but outside planning-feasible set
+ext_2210_08039v1_claim1,true,false,false,false,false,false,false,false,,
+ext_2210_08039v1_claim2,true,false,false,false,false,false,false,false,,
+ext_2410_07674v1_claim1,true,false,false,false,false,false,false,false,,
+ext_2410_07674v1_claim2,true,false,false,false,false,false,false,false,,
+ext_2208_13380v2_claim1,true,false,false,false,false,false,false,false,,
+ext_2208_13380v2_claim2,true,false,false,false,false,false,false,false,,
+ext_2407_01975v2_claim1,true,false,false,false,false,false,false,false,,
+ext_2207_05751v3_claim2,true,false,false,false,false,false,false,false,,
+ext_2207_05751v3_claim4,true,false,false,false,false,false,false,false,,
+ext_2403_18395v2_claim1,true,false,false,false,false,false,false,false,,
+ext_2403_18395v2_claim2,true,false,false,false,false,false,false,false,,
+ext_2403_18395v2_claim3,true,false,false,false,false,false,false,false,,
+ext_2403_18395v2_claim4,true,true,false,false,false,false,false,false,,
+ext_2403_02045v3_claim1,true,true,true,true,true,true,false,false,T3,perturbation-audit candidate not materialized as RQ2 T1 card
+ext_2401_02852v1_claim2,true,true,true,true,true,true,false,false,T3,perturbation-audit candidate not materialized as RQ2 T1 card
+ext_2308_10383v2_claim1,true,false,false,false,false,false,false,false,,
+ext_2308_10383v2_claim2,true,false,false,false,false,false,false,false,,
+ext_2308_10383v2_claim3,true,false,false,false,false,false,false,false,,
+ext_2308_10383v2_claim4,true,true,true,true,true,true,false,false,T3,perturbation-audit candidate not materialized as RQ2 T1 card
+ext_2307_07193v3_claim2,true,false,false,false,false,false,false,false,,
+ext_2303_00329v2_claim1,true,false,false,false,false,false,false,false,,
+ext_2302_04479v2_claim1,true,true,true,true,true,true,false,false,T3,perturbation-audit candidate not materialized as RQ2 T1 card
+ext_2302_04479v2_claim2,true,true,true,true,true,true,false,false,T3,perturbation-audit candidate not materialized as RQ2 T1 card
+ext_2302_04479v2_claim3,true,true,true,true,true,true,false,false,T3,perturbation-audit candidate not materialized as RQ2 T1 card
+ext_2208_09888v1_claim1,true,false,false,false,false,false,false,false,,
+ext_2205_01192v1_claim1,true,true,true,false,false,false,false,false,,scalar-directional but outside planning-feasible set
+ext_2205_01192v1_claim3,true,true,true,false,false,false,false,false,,scalar-directional but outside planning-feasible set
+ext_2111_03016v3_claim1,true,false,false,false,false,false,false,false,,
+ext_2111_03016v3_claim3,true,true,true,true,true,true,false,false,T3,perturbation-audit candidate not materialized as RQ2 T1 card
+ext_2110_10788v3_claim1,true,true,false,true,false,false,false,false,,"relation-aware planning candidate, non-scalar"
+ext_2110_10788v3_claim2,true,false,false,false,false,false,false,false,,
+ext_2108_03281v1_claim1,true,false,false,false,false,false,false,false,,
+ext_2101_05742v3_claim2,true,false,false,false,false,false,false,false,,
+ext_2101_05742v3_claim3,true,false,false,false,false,false,false,false,,
+ext_2312_06922v4_claim1,true,true,false,false,false,false,false,false,,
+ext_2312_06922v4_claim2,true,true,false,false,false,false,false,false,,
+ext_2310_10360v2_claim1,true,false,false,false,false,false,false,false,,
+ext_2111_12754v2_claim2,true,false,false,false,false,false,false,false,,
+ext_2111_00796v3_claim1,true,false,false,false,false,false,false,false,,
+ext_2109_04482v2_claim1,true,false,false,false,false,false,false,false,,
+ext_2412_13271v1_claim2,true,false,false,false,false,false,false,false,,
+ext_2412_13271v1_claim4,true,false,false,false,false,false,false,false,,
+ext_2412_13271v1_claim5,true,true,false,true,false,false,false,false,,"relation-aware planning candidate, non-scalar"
+ext_2402_12105v1_claim1,true,true,true,false,false,false,false,false,,scalar-directional but outside planning-feasible set
+ext_2309_04754v1_claim1,true,true,true,true,true,true,false,false,T3,perturbation-audit candidate not materialized as RQ2 T1 card
+ext_2309_04754v1_claim2,true,false,false,false,false,false,false,false,,
+ext_2306_02024v1_claim1,true,true,true,true,true,true,false,false,T3,perturbation-audit candidate not materialized as RQ2 T1 card
+ext_2303_08910v3_claim1,true,true,true,false,false,false,false,false,,scalar-directional but outside planning-feasible set
+ext_2212_11405v1_claim1,true,true,false,false,false,false,false,false,,
+ext_2212_11405v1_claim2,true,true,true,false,false,false,false,false,,scalar-directional but outside planning-feasible set
+ext_2212_11405v1_claim3,true,true,true,false,false,false,false,false,,scalar-directional but outside planning-feasible set
+ext_2209_08535v4_claim1,true,false,false,false,false,false,false,false,,
+ext_2205_01726v1_claim3,true,false,false,false,false,false,false,false,,
+ext_2205_01726v1_claim4,true,false,false,false,false,false,false,false,,
+ext_2205_01726v1_claim5,true,true,true,true,true,true,false,false,T3,perturbation-audit candidate not materialized as RQ2 T1 card
+ext_2204_10741v2_claim1,true,true,false,false,false,false,false,false,,
+ext_2204_10741v2_claim2,true,true,true,false,false,false,false,false,,scalar-directional but outside planning-feasible set
+ext_2112_07416v2_claim2,true,false,false,false,false,false,false,false,,
+ext_2112_07416v2_claim3,true,true,true,false,false,false,false,false,,scalar-directional but outside planning-feasible set
+ext_2111_08085v3_claim1,true,false,false,false,false,false,false,false,,
+ext_2111_08085v3_claim2,true,false,false,false,false,false,false,false,,
+ext_2107_08606v3_claim1,true,true,false,false,false,false,false,false,,
+ext_2107_08606v3_claim2,true,true,true,true,true,true,false,false,T3,perturbation-audit candidate not materialized as RQ2 T1 card
+ext_2107_08606v3_claim3,true,true,true,false,false,false,false,false,,scalar-directional but outside planning-feasible set
+ext_2103_08563v3_claim1,true,false,false,false,false,false,false,false,,
+ext_2103_08563v3_claim2,true,true,true,false,false,false,false,false,,scalar-directional but outside planning-feasible set
+ext_2102_00345v2_claim1,true,true,true,true,true,true,false,false,T3,perturbation-audit candidate not materialized as RQ2 T1 card
+ext_2102_00345v2_claim3,true,true,false,true,false,false,false,false,,"relation-aware planning candidate, non-scalar"
+ext_2101_08526v7_claim2,true,false,false,false,false,false,false,false,,
+ext_2011_08137v3_claim1,true,false,false,false,false,false,false,false,,
+ext_2011_08137v3_claim2,true,true,true,true,true,true,false,false,T3,perturbation-audit candidate not materialized as RQ2 T1 card
+ext_2011_08137v3_claim4,true,true,true,true,true,true,false,false,T3,perturbation-audit candidate not materialized as RQ2 T1 card
+ext_2009_13545v3_claim2,true,false,false,false,false,false,false,false,,
+ext_2009_13545v3_claim3,true,true,true,true,true,true,false,false,T3,perturbation-audit candidate not materialized as RQ2 T1 card
+ext_2009_03351v3_claim2,true,true,true,true,true,true,false,false,T3,perturbation-audit candidate not materialized as RQ2 T1 card
+ext_2008_02941v2_claim1,true,false,false,false,false,false,false,false,,
+ext_2008_02941v2_claim2,true,false,false,false,false,false,false,false,,
+ext_2006_13222v2_claim2,true,false,false,false,false,false,false,false,,
+ext_2005_11011v2_claim1,true,false,false,false,false,false,false,false,,
+ext_2005_11011v2_claim2,true,false,false,false,false,false,false,false,,
+ext_2005_11011v2_claim3,true,false,false,false,false,false,false,false,,
+ext_2002_11724v2_claim1,true,false,false,false,false,false,false,false,,
+ext_2002_11724v2_claim2,true,true,true,false,false,false,false,false,,scalar-directional but outside planning-feasible set
+ext_2002_11724v2_claim3,true,true,true,false,false,false,false,false,,scalar-directional but outside planning-feasible set
+ext_2110_10788v3_claim3,true,false,false,false,false,false,false,false,,
+ext_2405_05875v2_claim4,true,false,false,false,false,false,false,false,,
+ext_2411_19388v1_claim11,true,true,true,false,false,false,false,false,,scalar-directional but outside planning-feasible set
+ext_2306_02024v1_claim2,true,false,false,false,false,false,false,false,,
+ext_2311_16190v3_claim5,true,false,false,false,false,false,false,false,,
+ext_2303_02830v1_claim5,true,false,false,false,false,false,false,false,,
+ext_2405_07624v1_claim5,true,true,true,true,true,true,false,false,T3,perturbation-audit candidate not materialized as RQ2 T1 card
+ext_2409_10739v3_claim6,true,false,false,false,false,false,false,false,,
+ext_2009_03351v3_claim1,true,false,false,false,false,false,false,false,,
+ext_2405_05875v2_claim2,true,false,false,false,false,false,false,false,,
+ext_2101_05742v3_claim1,true,false,false,false,false,false,false,false,,
+ext_2101_08526v7_claim1,true,true,false,false,false,false,false,false,,
+ext_2204_13719v3_claim3,true,false,false,false,false,false,false,false,,
+ext_2409_14786v3_claim7,true,true,true,true,true,true,false,false,T3,perturbation-audit candidate not materialized as RQ2 T1 card
+ext_2401_02852v1_claim1,true,false,false,false,false,false,false,false,,
+ext_2101_10296v3_claim5,true,false,false,false,false,false,false,false,,
+ext_2202_14025v1_legacy_claim9,true,false,false,false,false,false,false,false,,
+ext_2008_02941v2_claim3,true,true,true,true,true,true,false,false,T3,perturbation-audit candidate not materialized as RQ2 T1 card
+ext_2205_01726v1_claim2,true,false,false,false,false,false,false,false,,
+ext_2405_07624v1_claim3,true,false,false,false,false,false,false,false,,
+ext_2405_07624v1_claim6,true,false,false,false,false,false,false,false,,
+ext_2209_03824v3_claim4,true,false,false,false,false,false,false,false,,
+ext_2303_00329v2_claim2,true,false,false,false,false,false,false,false,,
+ext_2112_07416v2_claim1,true,false,false,false,false,false,false,false,,
+ext_2410_07674v1_claim3,true,false,false,false,false,false,false,false,,
+ext_2110_00592v2_claim7,true,false,false,false,false,false,false,false,,
+ext_2102_05997v1_claim1,true,false,false,false,false,false,false,false,,
+ext_2204_10741v2_claim3,true,true,true,false,false,false,false,false,,scalar-directional but outside planning-feasible set
+ext_2112_03199v4_claim4,true,true,true,false,false,false,false,false,,scalar-directional but outside planning-feasible set
+ext_2009_13545v3_claim1,true,true,true,true,true,true,false,false,T3,perturbation-audit candidate not materialized as RQ2 T1 card
+ext_2102_06813v1_claim4,true,false,false,false,false,false,false,false,,
+ext_2205_01726v1_claim1,true,true,true,true,true,true,false,false,T3,perturbation-audit candidate not materialized as RQ2 T1 card
+ext_2009_13140v3_claim2,true,false,false,false,false,false,false,false,,
+ext_2308_02536v1_legacy_claim1,true,false,false,false,false,false,false,false,,
+ext_2311_15123v3_claim7,true,true,true,true,true,true,false,false,T4,perturbation-audit candidate not materialized as RQ2 T1 card
+ext_2303_08910v3_claim3,true,false,false,false,false,false,false,false,,
+ext_2405_11917v2_claim2,true,false,false,false,false,false,false,false,,
+ext_2202_06782v1_claim1,true,false,false,false,false,false,false,false,,
+ext_2311_15123v3_claim6,true,false,false,false,false,false,false,false,,
+ext_2412_13271v1_claim3,true,false,false,false,false,false,false,false,,
+ext_2111_03016v3_claim2,true,false,false,false,false,false,false,false,,
+ext_2102_00345v2_claim2,true,false,false,false,false,false,false,false,,
+ext_2402_12105v1_claim2,true,true,false,false,false,false,false,false,,
+ext_2302_02278v2_claim4,true,false,false,false,false,false,false,false,,
+ext_2407_01010v2_claim4,true,true,true,true,true,true,false,false,T3,perturbation-audit candidate not materialized as RQ2 T1 card
+ext_2201_06457v1_claim2,true,false,false,false,false,false,false,false,,
+ext_2305_03390v1_claim3,true,true,true,true,true,true,false,false,T3,perturbation-audit candidate not materialized as RQ2 T1 card
+ext_2409_15055v2_claim5,true,false,false,false,false,false,false,false,,
+ext_2202_14025v1_legacy_claim10,true,false,false,false,false,false,false,false,,
+ext_2201_06457v1_claim4,true,false,false,false,false,false,false,false,,
+ext_2412_13271v1_claim1,true,false,false,false,false,false,false,false,,
+ext_2311_16190v3_claim3,true,false,false,false,false,false,false,false,,
+ext_2108_11874v1_legacy_claim3,true,false,false,false,false,false,false,false,,
+ext_2110_00592v2_claim4,true,false,false,false,false,false,false,false,,
+ext_2405_08941v3_claim2,true,false,false,false,false,false,false,false,,
+ext_2403_02045v3_claim2,true,false,false,false,false,false,false,false,,
+ext_2409_10739v3_claim7,true,false,false,false,false,false,false,false,,
+ext_2102_05997v1_claim3,true,false,false,false,false,false,false,false,,
+ext_2407_17325v2_claim3,true,false,false,false,false,false,false,false,,
+ext_2407_17325v2_claim2,true,false,false,false,false,false,false,false,,
+ext_2411_00518v2_claim5,true,false,false,false,false,false,false,false,,
+ext_2311_16190v3_claim6,true,false,false,false,false,false,false,false,,
+ext_2309_05924v1_claim2,true,false,false,false,false,false,false,false,,
+ext_2404_14531v1_claim2,true,false,false,false,false,false,false,false,,
+ext_2303_08910v3_claim2,true,false,false,false,false,false,false,false,,
+ext_2411_19388v1_claim3,true,false,false,false,false,false,false,false,,
+ext_2309_16796v3_claim4,true,false,false,false,false,false,false,false,,
+ext_2006_13222v2_claim1,true,false,false,false,false,false,false,false,,
+ext_2411_19388v1_claim2,true,false,false,false,false,false,false,false,,
+ext_2202_14025v1_legacy_claim23,true,false,false,false,false,false,false,false,,
+ext_2108_11874v1_legacy_claim5,true,false,false,false,false,false,false,false,,
+ext_2304_08814v2_claim3,true,false,false,false,false,false,false,false,,
+ext_2409_14786v3_claim5,true,true,true,true,true,true,false,false,T3,perturbation-audit candidate not materialized as RQ2 T1 card
+ext_2406_06836v3_claim5,true,false,false,false,false,false,false,false,,
+ext_2409_10739v3_claim4,true,false,false,false,false,false,false,false,,
+ext_2411_00518v2_claim3,true,true,true,true,true,true,false,true,T1,RQ2 scalar card
+ext_2411_00518v2_claim4,true,false,false,false,false,false,false,false,,
+ext_2409_19820v1_claim2,true,false,false,false,false,false,false,false,,
+ext_2303_02830v1_claim3,true,false,false,false,false,false,false,false,,
+ext_2409_15055v2_claim4,true,true,true,false,false,false,false,false,,scalar-directional but outside planning-feasible set
+ext_2311_02151v2_claim1,true,true,true,false,false,false,false,false,,scalar-directional but outside planning-feasible set
+ext_2407_17325v2_claim1,true,true,false,false,false,false,false,false,,
+ext_2407_17325v2_claim4,true,false,false,false,false,false,false,false,,
+ext_2302_02278v2_claim2,true,false,false,false,false,false,false,false,,
+ext_2302_02278v2_claim5,true,false,false,false,false,false,false,false,,
+ext_2108_02099v2_claim5,true,false,false,false,false,false,false,false,,
+ext_2402_02585v1_claim5,true,false,false,false,false,false,false,false,,
+ext_2003_08408v2_claim2,true,false,false,false,false,false,false,false,,
+ext_2101_10296v3_claim6,true,false,false,false,false,false,false,false,,
+ext_2105_06240v2_claim3,true,false,false,false,false,false,false,false,,
+ext_2007_15671v1_claim5,true,true,true,true,true,true,false,false,T3,perturbation-audit candidate not materialized as RQ2 T1 card
+ext_2411_10062v1_claim3,true,true,true,false,false,false,false,false,,scalar-directional but outside planning-feasible set
+ext_2309_05157v1_claim6,true,true,true,false,false,false,false,false,,scalar-directional but outside planning-feasible set
+ext_2003_10611v3_claim3,true,false,false,false,false,false,false,false,,
+ext_2405_09169v3_claim4,true,true,true,false,false,false,false,false,,scalar-directional but outside planning-feasible set
+ext_2404_14531v1_claim1,true,false,false,false,false,false,false,false,,
+ext_2204_13719v3_claim1,true,false,false,false,false,false,false,false,,
+ext_2408_13316v2_claim2,true,false,false,false,false,false,false,false,,
+ext_2207_05751v3_claim1,true,false,false,false,false,false,false,false,,
+ext_2207_05751v3_claim3,true,false,false,false,false,false,false,false,,
+ext_2307_07193v3_claim1,true,false,false,false,false,false,false,false,,
+ext_2205_01192v1_claim2,true,true,true,false,false,false,false,false,,scalar-directional but outside planning-feasible set
+ext_2108_03281v1_claim2,true,false,false,false,false,false,false,false,,
+ext_2102_05997v1_claim2,true,false,false,false,false,false,false,false,,
+ext_2310_10360v2_claim2,true,true,true,false,false,false,false,false,,scalar-directional but outside planning-feasible set
+ext_2303_17366v2_claim1,true,false,false,false,false,false,false,false,,
+ext_2303_17366v2_claim2,true,false,false,false,false,false,false,false,,
+ext_2111_12754v2_claim1,true,false,false,false,false,false,false,false,,
+ext_2103_08563v3_claim3,true,false,false,false,false,false,false,false,,
+ext_2011_08137v3_claim3,true,false,false,false,false,false,false,false,,
+ext_2009_13140v3_claim1,true,false,false,false,false,false,false,false,,
+ext_2006_13222v2_claim3,true,false,false,false,false,false,false,false,,

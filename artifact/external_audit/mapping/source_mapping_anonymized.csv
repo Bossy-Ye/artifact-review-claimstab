@@ -1,0 +1,5 @@
+source_group,paper_id_anonymized,claim_ids,domain
+P1,P1,ext_2202_14025v1_legacy_claim6;ext_2202_14025v1_legacy_claim12,transpiler_compiler
+P2,P2,ext_2304_08814v2_claim5,transpiler_compiler
+P3,P3,ext_2409_08844v2_claim4;ext_2409_08844v2_claim3;ext_2409_08844v2_claim1,transpiler_compiler
+P4,P4,ext_2411_00518v2_claim1;ext_2411_00518v2_claim3,optimization_qaoa

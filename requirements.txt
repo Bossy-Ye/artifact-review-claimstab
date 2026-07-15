@@ -1,0 +1,7 @@
+# Minimal dependencies for the reviewer checks (no qiskit / no quantum simulation).
+# The verdict-core (artifact/src/) is pure-Python; pandas is used by the
+# headline/funnel checks; pytest runs the smoke suite. NumPy supports the optional
+# Tier-1 robustness regeneration (see artifact/ENVIRONMENT.md).
+numpy>=1.24,<3
+pandas>=2.0,<4
+pytest>=7.0,<10

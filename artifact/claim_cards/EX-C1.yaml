@@ -1,0 +1,64 @@
+claim_id: EX-C1
+domain: compilation
+source_identifier: "arXiv:2202.14025 (Arline Benchmarks), claim ext_2202_14025v1_legacy_claim12"
+source_title: "Arline Benchmarks: Automated Benchmarking Platform for Quantum Compilers"
+source_venue: "arXiv 2022 (arxiv_only; no peer-reviewed version found, see docs/related_work_matrix.csv)"
+source_artifact: "https://github.com/ArlineQ/arline_benchmarks"
+source_sentence_or_claim_summary: >-
+  Verbatim: "We found that Pytket with the backend implemented in C++ showed the best
+  runtime performance." Narrowed pairwise: for compiler runtime on random circuits,
+  Pytket yields lower runtime than Qiskit on the local pairwise surface.
+source_context: >-
+  Arline compiler runtime comparison. Broad Pytket-vs-Qiskit/PyZX/Cirq statement narrowed
+  to the Pytket-vs-Qiskit pair (PyZX unavailable locally).
+P:
+  family: random-circuit compilation runtime
+  instance_distribution: random line-coupled circuits across sizes (circuit_size in {4,6,8,10})
+  algorithmic_spec: none (compiler runtime measurement; no classical optimization loop)
+  resource_constraints: local pairwise compile surface; Qiskit optimization-level grid; timing repetitions
+B_A: Pytket
+B_B: Qiskit
+metric: compiler runtime performance (wall-clock)
+direction: "B_A < B_B (Pytket lower runtime than Qiskit)"
+scope_dimensions: circuit_size (4, 6, 8, 10)
+environment_dimensions: L1 = Qiskit optimization level (0-3); L2 = timing repetition (0-4)
+axis_status:
+  S_scope:
+    status: ACTIVE
+    reason: "Circuit sizes 4/6/8/10 are varied instances within the random-circuit family; runtime varies across them and the claim quantifies over them."
+  L1:
+    status: ACTIVE
+    reason: "Qiskit optimization level changes the amount of compile work and is artifact-supported, metric-affecting (runtime), and claim-preserving."
+  L2:
+    status: ACTIVE
+    reason: "A timing-repetition dimension (5 repetitions) is varied to capture compile-runtime measurement variance. NOTE: this is host-timing repetition, not quantum sampling/shots."
+  L3:
+    status: FIXED-INACTIVE
+    reason: "Metric is compiler/transpiler wall-clock runtime measured on the host; no quantum backend executes, so backend noise/calibration cannot enter it."
+  ALGO:
+    status: FIXED-INACTIVE
+    reason: "No variational/optimization loop enters compile runtime."
+  resource_budget:
+    status: SOURCE-CHECK REQUIRED
+    reason: "EX-C1 is a runtime claim and is host-sensitive: host CPU/thread/load/timer policy and repetition policy are not documented in the locked data. The locked log records compile times but not the host-environment policy that fixes their comparability."
+excluded_dimensions_with_reasons:
+  PyZX_Cirq_comparators: "changes the comparator (narrowed from broad statement to the Pytket-vs-Qiskit pair; PyZX unavailable locally)"
+  full_arline_suite_import: "outside the artifact-supported audited surface"
+  host_hardware_swap: "would change the timing host and break comparability of a runtime metric"
+  live_hardware_execution: "out of audited scope"
+cell_key: "circuit_size x qiskit_optimization_level x timing_repetition"
+locked_cell_log: artifact/external_audit/tier1_robustness/per_cell_inputs/ext_2202_14025v1_legacy_claim12_measurements.csv
+result_source: artifact/results/paper/output/figures/section5/external_forest_data.csv
+N: 80
+k: 80
+direction_preservation_rate: 1.0
+wilson_ci: "[0.954, 1.000]"
+wilson_verdict: "Sustained"
+bootstrap_or_dependence_check: "Cluster bootstrap agrees with Wilson classification (part of 47/47 agreement); see artifact/results/paper/output/figures/section5/cluster_bootstrap_47.csv"
+evidence_boundary: >-
+  Sustained over this card: Pytket-vs-Qiskit compiler runtime on random line-coupled circuits,
+  4 sizes x 4 Qiskit optimization levels x 5 timing repetitions (80 cells). Runtime is host-sensitive;
+  the verdict holds on the locked host-timing surface, not as a host-independent runtime guarantee.
+  This is a scoped local audit design, not full source-study replication.
+manuscript_locations: "Section 6/RQ2 (Table per_claim_external_audit, Fig external_forest). Manuscript anonymizes baselines as 'A vs B'."
+provenance_notes: "Real baselines from locked inventory. EX-C1 runtime host/timing/resource-budget status recorded as a source-check requirement; resource_budget = SOURCE-CHECK REQUIRED (host policy undocumented)."

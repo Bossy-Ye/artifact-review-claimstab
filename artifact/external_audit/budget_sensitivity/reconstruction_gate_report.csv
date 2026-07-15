@@ -1,0 +1,5 @@
+record_id,n_cells,metric_match,label_match,gate_status,log
+EX-C3,80,80/80,80/80,PASS,ext_2304_08814v2_claim5_measurements.csv
+EX-C5,80,80/80,80/80,PASS,ext_2409_08844v2_claim4_measurements.csv
+EX-C6,80,80/80,80/80,PASS,ext_2202_14025v1_legacy_claim6_measurements.csv
+EX-C7,80,80/80,80/80,PASS,ext_2409_08844v2_claim3_measurements.csv

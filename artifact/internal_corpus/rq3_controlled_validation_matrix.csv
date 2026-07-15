@@ -1,0 +1,13 @@
+parameter,L1Q_within_qiskit_diagnostic,L2_QAOA_diagnostic,L3_QAOA_diagnostic,ALGO_QAOA_diagnostic,combined_layer_diagnostic,existing_canonical_C1_C24,external_EX_C1_EX_C8
+INSTANCE,exercised (30 circuits),exercised (45 graphs),exercised (45 graphs),exercised (30 graphs),exercised (20 graphs),exercised,exercised
+L1 optimization level,exercised (A=3 vs B=0),fixed (1),fixed (1),fixed (1),"exercised ({0,1,3} via L1 regimes)",exercised (Blocks A/C/E),exercised (EX-C1/3/5/6/7)
+L1 transpiler seed,exercised ({0..9}),fixed (0),fixed (0),fixed (0),fixed (0),exercised (Blocks A/B/C/D/E),"exercised (EX-C3/5/6/7, 5 seeds)"
+L1 layout/routing method,exercised (A=sabre vs B=trivial),fixed (sabre),fixed (sabre),fixed (sabre),"exercised ({trivial, sabre, dense} via L1 regimes)",exercised (Blocks A/B/C/D/E),not evaluated
+L1 basis target,"exercised ({u,cx} vs {rz,sx,cx})",fixed (default),fixed,fixed,"exercised (one regime uses constrained basis {rz, sx, cx})",not evaluated,not evaluated
+L1 coupling topology,exercised (linear vs ring),fixed,fixed,fixed,implicit (linear linear),not evaluated,fixed by source
+L2 shots,metric-irrelevant (structural),"exercised ({128, 512, 1024, 4096})",fixed (1024),absent (statevector),"exercised ({512, 1024})",exercised (Block F),not evaluated
+L2 simulator seed,metric-irrelevant,exercised ({0..9}),fixed (0),absent (statevector),"exercised ({0,1,2})",exercised (Blocks B/D/F),not evaluated
+L3 noise model,metric-irrelevant,ideal,exercised (6 regimes),ideal,exercised (3 regimes),not evaluated,not evaluated
+ALGO optimizer,not applicable,fixed (no optimizer loop),fixed,"exercised ({COBYLA, Nelder-Mead, Powell})",fixed,fixed by design (canonical),"exercised (EX-C4 only, 2 optimizers)"
+ALGO initialization seed,not applicable,fixed,fixed,exercised ({0..9}),fixed,"fixed by design (gamma=0.8, beta=0.4)",not evaluated
+combined-layer interaction,not evaluated (L1 only),not evaluated (L2 only),not evaluated (L3 only),not evaluated (ALGO only),exercised (L1 x L2 x L3 jointly),partial (L1+L2 in Blocks B/D),not evaluated

@@ -1,0 +1,73 @@
+item_id,claim_id,field,first_label,recode_label,disagreement_type,adjudicated_label,adjudication_rationale,codebook_clarified,headline_count_would_change
+S009,ext_2005_11011v2_claim3,claim_card_specifiable,false,true,false->true,true,"Source sentence at line 782 unambiguously names three optimizers (MPG, Nelder-Mead, MGD), a single metric (resilience), and a directional ranking; claim-card schema fills cleanly.",yes,yes
+S011,ext_2108_02099v2_claim3,claim_card_specifiable,false,true,false->true,true,"Source sentence at line 1644 unambiguously names comparators (t|ket and Qiskit), metric (depth), and direction (reduction); schema fills cleanly.",yes,yes
+S012,ext_2202_14025v1_legacy_claim11,claim_card_specifiable,false,true,false->true,true,"Source sentence at line 701 unambiguously names PyZX vs competitors, two metrics (CX reduction with single-qubit cost), and direction; multi-objective schema fills cleanly.",yes,yes
+S013,ext_2202_14025v1_legacy_claim5,claim_card_specifiable,false,true,false->true,true,"Source sentence at line 604 unambiguously names comparators (Qiskit Transpile vs Pytket DefaultMapping), metric (CX count overhead), and equality relation; schema fills cleanly.",yes,yes
+S014,ext_2304_03829v1_claim4,claim_card_specifiable,false,true,false->true,true,"Source sentence at line 547 unambiguously gives an explicit numeric comparison (6,981.6 vs lower) between named configurations (ESOP with vs without RTT); schema fills cleanly.",yes,yes
+S015,ext_2305_03390v1_claim1,claim_card_specifiable,false,true,false->true,true,"Source sentence at line 427 unambiguously names PUBO vs QUBO and three metrics (expected value, median, variance) -> multi-objective; schema fills cleanly.",yes,yes
+S016,ext_2308_02536v1_legacy_claim1,claim_card_specifiable,false,true,false->true,false,Adjudicated to keep the initial label per crosscheck (ambiguous metric/comparator).,yes,no
+S017,ext_2309_01028v2_claim4,claim_card_specifiable,false,true,false->true,true,Source sentence at line 1054 unambiguously names ESOP vs TBS and gives a multi-metric tradeoff (complexity vs qubit count); schema fills cleanly.,yes,yes
+S018,ext_2309_01028v2_claim5,claim_card_specifiable,false,true,false->true,true,"Source sentence at line 1068 unambiguously gives explicit numbers (6,981.6 vs 3,769.5) between named configurations; Zenodo artifact present so planning_feasible also flips true.",yes,yes
+S019,ext_2409_15055v2_claim2,claim_card_specifiable,false,true,false->true,true,Source sentence at line 899 unambiguously names DC-QAOA(NC) vs QAOA and a size-dependent crossover at N=16; schema fills cleanly.,yes,yes
+S020,ext_2411_00518v2_claim2,claim_card_specifiable,false,true,false->true,true,Source sentence at line 976 unambiguously names Copula-QAOA vs QTG-QAOA and a size-dependent crossover; schema fills cleanly.,yes,yes
+S027,ext_2405_09169v3_claim4,claim_card_specifiable,true,false,true->false,false,"Source at line 17 is a hardware scale-demonstration with an IMPLICIT comparator (smaller prior runs). Rule: ambiguous comparator -> keep as boundary, do not add. Current label has it incorrectly in 166; resolution removes it.",yes,yes
+S009,ext_2005_11011v2_claim3,scalar_directional,false,true,false->true,true,"Source sentence at line 782 unambiguously names three optimizers (MPG, Nelder-Mead, MGD), a single metric (resilience), and a directional ranking; claim-card schema fills cleanly.",yes,yes
+S011,ext_2108_02099v2_claim3,scalar_directional,false,true,false->true,true,"Source sentence at line 1644 unambiguously names comparators (t|ket and Qiskit), metric (depth), and direction (reduction); schema fills cleanly.",yes,yes
+S014,ext_2304_03829v1_claim4,scalar_directional,false,true,false->true,true,"Source sentence at line 547 unambiguously gives an explicit numeric comparison (6,981.6 vs lower) between named configurations (ESOP with vs without RTT); schema fills cleanly.",yes,yes
+S016,ext_2308_02536v1_legacy_claim1,scalar_directional,false,true,false->true,false,Adjudicated to keep the initial label per crosscheck (ambiguous metric/comparator).,yes,no
+S018,ext_2309_01028v2_claim5,scalar_directional,false,true,false->true,true,"Source sentence at line 1068 unambiguously gives explicit numbers (6,981.6 vs 3,769.5) between named configurations; Zenodo artifact present so planning_feasible also flips true.",yes,yes
+S021,ext_2110_00592v2_claim1,scalar_directional,true,false,true->false,false,tier=T4,no,no
+S022,ext_2110_00592v2_claim2,scalar_directional,true,false,true->false,false,tier=T4,no,no
+S024,ext_2206_09938v2_claim2,scalar_directional,true,false,true->false,false,tier=T3,no,no
+S026,ext_2303_02830v1_claim1,scalar_directional,true,false,true->false,false,tier=T3,no,no
+S027,ext_2405_09169v3_claim4,scalar_directional,true,false,true->false,false,"Source at line 17 is a hardware scale-demonstration with an IMPLICIT comparator (smaller prior runs). Rule: ambiguous comparator -> keep as boundary, do not add. Current label has it incorrectly in 166; resolution removes it.",yes,yes
+S031,ext_2007_15671v1_claim3,scalar_directional,true,false,true->false,false,tier=T4,no,no
+S032,ext_2007_15671v1_claim4,scalar_directional,true,false,true->false,false,tier=T4,no,no
+S033,ext_2007_15671v1_claim5,scalar_directional,true,false,true->false,false,tier=T3,no,no
+S034,ext_2009_13545v3_claim1,scalar_directional,true,false,true->false,false,tier=T3,no,no
+S035,ext_2009_13545v3_claim3,scalar_directional,true,false,true->false,false,tier=T3,no,no
+S040,ext_2107_08606v3_claim2,scalar_directional,true,false,true->false,false,tier=T3,no,no
+S043,ext_2112_03199v4_claim2,scalar_directional,true,false,true->false,false,tier=T3,no,no
+S050,ext_2206_06684v1_claim1,scalar_directional,true,false,true->false,false,tier=T3,no,no
+S051,ext_2209_02669v3_claim1,scalar_directional,true,false,true->false,false,tier=T3,no,no
+S052,ext_2209_02669v3_claim2,scalar_directional,true,false,true->false,false,tier=T3,no,no
+S095,ext_2211_07685v3_claim1,scalar_directional,true,false,true->false,false,tier=T3,no,no
+S096,ext_2211_07685v3_claim2,scalar_directional,true,false,true->false,false,tier=T3,no,no
+S097,ext_2211_07685v3_claim4,scalar_directional,true,false,true->false,false,tier=T3,no,no
+S102,ext_2304_08814v2_claim6,scalar_directional,true,false,true->false,false,tier=T3,no,no
+S103,ext_2304_08814v2_claim7,scalar_directional,true,false,true->false,false,tier=T3,no,no
+S113,ext_2309_05157v1_claim1,scalar_directional,true,false,true->false,false,tier=T4,no,no
+S114,ext_2309_05157v1_claim2,scalar_directional,true,false,true->false,false,tier=T4,no,no
+S012,ext_2202_14025v1_legacy_claim11,planning_feasible,false,true,false->true,true,"Source sentence at line 701 unambiguously names PyZX vs competitors, two metrics (CX reduction with single-qubit cost), and direction; multi-objective schema fills cleanly.",yes,no
+S013,ext_2202_14025v1_legacy_claim5,planning_feasible,false,true,false->true,true,"Source sentence at line 604 unambiguously names comparators (Qiskit Transpile vs Pytket DefaultMapping), metric (CX count overhead), and equality relation; schema fills cleanly.",yes,no
+S015,ext_2305_03390v1_claim1,planning_feasible,false,true,false->true,true,"Source sentence at line 427 unambiguously names PUBO vs QUBO and three metrics (expected value, median, variance) -> multi-objective; schema fills cleanly.",yes,no
+S017,ext_2309_01028v2_claim4,planning_feasible,false,true,false->true,true,Source sentence at line 1054 unambiguously names ESOP vs TBS and gives a multi-metric tradeoff (complexity vs qubit count); schema fills cleanly.,yes,no
+S018,ext_2309_01028v2_claim5,planning_feasible,false,true,false->true,true,"Source sentence at line 1068 unambiguously gives explicit numbers (6,981.6 vs 3,769.5) between named configurations; Zenodo artifact present so planning_feasible also flips true.",yes,yes
+S036,ext_2101_08526v7_claim1,planning_feasible,false,true,false->true,true,Source confirms 2+ metrics; multi-objective relation; dominance_check is formal.,no,no
+S039,ext_2107_08606v3_claim1,planning_feasible,false,true,false->true,true,Source confirms 2+ metrics; multi-objective relation; dominance_check is formal.,no,no
+S048,ext_2204_10741v2_claim1,planning_feasible,false,true,false->true,true,Source confirms 2+ metrics; multi-objective relation; dominance_check is formal.,no,no
+S098,ext_2212_11405v1_claim1,planning_feasible,false,true,false->true,true,Source confirms 2+ metrics; multi-objective relation; dominance_check is formal.,no,no
+S029,ext_2409_14786v3_claim3,auditable_design,no,yes,no->yes,yes,broader_auditable=true (verification_only IS a valid broader mode per Layer 8),no,no
+S030,ext_2409_14786v3_claim4,auditable_design,no,yes,no->yes,yes,broader_auditable=true (verification_only IS a valid broader mode per Layer 8),no,no
+S021,ext_2110_00592v2_claim1,relation_type,scalar_directional,unclear_boundary,scalar_directional->unclear_boundary,unclear_boundary,tier=T4,no,no
+S022,ext_2110_00592v2_claim2,relation_type,scalar_directional,unclear_boundary,scalar_directional->unclear_boundary,unclear_boundary,tier=T4,no,no
+S024,ext_2206_09938v2_claim2,relation_type,scalar_directional,unclear_boundary,scalar_directional->unclear_boundary,unclear_boundary,tier=T3,no,no
+S026,ext_2303_02830v1_claim1,relation_type,scalar_directional,unclear_boundary,scalar_directional->unclear_boundary,unclear_boundary,tier=T3,no,no
+S027,ext_2405_09169v3_claim4,relation_type,scalar_directional,unclear_boundary,scalar_directional->unclear_boundary,unclear_boundary,"Source at line 17 is a hardware scale-demonstration with an IMPLICIT comparator (smaller prior runs). Rule: ambiguous comparator -> keep as boundary, do not add. Current label has it incorrectly in 166; resolution removes it.",yes,no
+S031,ext_2007_15671v1_claim3,relation_type,scalar_directional,relation_specific,scalar_directional->relation_specific,relation_specific,tier=T4,no,no
+S032,ext_2007_15671v1_claim4,relation_type,scalar_directional,relation_specific,scalar_directional->relation_specific,relation_specific,tier=T4,no,no
+S033,ext_2007_15671v1_claim5,relation_type,scalar_directional,relation_specific,scalar_directional->relation_specific,relation_specific,tier=T3,no,no
+S034,ext_2009_13545v3_claim1,relation_type,scalar_directional,relation_specific,scalar_directional->relation_specific,relation_specific,tier=T3,no,no
+S035,ext_2009_13545v3_claim3,relation_type,scalar_directional,relation_specific,scalar_directional->relation_specific,relation_specific,tier=T3,no,no
+S040,ext_2107_08606v3_claim2,relation_type,scalar_directional,relation_specific,scalar_directional->relation_specific,relation_specific,tier=T3,no,no
+S043,ext_2112_03199v4_claim2,relation_type,scalar_directional,relation_specific,scalar_directional->relation_specific,relation_specific,tier=T3,no,no
+S050,ext_2206_06684v1_claim1,relation_type,scalar_directional,relation_specific,scalar_directional->relation_specific,relation_specific,tier=T3,no,no
+S051,ext_2209_02669v3_claim1,relation_type,scalar_directional,relation_specific,scalar_directional->relation_specific,relation_specific,tier=T3,no,no
+S052,ext_2209_02669v3_claim2,relation_type,scalar_directional,relation_specific,scalar_directional->relation_specific,relation_specific,tier=T3,no,no
+S095,ext_2211_07685v3_claim1,relation_type,scalar_directional,relation_specific,scalar_directional->relation_specific,relation_specific,tier=T3,no,no
+S096,ext_2211_07685v3_claim2,relation_type,scalar_directional,relation_specific,scalar_directional->relation_specific,relation_specific,tier=T3,no,no
+S097,ext_2211_07685v3_claim4,relation_type,scalar_directional,relation_specific,scalar_directional->relation_specific,relation_specific,tier=T3,no,no
+S102,ext_2304_08814v2_claim6,relation_type,scalar_directional,relation_specific,scalar_directional->relation_specific,relation_specific,tier=T3,no,no
+S103,ext_2304_08814v2_claim7,relation_type,scalar_directional,relation_specific,scalar_directional->relation_specific,relation_specific,tier=T3,no,no
+S113,ext_2309_05157v1_claim1,relation_type,scalar_directional,relation_specific,scalar_directional->relation_specific,relation_specific,tier=T4,no,no
+S114,ext_2309_05157v1_claim2,relation_type,scalar_directional,relation_specific,scalar_directional->relation_specific,relation_specific,tier=T4,no,no

@@ -1,0 +1,7 @@
+category,recorded_reason,records
+Proxy-free scoped,Lockable matched comparison evidence; eligible for Tier-1 S/U/R verdicts,8
+"Lockable, not proxy-free scoped",Source-supported extension or diagnostic design; not the reported comparison itself,43
+"Lockable, not proxy-free scoped",Source-materialized evidence without matched A/B source data for proxy-free scoped auditing,2
+Boundary,Source-rule-only evidence; no matched scalar A/B design lockable for proxy-free scoped auditing,20
+Boundary,"Verification-only record, not an auditable design",2
+Boundary,"Missing timing protocol, comparator implementation, or other lockable source convention",4

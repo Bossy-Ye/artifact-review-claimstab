@@ -1,0 +1,63 @@
+claim_id: EX-C3
+domain: compilation
+source_identifier: "arXiv:2304.08814, claim ext_2304_08814v2_claim5"
+source_title: "A Comparison of Quantum Compilers using a DAG-based or phase polynomial-based Intermediate Representation"
+source_venue: "arXiv 2023 (peer-reviewed status not yet verified)"
+source_artifact: "https://github.com/Aerylia/pauliopt/tree/paper/reverse-traversal"
+source_sentence_or_claim_summary: >-
+  Verbatim: "Qiskit and TKET have a similar runtime, where TKET is slightly slower with much
+  better CNOT counts." Narrowed: for DAG-based quantum compilation, TKET yields lower CNOT gate
+  count than Qiskit.
+source_context: "Page-24 DAG-based compiler comparison stating TKET has much better CNOT counts than Qiskit."
+P:
+  family: DAG-based quantum compilation
+  instance_distribution: deterministic connectivity-stress circuits (linear_3_remote_cx, linear_4_bidirectional_mix, linear_4_crossing_ladder, linear_4_repeated_remote)
+  algorithmic_spec: none (deterministic compile + CNOT count; no classical optimization loop)
+  resource_constraints: 4-node line architecture; Qiskit optimization-level/seed grid
+B_A: TKET
+B_B: Qiskit
+metric: CNOT gate count
+direction: "B_A < B_B (TKET lower CNOT count than Qiskit)"
+scope_dimensions: circuit instance (4 connectivity-stress circuits)
+environment_dimensions: L1 = Qiskit optimization level (0-3) x qiskit seed (0-4)
+axis_status:
+  S_scope:
+    status: ACTIVE
+    reason: "Source-supported circuit instances within the DAG-compilation family; CNOT count varies across circuits and the claim quantifies over them."
+  L1:
+    status: ACTIVE
+    reason: "Qiskit optimization level and seed transform the circuit before the CNOT count is measured; artifact-supported, metric-affecting, claim-preserving."
+  L2:
+    status: FIXED-INACTIVE
+    reason: "Metric is a structural compiler-output CNOT count; no sampling/shots enter the measured value."
+  L3:
+    status: FIXED-INACTIVE
+    reason: "The 4-node line coupling map is a fixed compilation target / scope-defining configuration (master coupling-map rule), not live backend noise; a static CNOT count has no dependence on calibration/noise/drift."
+  ALGO:
+    status: FIXED-INACTIVE
+    reason: "No classical optimization loop enters a deterministic compile-and-count; compiler stochasticity captured under the L1 seed."
+  resource_budget:
+    status: FIXED-INACTIVE
+    reason: "Fixed line architecture and optimization-level/seed grid hold the compile budget fixed; the metric is a count, not a time/resource quantity."
+excluded_dimensions_with_reasons:
+  runtime_metric: "changes the metric (CNOT-count claim, not a timing claim)"
+  phase_polynomial_compiler_family: "changes the comparator/compilation paradigm"
+  hardware_noise: "would change L3 from fixed compilation target to live backend"
+  live_hardware_execution: "out of audited scope"
+cell_key: "circuit_instance x qiskit_optimization_level x qiskit_seed"
+locked_cell_log: artifact/external_audit/tier1_robustness/per_cell_inputs/ext_2304_08814v2_claim5_measurements.csv
+result_source: artifact/results/paper/output/figures/section5/external_forest_data.csv
+N: 80
+k: 62
+direction_preservation_rate: 0.775
+wilson_ci: "[0.672, 0.853]"
+wilson_verdict: "Unresolved"
+bootstrap_or_dependence_check: "The 47-row aggregate appears in artifact/results/paper/output/figures/section5/cluster_bootstrap_47.csv; the Tier-1 per-cell check in artifact/external_audit/tier1_robustness/tier1_cluster_resampling.csv identifies EX-C3 as cluster-sensitive."
+evidence_boundary: >-
+  Unresolved over this card: TKET-vs-Qiskit CNOT gate count on 4 connectivity-stress circuits x
+  4 Qiskit optimization levels x 5 seeds on a 4-node line (80 cells). Narrowed connectivity-stress
+  surface, not a full reproduction of the source benchmark suite.
+manuscript_locations: "Section 6/RQ2 (Table per_claim_external_audit, Fig external_forest). Manuscript anonymizes baselines as 'A vs D'."
+provenance_notes: >-
+  Real baselines from the locked inventory. N=80 is confirmed from the shipped
+  80-row Tier-1 per-cell trace; the locked surface is N=80.

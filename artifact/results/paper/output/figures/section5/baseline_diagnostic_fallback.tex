@@ -1,0 +1,16 @@
+\begin{table}[t]
+    \centering
+    \caption{Diagnostic baseline fallback. True matched seed-only $N=80$ is not available in canonical audit data; we report a max-available fallback. This is a diagnostic comparison, not a fair controlled baseline.}
+    \label{tab:baseline_diagnostic}
+    \resizebox{\columnwidth}{!}{%
+    \begin{tabular}{@{}llll@{}}
+        \toprule
+        \textbf{Audit regime} & \textbf{Cells/claim} & \textbf{Classification} & \textbf{Note} \\
+        \midrule
+        Single-run & 1 & 19 match, 5 oppose & no Wilson CI \\
+        Seed-only max-avail. & $\leq 20$ (median $\sim 8$) & 24 Unresolved & matched-$N$ unavail. \\
+        Full \framework & 80 & 10 S, 14 U, 0 R & full perturbation \\
+        \bottomrule
+    \end{tabular}
+    }
+\end{table}

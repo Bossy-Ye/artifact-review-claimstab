@@ -1,0 +1,45 @@
+# Python build and test caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+*.egg-info/
+.eggs/
+build/
+dist/
+site/
+
+# Virtual environments
+.venv/
+venv/
+venv.pre_restore_*/
+
+# Editor and operating-system metadata
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Optional checker reports and local run output
+/artifact/outputs/
+/out/
+/out_*/
+/output/
+/logs/
+/tmp/
+/temp/
+*.log
+*.tmp
+
+# Local work areas outside the reviewer package
+/.cache/
+/.local_archive/
+/.local_roadb_ai/
+/.external_audit_tmp/
+/scratch/
+*.bak
+*.draft.md
+*.scratch.md
