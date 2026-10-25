@@ -2,7 +2,7 @@ claim_id: EX-C7
 domain: compilation
 source_identifier: "arXiv:2409.08844 (Benchpress), claim ext_2409_08844v2_claim3"
 source_title: "Benchmarking the performance of quantum computing software for quantum circuit creation, manipulation and compilation"
-source_venue: "Nature Computational Science 2025 (10.1038/s43588-025-00792-y); bib key nation2024benchmarking currently points to the arXiv preprint"
+source_venue: "Nature Computational Science 5, 427-435 (2025), doi:10.1038/s43588-025-00792-y"
 source_artifact: "https://github.com/Qiskit/benchpress/tree/1.0"
 source_sentence_or_claim_summary: >-
   Verbatim: "First, we see that, as a whole, Qiskit outperforms BQSKit, Staq, and Tket
