@@ -51,7 +51,7 @@ k: 80
 direction_preservation_rate: 1.0
 wilson_ci: "[0.954, 1.000]"
 wilson_verdict: "Sustained"
-bootstrap_or_dependence_check: "UNAVAILABLE at claim level because the per-cell trace is not materialized. The 47-row aggregate is shipped at artifact/results/paper/output/figures/section5/cluster_bootstrap_47.csv, but does not repair this evidence boundary."
+bootstrap_or_dependence_check: "UNAVAILABLE: the per-cell trace is not materialized."
 evidence_boundary: >-
   Sustained over this card: QTG-QAOA-vs-Copula-QAOA approximation ratio over the audited knapsack
   instances and ALGO sweep (80 cells). The per-cell log is not present in the repo, so the cell-level

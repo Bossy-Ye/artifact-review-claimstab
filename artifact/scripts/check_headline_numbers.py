@@ -421,15 +421,18 @@ def collect_checks() -> list[Check]:
         add_bool(checks, "variance_software_L1_percent", "approximately 78%", 77.0 <= sw_l1 <= 79.0, f"{sw_l1:.1f}%", "paper/output/figures/section5/variance_decomposition_values.csv", critical=False)
         add_bool(checks, "variance_optimization_stack_percent", "approximately 11%", 10.0 <= opt_stack <= 12.0, f"{opt_stack:.1f}%", "paper/output/figures/section5/variance_decomposition_values.csv", critical=False)
 
-    # Manuscript-facing 47-claim cluster-bootstrap aggregate
-    # (24 canonical + 8 external + 15 RQ3 controlled-validation suite;
-    # legacy four-regime L3 superseded and not double-counted).
+    # Cluster bootstrap: only the 15 RQ3 rows are resampled (B=1000);
+    # the 24 canonical + 8 external rows carry a single iteration.
     cluster47 = read_csv("paper/output/figures/section5/cluster_bootstrap_47.csv")
+    src47 = "paper/output/figures/section5/cluster_bootstrap_47.csv"
     if cluster47 is None:
-        add_missing(checks, "cluster_bootstrap_agreement_47", "47/47", "paper/output/figures/section5/cluster_bootstrap_47.csv")
+        add_missing(checks, "cluster_bootstrap_agreement_rq3", "15/15", src47)
     else:
-        same = cluster47["same_classification"].astype(str).str.lower().eq("true").sum()
-        add_exact(checks, "cluster_bootstrap_agreement_47", "47/47", f"{int(same)}/{len(cluster47)}", "paper/output/figures/section5/cluster_bootstrap_47.csv")
+        boot = cluster47[cluster47["bootstrap_iterations"].astype(int) >= 1000]
+        same = boot["same_classification"].astype(str).str.lower().eq("true").sum()
+        add_exact(checks, "cluster_bootstrap_agreement_rq3", "15/15", f"{int(same)}/{len(boot)}", src47)
+        single = int((cluster47["bootstrap_iterations"].astype(int) == 1).sum())
+        add_exact(checks, "cluster_bootstrap_single_iteration_rows", 32, single, src47)
 
     sens = read_csv("paper/output/figures/section5/sensitivity_summary.csv")
     if sens is None:

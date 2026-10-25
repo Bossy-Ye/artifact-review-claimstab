@@ -294,14 +294,16 @@ $\tau=0.99$. The specific sensitivity and evidence-boundary cases are recorded i
   $\tau=0.99$ the finite-$N$ extreme labels (EX-C1/EX-C2 Sustained, EX-C7/EX-C8 Not preserved)
   soften to Unresolved. The canonical check shifts 10 of 24 borderline claims to
   Unresolved at $\tau=0.99$.
-- **Dependence-aware grouping.** The 47-claim union (24 canonical $+$ 8 external $+$
-  15 RQ3 controlled-validation-suite; earlier four-regime L3 excluded by construction)
-  shows cluster-bootstrap agreement **47 / 47** with the primary Wilson classifications
-  ($B=1000$ per claim). Tier-1 per-cell cluster bootstrap ($B=10{,}000$) identifies
-  **EX-C3 as cluster-bootstrap-sensitive** (one circuit dominates; 6.4\% of resamples
-  reach Sustained, although no single-cluster deletion flips its primary Unresolved
-  label). **EX-C2 and EX-C4 are unavailable for this check** because their per-cell
-  traces are not materialized.
+- **Dependence-aware grouping.** Cluster bootstrap on `instance_id` ($B=1000$): the 15
+  RQ3 claims keep their primary labels (15/15). Tier-1 per-cell cluster bootstrap
+  ($B=10{,}000$): **EX-C3 is cluster-bootstrap-sensitive** (one circuit dominates; 6.4\%
+  of resamples reach Sustained); **EX-C2 and EX-C4 are unavailable** (no per-cell
+  traces). The 24 canonical claims are not cluster-bootstrapped (aggregate data only).
+  In `cluster_bootstrap_47.csv` the 24 canonical and 8 external rows have
+  `bootstrap_iterations = 1`; their agreement field is not a bootstrap result.
+  Leave-one-cluster-out drops $N$ to 60 ($< 73$): EX-C1, EX-C7 and EX-C8 become
+  Unresolved by construction while their patterns hold (60/60, 0/60, 0/60); EX-C3 stays
+  Unresolved.
 - **Tie handling.** **EX-C7 has 0 preserved cells (0/80 primary; 62 contradictions,
   18 ties) and remains contradicted-dominated**, but its categorical *Not preserved* label is
   policy-bounded: it softens to Unresolved if ties are excluded (0/62) or counted as
@@ -319,7 +321,7 @@ $\tau=0.99$. The specific sensitivity and evidence-boundary cases are recorded i
 Evidence:
 
 - [external_audit/tier1_robustness/](external_audit/tier1_robustness/) — per-cell primary evidence; threshold / cluster / leave-one-cluster-out / tie-policy / budget tables; the per-dimension [tier1_robustness_status.csv](external_audit/tier1_robustness/tier1_robustness_status.csv) and [statistical_robustness_summary.md](external_audit/tier1_robustness/statistical_robustness_summary.md); re-runnable via [tier1_robustness_analysis.py](external_audit/tier1_robustness/tier1_robustness_analysis.py).
-- [results/paper/output/figures/section5/cluster_bootstrap_47.csv](results/paper/output/figures/section5/cluster_bootstrap_47.csv) — 47-claim union agreement.
+- [results/paper/output/figures/section5/cluster_bootstrap_47.csv](results/paper/output/figures/section5/cluster_bootstrap_47.csv) — 15 RQ3 rows bootstrapped ($B=1000$); 32 rows with one iteration.
 - [results/paper/output/figures/section5/sensitivity_summary.csv](results/paper/output/figures/section5/sensitivity_summary.csv) — $\tau$ / $N$ / ALGO-toggle sensitivity.
 - [external_audit/budget_sensitivity/expanded_seed_sensitivity.csv](external_audit/budget_sensitivity/expanded_seed_sensitivity.csv) — seed expansion to $N=320$.
 - [external_audit/budget_sensitivity/RECONSTRUCTION_README.md](external_audit/budget_sensitivity/RECONSTRUCTION_README.md) and [recon_driver.py](external_audit/budget_sensitivity/recon_driver.py) — 80/80 reconstruction gate, raw JSONL provenance, and read-only derivation of the N=80..320 expansion tables.

@@ -55,7 +55,7 @@ not in numeric order.
 - **B_A:** Copula-QAOA (as implemented in the source repository).
 - **B_B:** QTG-based AAM-QAOA (as implemented in the source repository).
 - **M:** probability value (probability of measuring the global optimum / target eigenstate, as reported in the paper's result CSV).
-- **D:** A > B (Copula > QTG) on the audited 5–10 item regime.
+- **D:** A > B (Copula > QTG-based AAM) for 5–10 items in the source; audited on n_items 6–10.
 
 ### 3. Metric-to-axis reasoning
 - **Compilation/transpilation required?** No. The probability value is read from the paper's pre-computed result files, not recompiled per cell.

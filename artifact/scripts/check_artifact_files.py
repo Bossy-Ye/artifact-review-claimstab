@@ -28,7 +28,7 @@ class ExpectedFile:
 
 
 EXPECTED_FILES: list[ExpectedFile] = [
-    ExpectedFile("root", "README.md", True, "anonymous artifact entry point"),
+    ExpectedFile("root", "README.md", True, "artifact entry point"),
     ExpectedFile("root", "LICENSE", True, "artifact license"),
     ExpectedFile("environment", "requirements.txt", True, "compatible reviewer dependency ranges"),
     ExpectedFile("environment", "requirements-lock.txt", True, "tested Python 3.12 reviewer environment"),
@@ -94,7 +94,7 @@ EXPECTED_FILES: list[ExpectedFile] = [
     ExpectedFile("controlled validation", "paper/output/figures/section5/combined_layer_diagnostic_data.csv", True, "RQ3 combined row-level grid"),
     ExpectedFile("controlled validation", "paper/output/figures/section5/combined_layer_diagnostic_summary.csv", True, "RQ3 combined summary"),
     ExpectedFile("controlled validation", "paper/output/figures/section5/rq3_controlled_validation_summary.csv", True, "RQ3 five-diagnostic aggregate"),
-    ExpectedFile("robustness", "paper/output/figures/section5/cluster_bootstrap_47.csv", True, "manuscript-facing cluster bootstrap robustness (47-row: 24 canonical + 8 external + 15 RQ3 suite)"),
+    ExpectedFile("robustness", "paper/output/figures/section5/cluster_bootstrap_47.csv", True, "cluster bootstrap (15 RQ3 rows, B=1000; 32 rows one iteration)"),
     ExpectedFile("robustness", "artifact/external_audit/budget_sensitivity/expanded_seed_sensitivity.csv", True, "Tier-1 seed/budget expansion (N=80..320; EX-C7 0/320)"),
     ExpectedFile("robustness", "artifact/external_audit/budget_sensitivity/RECONSTRUCTION_README.md", True, "validated Tier-1 reconstruction method and evidence boundary"),
     ExpectedFile("robustness", "artifact/external_audit/budget_sensitivity/n_provenance_manifest.csv", True, "predeclared N factorization and expandable-axis provenance"),
@@ -151,6 +151,35 @@ def check_files() -> tuple[list[tuple[ExpectedFile, bool]], int, int]:
     return rows, missing_required, missing_optional
 
 
+INVENTORY = REPO_ROOT / "artifact" / "dry_run_visibility" / "evidence_inventory.csv"
+NOT_BUNDLED = "[not bundled]"
+
+
+def check_inventory_paths() -> tuple[int, int, list[str]]:
+    """Every path in the evidence inventory exists or is marked [not bundled]."""
+    import csv
+    import glob
+    import re
+
+    tok = re.compile(r"(?:artifact/|docs/)[^\s;()+]+")
+    present = marked = 0
+    unmarked: list[str] = []
+    for row in csv.reader(open(INVENTORY, newline="")):
+        for cell in row:
+            for m in tok.finditer(cell):
+                if cell[m.end():].startswith(" " + NOT_BUNDLED):
+                    marked += 1
+                    continue
+                path = m.group(0).rstrip(".,")
+                brace = re.search(r"\{([^}]*)\}", path)
+                parts = [path[:brace.start()] + x + path[brace.end():] for x in brace.group(1).split(",")] if brace else [path]
+                if all(glob.glob(str(REPO_ROOT / x)) for x in parts):
+                    present += 1
+                else:
+                    unmarked.append(path)
+    return present, marked, unmarked
+
+
 def write_report(rows: list[tuple[ExpectedFile, bool]], missing_required: int, missing_optional: int) -> None:
     REPORT_DIR.mkdir(parents=True, exist_ok=True)
     total = len(rows)
@@ -191,6 +220,13 @@ def main(argv: list[str] | None = None) -> int:
     rows, missing_required, missing_optional = check_files()
     found = sum(1 for _, exists in rows if exists)
     total = len(rows)
+    inv_present, inv_marked, inv_unmarked = check_inventory_paths()
+    print(
+        f"[artifact-check] evidence inventory: {inv_present} paths present; "
+        f"{inv_marked} marked not bundled; {len(inv_unmarked)} unmarked missing."
+    )
+    for path in inv_unmarked:
+        print(f"  MISSING (unmarked): {path}")
 
     if not args.write_report:
         # Concise default: write nothing.
@@ -207,7 +243,7 @@ def main(argv: list[str] | None = None) -> int:
             prefix = "[PASS]" if exists else ("[MISSING]" if item.required else "[OPTIONAL-MISSING]")
             print(f"{prefix} {item.path}")
         print(f"Report: {REPORT_PATH.relative_to(REPO_ROOT)}")
-    return 1 if missing_required else 0
+    return 1 if missing_required or inv_unmarked else 0
 
 
 if __name__ == "__main__":

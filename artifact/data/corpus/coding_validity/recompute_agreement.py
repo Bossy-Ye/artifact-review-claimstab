@@ -89,7 +89,7 @@ def compute_rows():
 
 def render_csv(fieldnames, rows):
     stream = io.StringIO(newline="")
-    writer = csv.DictWriter(stream, fieldnames=fieldnames)
+    writer = csv.DictWriter(stream, fieldnames=fieldnames, lineterminator="\n")
     writer.writeheader()
     writer.writerows(rows)
     return stream.getvalue()

@@ -103,11 +103,12 @@ def test_canonical_distribution() -> None:
     assert counts.get("Not preserved", 0) == 0
 
 
-def test_cluster_bootstrap_47_agreement() -> None:
+def test_cluster_bootstrap_rq3_agreement() -> None:
     df = pd.read_csv(SEC5 / "cluster_bootstrap_47.csv")
-    assert len(df) == 47
-    same = df["same_classification"].astype(str).str.lower().eq("true").sum()
-    assert int(same) == 47
+    boot = df[df["bootstrap_iterations"] >= 1000]
+    assert len(boot) == 15
+    assert boot["same_classification"].astype(str).str.lower().eq("true").all()
+    assert int((df["bootstrap_iterations"] == 1).sum()) == 32
 
 
 def test_sensitivity_exact_counts() -> None:

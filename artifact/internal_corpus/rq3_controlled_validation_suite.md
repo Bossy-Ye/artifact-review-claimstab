@@ -133,14 +133,10 @@ summary is in
 
 **Cluster bootstrap.** All 15 RQ3-suite claims pass cluster
 bootstrap at 1000/1000 (cluster on `instance_id`), matching the
-Wilson classification under instance-cluster resampling. The
-manuscript-facing 47-claim aggregate (24 canonical + 8 external + 15
-RQ3 suite) is reproduced into
-`artifact/results/paper/output/figures/section5/cluster_bootstrap_47.csv` and gives
-**47/47** bootstrap-vs-Wilson classification agreement under the
-unified `same_classification` field; the earlier four-regime L3
-diagnostic is excluded by construction to avoid double-counting the
-expanded six-regime L3 claims.
+Wilson classification under instance-cluster resampling. In
+`artifact/results/paper/output/figures/section5/cluster_bootstrap_47.csv` only these
+15 rows are bootstrapped ($B=1000$); the 24 canonical and 8 external rows have one
+iteration.
 
 ## Empirical observations (descriptive, not new headline claims)
 
@@ -240,7 +236,6 @@ are not bundled.
 ## Paper-facing aggregation
 
 RQ3 uses five controlled diagnostics spanning L1 / L2 / L3 / ALGO / combined. The
-paper-facing cluster-bootstrap summary is **24 canonical + 8 external + 15 RQ3 suite
-= 47/47**. The earlier 35/35 aggregate belongs to the prior four-regime L3
-configuration and is retained only as provenance; it is not added to the 47-record
-surface.
+paper-facing cluster-bootstrap summary is the 15 RQ3 claims (15/15, $B=1000$). The
+earlier 35/35 aggregate belongs to the prior four-regime L3 configuration and is
+retained only as provenance.

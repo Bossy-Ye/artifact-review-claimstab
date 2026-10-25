@@ -47,6 +47,19 @@ def test_evidence_inventory_covers_all_rq2_units() -> None:
     assert EXACT <= ids and SD <= ids and BD <= ids
 
 
+def test_evidence_inventory_paths_exist_or_are_marked() -> None:
+    import importlib.util
+    import sys
+
+    spec = importlib.util.spec_from_file_location("check_artifact_files", ART / "scripts/check_artifact_files.py")
+    caf = importlib.util.module_from_spec(spec)
+    sys.modules[spec.name] = caf
+    spec.loader.exec_module(caf)
+    present, marked, unmarked = caf.check_inventory_paths()
+    assert unmarked == []
+    assert present > 0 and marked == 37
+
+
 def test_exact_records_are_scalar_directional() -> None:
     rows = {r["unit_id"].strip(): r for r in csv.DictReader(open(LEDGER))}
     for ex in EXACT:

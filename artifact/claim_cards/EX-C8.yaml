@@ -55,7 +55,7 @@ k: 0
 direction_preservation_rate: 0.0
 wilson_ci: "[0.000, 0.046]"
 wilson_verdict: "Not preserved within audited scope"
-bootstrap_or_dependence_check: "Cluster bootstrap agrees with Wilson classification (part of 47/47 agreement); see artifact/results/paper/output/figures/section5/cluster_bootstrap_47.csv"
+bootstrap_or_dependence_check: "Tier-1 per-cell cluster bootstrap (B=10,000, 4 circuit-size clusters): cluster-stable. See artifact/external_audit/tier1_robustness/tier1_cluster_resampling.csv."
 evidence_boundary: >-
   Not preserved over this card: Cirq-vs-Qiskit circuit-construction time on Hamiltonian-simulation-like
   circuits, 4 sizes x 20 timing repetitions (80 cells), on a local constructor-timing surface.
