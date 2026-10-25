@@ -5,11 +5,11 @@ This is a **minimal, dependency-light extract** of the CLAIMSTAB-QC framework
 run the code used for the reported outcomes. The artifact scope excludes the
 qiskit-dependent experiment generators and figure pipeline.
 
-## What is here (`src/claimstab/`, 21 files, ~1.2k LOC, pure Python)
+## What is here (`src/claimstab/`, 20 files, ~1.3k LOC, pure Python)
 
 | Module | Section IV role |
 |---|---|
-| `inference/policies.py` | Wilson interval + S/U/R policy |
+| `inference/policies.py` | Wilson interval + S/U/NP policy |
 | `statistics/wilson.py`, `bootstrap.py`, `sensitivity.py` | `wilson_ci`; cluster bootstrap; tau/N sensitivity |
 | `audit/relation_checkers.py`, `relations.py`, `verdicts.py`, `cells.py`, `claims.py`, `runner.py` | relation checkers (scalar Wilson, aggregate, crossover, categorical, boundary), verdict classification, materialization check |
 | `core_objects/cro.py`, `drr.py`, `oap.py` | comparison/claim core objects |
@@ -35,7 +35,7 @@ python3 -m pytest artifact/tests/ -q
 
 `artifact/tests/conftest.py` puts `artifact/src` first on `sys.path`, so the tests
 exercise *this* bundled package. Tests:
-- `test_wilson_rule.py` — Wilson math + bundled `wilson_ci` reproduces EX-C3 (62/80 → Unresolved) and EX-C7 (0/80 → Reversed).
+- `test_wilson_rule.py` — Wilson math + bundled `wilson_ci` reproduces EX-C3 (62/80 → Unresolved) and EX-C7 (0/80 → Not preserved).
 - `test_relation_checkers.py` / `test_relation_primitives.py` — the relation-checker interface; reproduces the 2/4/2 distribution and SD5/SD6 outcomes from shipped evidence.
 - `test_funnel_counts.py` — reconciles 455/175/145/93/79/53/8 and the RQ2/RQ3/RQ4 distributions from the shipped CSVs (needs `pandas`).
 - `test_manifest_loading.py` — the RQ2 ledger + evidence inventory parse and carry EX-C1..C8 / SD1..SD7 / BD1..BD2.

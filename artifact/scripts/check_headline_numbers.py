@@ -338,7 +338,7 @@ def collect_checks() -> list[Check]:
         cls = value_counts(external, "classification")
         add_exact(checks, "external_Sustained", 2, cls.get("Sustained", 0), "paper/output/figures/section5/external_forest_data.csv")
         add_exact(checks, "external_Unresolved", 4, cls.get("Unresolved", 0), "paper/output/figures/section5/external_forest_data.csv")
-        add_exact(checks, "external_Reversed", 2, cls.get("Reversed", 0), "paper/output/figures/section5/external_forest_data.csv")
+        add_exact(checks, "external_NotPreserved", 2, cls.get("Not preserved", 0), "paper/output/figures/section5/external_forest_data.csv")
         dom = value_counts(external, "domain")
         add_exact(checks, "external_domain_compilation", 5, dom.get("compilation", 0), "paper/output/figures/section5/external_forest_data.csv")
         add_exact(checks, "external_domain_benchmark", 1, dom.get("benchmark", 0), "paper/output/figures/section5/external_forest_data.csv")
@@ -350,8 +350,8 @@ def collect_checks() -> list[Check]:
             "EX-C4": (0.562, 0.453, 0.666, "Unresolved"),
             "EX-C5": (0.550, 0.441, 0.654, "Unresolved"),
             "EX-C6": (0.425, 0.323, 0.534, "Unresolved"),
-            "EX-C7": (0.000, 0.000, 0.046, "Reversed"),
-            "EX-C8": (0.000, 0.000, 0.046, "Reversed"),
+            "EX-C7": (0.000, 0.000, 0.046, "Not preserved"),
+            "EX-C8": (0.000, 0.000, 0.046, "Not preserved"),
         }
         for label, (s_hat, low, high, klass) in expected_rows.items():
             row = external.loc[external["figure_label"] == label]
@@ -376,7 +376,7 @@ def collect_checks() -> list[Check]:
         ccls = value_counts(canonical, "classification")
         add_exact(checks, "canonical_Sustained", 10, ccls.get("Sustained", 0), "paper/output/figures/section5/canonical24_forest_data.csv")
         add_exact(checks, "canonical_Unresolved", 14, ccls.get("Unresolved", 0), "paper/output/figures/section5/canonical24_forest_data.csv")
-        add_exact(checks, "canonical_Reversed", 0, ccls.get("Reversed", 0), "paper/output/figures/section5/canonical24_forest_data.csv")
+        add_exact(checks, "canonical_NotPreserved", 0, ccls.get("Not preserved", 0), "paper/output/figures/section5/canonical24_forest_data.csv")
         sw = canonical[canonical["paradigm"] == "software-stack"]
         opt = canonical[canonical["paradigm"] == "optimization"]
         add_exact(checks, "canonical_software_stack_Sustained", 9, int((sw["classification"] == "Sustained").sum()), "paper/output/figures/section5/canonical24_forest_data.csv")
@@ -393,16 +393,16 @@ def collect_checks() -> list[Check]:
     syn = read_csv("output/paper/icse_pack/derived/ANALYSIS/synthetic_reversed_expanded.csv")
     ctrl = read_csv("output/paper/icse_pack/derived/ANALYSIS/synthetic_control_sanity.csv")
     if syn is None or ctrl is None:
-        add_missing(checks, "synthetic_reversed_corpus", "9/9 Reversed", "synthetic reversed files")
+        add_missing(checks, "synthetic_reversed_corpus", "9/9 Not preserved", "synthetic reversed files")
     else:
-        expanded_rev = int((syn["actual_classification"] == "Reversed").sum())
-        original_rev = int(((ctrl["control_id"] == "shuffled_reversed") & (ctrl["reporting_status"] == "Reversed")).sum())
+        expanded_rev = int((syn["actual_classification"] == "Not preserved").sum())
+        original_rev = int(((ctrl["control_id"] == "shuffled_reversed") & (ctrl["reporting_status"] == "Not preserved")).sum())
         total = len(syn) + 1
         add_exact(checks, "synthetic_reversed_corpus", "9/9", f"{expanded_rev + original_rev}/{total}", "output/paper/icse_pack/derived/ANALYSIS/synthetic_reversed_expanded.csv + synthetic_control_sanity.csv")
 
     chem = read_csv("output/paper/icse_pack/derived/SUPPORT/internal_surface_supporting_metric_dataset.csv")
     if chem is None:
-        add_missing(checks, "chemistry_reversed_cases", "17/18 Reversed; 18/18 not Sustained", "output/paper/icse_pack/derived/SUPPORT/internal_surface_supporting_metric_dataset.csv")
+        add_missing(checks, "chemistry_reversed_cases", "17/18 Not preserved; 18/18 not Sustained", "output/paper/icse_pack/derived/SUPPORT/internal_surface_supporting_metric_dataset.csv")
     else:
         refuted = int((chem["claim_validation_outcome"] == "refuted").sum())
         not_sustained = int((chem["baseline_claim_holds"] == False).sum())  # noqa: E712
@@ -532,9 +532,9 @@ def collect_checks() -> list[Check]:
     # paper-facing 0 S / 13 U / 2 R aggregate.
     diagnostics = {
         "l1_within_qiskit": {
-            "L1Q-C1": (1200, 0, "Reversed"),
+            "L1Q-C1": (1200, 0, "Not preserved"),
             "L1Q-C2": (1200, 400, "Unresolved"),
-            "L1Q-C3": (1200, 0, "Reversed"),
+            "L1Q-C3": (1200, 0, "Not preserved"),
         },
         "l2_sampling": {
             "L2-C1": (1800, 1074, "Unresolved"),
@@ -595,7 +595,7 @@ def collect_checks() -> list[Check]:
         add_exact(checks, "rq3_controlled_validation_diagnostics", 5, len(rq3_summary), rq3_summary_src)
     add_exact(checks, "rq3_controlled_Sustained", 0, rq3_verdicts.count("Sustained"), "five RQ3 diagnostic summaries")
     add_exact(checks, "rq3_controlled_Unresolved", 13, rq3_verdicts.count("Unresolved"), "five RQ3 diagnostic summaries")
-    add_exact(checks, "rq3_controlled_Reversed", 2, rq3_verdicts.count("Reversed"), "five RQ3 diagnostic summaries")
+    add_exact(checks, "rq3_controlled_NotPreserved", 2, rq3_verdicts.count("Not preserved"), "five RQ3 diagnostic summaries")
 
     gate_src = "artifact/external_audit/budget_sensitivity/reconstruction_gate_report.csv"
     gate = read_csv(gate_src)

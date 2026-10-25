@@ -1,11 +1,10 @@
 #!/usr/bin/env python3
 """Tier-1 (exact scalar-directional) robustness analysis for EX-C1..EX-C8.
 
-Design-first statistical treatment that SEPARATES four things the manuscript
-conflates:
+Design-first statistical treatment; reports separately:
 
   1. finite locked-design evidence        (k / N, ties, contradictions, margins)
-  2. Wilson policy classification          (the predeclared S/U/R classifier)
+  2. Wilson policy classification          (the predeclared S/U/NP classifier)
   3. dependence-aware robustness           (cluster bootstrap, leave-one-cluster-out)
   4. tie-policy and threshold sensitivity  (tau in {0.90,0.95,0.99}; 3 tie policies)
   5. budget / seed-count expansion         (N = 80,160,240,320 where a validated
@@ -71,7 +70,7 @@ def classify(lo: float, hi: float, tau: float = TAU_PRIMARY) -> str:
     if lo >= tau:
         return "Sustained"
     if hi <= 1.0 - tau:
-        return "Reversed"
+        return "Not preserved"
     return "Unresolved"
 
 
@@ -150,8 +149,8 @@ EXPECTED = {
     "EX-C4": dict(k=45, lo=0.4534, hi=0.6659, cls="Unresolved"),
     "EX-C5": dict(k=44, lo=0.4412, hi=0.6542, cls="Unresolved", ties=15, contra=21),
     "EX-C6": dict(k=34, lo=0.3226, hi=0.5343, cls="Unresolved", ties=26, contra=20),
-    "EX-C7": dict(k=0,  lo=0.0,    hi=0.0458, cls="Reversed",   ties=18, contra=62),
-    "EX-C8": dict(k=0,  lo=0.0,    hi=0.0458, cls="Reversed"),
+    "EX-C7": dict(k=0,  lo=0.0,    hi=0.0458, cls="Not preserved",   ties=18, contra=62),
+    "EX-C8": dict(k=0,  lo=0.0,    hi=0.0458, cls="Not preserved"),
 }
 
 
@@ -235,7 +234,7 @@ def cluster_bootstrap(df: pd.DataFrame, rng: np.random.Generator, b: int = B_BOO
         rates.append(rate)
     verdicts = np.array(verdicts)
     rates = np.array(rates)
-    prop = {v: float(np.mean(verdicts == v)) for v in ("Sustained", "Unresolved", "Reversed")}
+    prop = {v: float(np.mean(verdicts == v)) for v in ("Sustained", "Unresolved", "Not preserved")}
     med = float(np.median(rates))
     lo_r, hi_r = (float(x) for x in np.percentile(rates, [2.5, 97.5]))
     return kcl, prop, med, lo_r, hi_r
@@ -379,7 +378,7 @@ def main() -> None:
                     if rec.get("agg_k") == rec.get("agg_N") else "no per-cell data")
             cluster_rows.append(dict(record_id=rid, cluster_unit=rec["cluster_name"],
                                      num_clusters="", B="", sustained_prop="",
-                                     unresolved_prop="", reversed_prop="",
+                                     unresolved_prop="", not_preserved_prop="",
                                      median_preservation_rate="", lower_2p5="", upper_97p5="",
                                      cluster_status=f"not-available ({rec['missing_reason']})"))
             continue
@@ -395,7 +394,7 @@ def main() -> None:
                                  num_clusters=kcl, B=B_BOOT,
                                  sustained_prop=round(prop["Sustained"], 4),
                                  unresolved_prop=round(prop["Unresolved"], 4),
-                                 reversed_prop=round(prop["Reversed"], 4),
+                                 not_preserved_prop=round(prop["Not preserved"], 4),
                                  median_preservation_rate=round(med, 4),
                                  lower_2p5=round(lo_r, 4), upper_97p5=round(hi_r, 4),
                                  cluster_status=cstatus))
@@ -534,7 +533,7 @@ def main() -> None:
           ["record_id", "tau", "wilson_lower", "wilson_upper", "verdict", "changed_from_primary"])
     write("tier1_cluster_resampling.csv", cluster_rows,
           ["record_id", "cluster_unit", "num_clusters", "B", "sustained_prop", "unresolved_prop",
-           "reversed_prop", "median_preservation_rate", "lower_2p5", "upper_97p5", "cluster_status"])
+           "not_preserved_prop", "median_preservation_rate", "lower_2p5", "upper_97p5", "cluster_status"])
     write("tier1_leave_one_cluster_out.csv", loco_rows,
           ["record_id", "cluster_unit", "removed_cluster", "N", "preserved", "contradicted",
            "tied", "preservation_rate", "wilson_lower", "wilson_upper", "verdict",

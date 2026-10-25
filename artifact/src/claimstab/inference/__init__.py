@@ -12,7 +12,6 @@ from .policies import (
     wilson_interval,
     wilson_ci_proportion,
 )
-from .status_remap import remap_status
 
 __all__ = [
     "InferencePolicy",
@@ -27,5 +26,4 @@ __all__ = [
     "conservative_stability_decision",
     "ci_width",
     "wilson_ci_proportion",
-    "remap_status",
 ]

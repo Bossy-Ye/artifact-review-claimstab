@@ -29,7 +29,7 @@ class RelationType(str, Enum):
 
 
 class BoundaryVerdict(str, Enum):
-    """Relation-specific boundary/result labels outside scalar S/U/R."""
+    """Relation-specific boundary/result labels outside scalar S/U/NP."""
 
     CONCORDANT = "CONCORDANT"
     NON_CONCORDANT = "NON_CONCORDANT"

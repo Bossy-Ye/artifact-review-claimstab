@@ -54,10 +54,10 @@ N: 80
 k: 0
 direction_preservation_rate: 0.0
 wilson_ci: "[0.000, 0.046]"
-wilson_verdict: "Reversed within audited scope"
+wilson_verdict: "Not preserved within audited scope"
 bootstrap_or_dependence_check: "Cluster bootstrap agrees with Wilson classification (part of 47/47 agreement); see artifact/results/paper/output/figures/section5/cluster_bootstrap_47.csv"
 evidence_boundary: >-
-  The Reversed verdict attaches to this card: Qiskit-vs-Tket two-qubit gate count over
+  The Not preserved verdict attaches to this card: Qiskit-vs-Tket two-qubit gate count over
   4 connectivity-stress circuits x 4 Qiskit optimization levels x 5 transpiler seeds on a
   4-node line architecture (80 cells). It is a narrowed pairwise/connectivity-stress surface,
   a scoped local audit design rather than full source-study replication, and not a global statement

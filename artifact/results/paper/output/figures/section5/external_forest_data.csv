@@ -5,5 +5,5 @@ EX-C3,ext_2304_08814v2_claim5,compilation,P2,0.775,0.672132,0.852668,Unresolved,
 EX-C4,ext_2411_00518v2_claim3,optimization,P4,0.5625,0.453411,0.665861,Unresolved,80,45
 EX-C5,ext_2409_08844v2_claim4,compilation,P3,0.55,0.441195,0.654223,Unresolved,80,44
 EX-C6,ext_2202_14025v1_legacy_claim6,compilation,P1,0.425,0.322566,0.534307,Unresolved,80,34
-EX-C7,ext_2409_08844v2_claim3,compilation,P3,0.0,0.0,0.045818,Reversed,80,0
-EX-C8,ext_2409_08844v2_claim1,benchmark,P3,0.0,0.0,0.045818,Reversed,80,0
+EX-C7,ext_2409_08844v2_claim3,compilation,P3,0.0,0.0,0.045818,Not preserved,80,0
+EX-C8,ext_2409_08844v2_claim1,benchmark,P3,0.0,0.0,0.045818,Not preserved,80,0

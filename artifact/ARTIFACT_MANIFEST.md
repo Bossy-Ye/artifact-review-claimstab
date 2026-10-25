@@ -61,7 +61,7 @@ artifact-side normalized provenance; raw Google Scholar pages are not bundled. S
 [`field_study/corpus/search_protocol.md`](field_study/corpus/search_protocol.md) for
 the normalized query records, screened-paper list, and identifier conventions.
 
-`SD4` is a diagnostic current-baseline extension, not a Tier-1 S/U/R verdict (see its
+`SD4` is a diagnostic current-baseline extension, not a Tier-1 S/U/NP verdict (see its
 note in `rq2_audit_design_ledger.csv`). `SD6` is a source-rule aggregate summary: the
 artifact records its row-selection and convention boundary — the manuscript-facing 0.36
 value follows the source-rule row selection, while alternative formal ratios are

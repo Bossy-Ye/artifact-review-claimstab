@@ -14,8 +14,8 @@ EX-C6,80,34,20,26,0.425,0.322566,0.534307,Unresolved,False,baseline N=80
 EX-C6,160,69,40,51,0.43125,0.357011,0.508713,Unresolved,False,validated re-sampled seed expansion
 EX-C6,240,106,60,74,0.441667,0.38025,0.504921,Unresolved,False,validated re-sampled seed expansion
 EX-C6,320,144,82,94,0.45,0.396406,0.50478,Unresolved,False,validated re-sampled seed expansion
-EX-C7,80,0,62,18,0.0,0.0,0.045818,Reversed,False,baseline N=80
-EX-C7,160,0,124,36,0.0,0.0,0.023446,Reversed,False,validated re-sampled seed expansion
-EX-C7,240,0,184,56,0.0,0.0,0.015754,Reversed,False,validated re-sampled seed expansion
-EX-C7,320,0,243,77,0.0,0.0,0.011862,Reversed,False,validated re-sampled seed expansion
+EX-C7,80,0,62,18,0.0,0.0,0.045818,Not preserved,False,baseline N=80
+EX-C7,160,0,124,36,0.0,0.0,0.023446,Not preserved,False,validated re-sampled seed expansion
+EX-C7,240,0,184,56,0.0,0.0,0.015754,Not preserved,False,validated re-sampled seed expansion
+EX-C7,320,0,243,77,0.0,0.0,0.011862,Not preserved,False,validated re-sampled seed expansion
 EX-C8,,,,,,,,,,budget-unavailable: no validated larger trace (record not in expanded_seed_sensitivity.csv)

@@ -91,7 +91,7 @@ def test_external_audit_distribution() -> None:
     assert len(df) == 8
     assert counts.get("Sustained", 0) == 2
     assert counts.get("Unresolved", 0) == 4
-    assert counts.get("Reversed", 0) == 2
+    assert counts.get("Not preserved", 0) == 2
 
 
 def test_canonical_distribution() -> None:
@@ -100,7 +100,7 @@ def test_canonical_distribution() -> None:
     assert len(df) == 24
     assert counts.get("Sustained", 0) == 10
     assert counts.get("Unresolved", 0) == 14
-    assert counts.get("Reversed", 0) == 0
+    assert counts.get("Not preserved", 0) == 0
 
 
 def test_cluster_bootstrap_47_agreement() -> None:

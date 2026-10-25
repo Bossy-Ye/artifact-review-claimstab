@@ -17,9 +17,9 @@ EX-C5,0.99,0.441195,0.654223,Unresolved,False
 EX-C6,0.9,0.322566,0.534307,Unresolved,False
 EX-C6,0.95,0.322566,0.534307,Unresolved,False
 EX-C6,0.99,0.322566,0.534307,Unresolved,False
-EX-C7,0.9,0.0,0.045818,Reversed,False
-EX-C7,0.95,0.0,0.045818,Reversed,False
+EX-C7,0.9,0.0,0.045818,Not preserved,False
+EX-C7,0.95,0.0,0.045818,Not preserved,False
 EX-C7,0.99,0.0,0.045818,Unresolved,True
-EX-C8,0.9,0.0,0.045818,Reversed,False
-EX-C8,0.95,0.0,0.045818,Reversed,False
+EX-C8,0.9,0.0,0.045818,Not preserved,False
+EX-C8,0.95,0.0,0.045818,Not preserved,False
 EX-C8,0.99,0.0,0.045818,Unresolved,True

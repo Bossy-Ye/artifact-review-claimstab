@@ -1,4 +1,4 @@
-"""Wilson S/U/R rule — reference math + the bundled implementation agree.
+"""Wilson S/U/NP rule — reference math + the bundled implementation agree.
 
 Reused from the repo's tests/test_statistics.py, extended to also exercise the
 bundled `claimstab.statistics.wilson_ci`. No qiskit/pandas needed.
@@ -24,7 +24,7 @@ def classify(wilson_lower: float, wilson_upper: float, tau: float = 0.95) -> str
     if wilson_lower >= tau:
         return "Sustained"
     if wilson_upper <= 1 - tau:
-        return "Reversed"
+        return "Not preserved"
     return "Unresolved"
 
 
@@ -43,7 +43,7 @@ def test_wilson_interval_all_failures_n80() -> None:
 def test_classification_rule() -> None:
     assert classify(0.954, 1.0) == "Sustained"
     assert classify(0.323, 0.534) == "Unresolved"
-    assert classify(0.0, 0.046) == "Reversed"
+    assert classify(0.0, 0.046) == "Not preserved"
 
 
 def test_bundled_wilson_reproduces_exc3() -> None:
@@ -56,6 +56,6 @@ def test_bundled_wilson_reproduces_exc3() -> None:
     assert classify(r.lower, r.upper) == "Unresolved"
 
 
-def test_bundled_wilson_reproduces_exc7_reversed() -> None:
+def test_bundled_wilson_reproduces_exc7_not_preserved() -> None:
     r = wilson_ci(0, 80)
-    assert classify(r.lower, r.upper) == "Reversed"
+    assert classify(r.lower, r.upper) == "Not preserved"

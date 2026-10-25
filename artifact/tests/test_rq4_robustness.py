@@ -55,7 +55,7 @@ def test_exc7_tie_policy_bounded() -> None:
     main = next(r for r in tie if r["tie_policy"] == "main_ties_nonpreserving")
     excl = next(r for r in tie if r["tie_policy"] == "ties_excluded")
     half = next(r for r in tie if r["tie_policy"] == "ties_half_preserving")
-    assert main["verdict_projection"] == "Reversed" and float(main["preserved_effective"]) == 0.0
+    assert main["verdict_projection"] == "Not preserved" and float(main["preserved_effective"]) == 0.0
     assert float(excl["preserved_effective"]) == 0.0          # 0 actual preserved
     assert excl["changed_from_primary"] == "True" and half["changed_from_primary"] == "True"
 

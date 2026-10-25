@@ -38,7 +38,7 @@ def wilson(k,n,z=Z):
     p=k/n; den=1+z*z/n; c=(p+z*z/(2*n))/den
     h=(z/den)*sqrt(p*(1-p)/n+z*z/(4*n*n)); return (max(0.0,c-h),min(1.0,c+h))
 def classify(lo,hi):
-    return "Sustained" if lo>=TAU else ("Reversed" if hi<=1-TAU else "Unresolved")
+    return "Sustained" if lo>=TAU else ("Not preserved" if hi<=1-TAU else "Unresolved")
 def lab(a,b):
     return "preserved" if a<b else ("tied" if a==b else "contradicted")
 

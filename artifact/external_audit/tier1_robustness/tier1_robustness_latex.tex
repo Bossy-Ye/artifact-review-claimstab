@@ -10,7 +10,7 @@
 % ---------------------------------------------------------------------
 \begin{table}[t]
     \centering
-    \caption{Robustness of the eight exact Tier-1 S/U/R verdicts to choices that
+    \caption{Robustness of the eight exact Tier-1 S/U/NP verdicts to choices that
     are \emph{policy}, not \emph{evidence}. Primary verdict is the predeclared
     Wilson classifier at $\tau{=}0.95$ over the locked finite design.
     \textbf{Thr.}: behaviour across $\tau\in\{0.90,0.95,0.99\}$.
@@ -58,7 +58,7 @@ outcome is stable, but two \emph{labels} are policy-contingent at $N{=}80$. EX-C
 Unresolved is driven by between-circuit heterogeneity: with only four circuit
 clusters, $6.4\%$ of cluster resamples reach Sustained (resampled rate CI
 $[0.44,1.00]$), although no single-circuit deletion flips it, so it is
-bootstrap-sensitive but deletion-stable. EX-C7's Reversed holds under cluster
+bootstrap-sensitive but deletion-stable. EX-C7's Not preserved holds under cluster
 resampling and under seed expansion to $N{=}320$ (Wilson upper bound shrinking
 $0.046\!\to\!0.012$), but softens to Unresolved if ties are excluded ($0/62$) or
 half-counted ($9/80$); its substantive content---$0$ preserved cells under every tie
@@ -73,8 +73,8 @@ per-cell trace is materialized.
 % ---------------------------------------------------------------------
 % (3) Threats to validity paragraph
 % ---------------------------------------------------------------------
-% --- Threats: S/U/R are scoped audit-policy outcomes ---
-\paragraph{S/U/R verdicts are scoped audit-policy outcomes, not population estimates.}
+% --- Threats: S/U/NP are scoped audit-policy outcomes ---
+\paragraph{S/U/NP verdicts are scoped audit-policy outcomes, not population estimates.}
 Each verdict classifies the realized preservation rate $k/N$ of a \emph{locked, finite}
 set of audit cells; it answers ``does the asserted direction hold across \emph{this}
 enumerated design'' and must not be read as an estimate of a universal
@@ -84,7 +84,7 @@ Cells within a record share circuits, instances, optimization levels, and seeds 
 are therefore not independent; our cluster bootstrap and leave-one-cluster-out probe
 this dependence but \emph{cannot establish independence}, and EX-C3 shows a verdict
 can hinge on which clusters are sampled. The tie convention and the $\tau$ and $N$
-choices are policy parameters: EX-C7 is Reversed specifically under the predeclared
+choices are policy parameters: EX-C7 is Not preserved specifically under the predeclared
 ties-non-preserving, $\tau{\le}0.95$ policy, and the extreme verdicts are
 threshold-contingent at $\tau{=}0.99$. Finally, EX-C2 and EX-C4 are backed only by
 locked aggregates on this artifact branch, so their cell-level dependence and tie

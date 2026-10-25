@@ -151,10 +151,10 @@ Evidence:
 ### RQ2 — Materialized external audit (declared audit designs)
 
 - All 8 artifact-backed T1 claims audited under a per-claim **declared audit design** of $N=80$ cells.
-- Verdicts within audited scope: **2 Sustained / 4 Unresolved / 2 Reversed**.
+- Verdicts within audited scope: **2 Sustained / 4 Unresolved / 2 Not preserved**.
   - Sustained: EX-C1 (compilation runtime), EX-C2 (approximation ratio).
   - Unresolved: EX-C3, EX-C4, EX-C5, EX-C6.
-  - Reversed: EX-C7 (two-qubit gate count, $k=0$ of $80$, Wilson CI $[0.000, 0.046]$), EX-C8 (construction time, $k=0$ of $80$, Wilson CI $[0.000, 0.046]$).
+  - Not preserved: EX-C7 (two-qubit gate count, $k=0$ of $80$, Wilson CI $[0.000, 0.046]$), EX-C8 (construction time, $k=0$ of $80$, Wilson CI $[0.000, 0.046]$).
 
 **Scope and boundaries.** These are 8 Tier-1 exact / proxy-free directional audit
 records within the locked artifact scope: each is exact with respect to the locked
@@ -197,12 +197,12 @@ ladder on the C1–C24 dataset, and controlled diagnostic surfaces by audit-axis
 
 #### Synthetic decision-rule controls
 
-Mechanism checks on the Wilson S/U/R rule under known preservation profiles — not
+Mechanism checks on the Wilson S/U/NP rule under known preservation profiles — not
 corpus-derived RQ1/RQ2 evidence.
 
 - Grid: `s_true ∈ {0.50, 0.70, 0.85, 0.95, 0.99, 1.00}` × `N ∈ {10, 30, 100}` = 18 preservation profiles, 3000 trials.
 - Wilson 95% coverage: **94.97%**.
-- Reversed-detection control: **26 / 27** known-reversed cases detected (9 synthetic Reversed + 18 H$_2$ chemistry comparators).
+- Known-reversal control: **26 / 27** known-reversed cases detected (9 synthetic + 18 H$_2$ chemistry comparators).
 
 Evidence:
 
@@ -223,7 +223,7 @@ $\gamma = 0.8$ and $\beta = 0.4$. This dataset is RQ3 evidence, not a manuscript
 |---|---|---|---|---|
 | C1–C9 | Arithmetic, GHZ, QFT structural circuits | pytket vs Qiskit compiler-output comparison | two-qubit gate count; source-aligned structural compiler-output setting | Tests whether compiler-output directions remain supported under locked audit designs. |
 | C10–C24 | Max-2-SAT QAOA and MaxCut QAOA | layer-count comparison, $p{=}2$ vs $p{=}1$ | fixed QAOA angles $\gamma = 0.8$, $\beta = 0.4$ | Tests whether apparent QAOA layer-count advantages remain supported under locked audit designs. |
-| All C1–C24 | 8 benchmark-relevant base setups | 24 controlled comparisons | simpler protocols compared with the full locked audit | Single-run: 19/24 match, 5/24 oppose; seed-only: all 24 Unresolved, 14/24 agree with full audit; L1-only: 15 records, 10/15 disagree with full audit; full audit: 10 Sustained, 14 Unresolved, 0 Reversed. |
+| All C1–C24 | 8 benchmark-relevant base setups | 24 controlled comparisons | simpler protocols compared with the full locked audit | Single-run: 19/24 match, 5/24 oppose; seed-only: all 24 Unresolved, 14/24 agree with full audit; L1-only: 15 records, 10/15 disagree with full audit; full audit: 10 Sustained, 14 Unresolved, 0 Not preserved. |
 
 This is RQ3 mechanism evidence, not corpus-derived RQ1/RQ2 evidence, and it is not a
 manuscript figure.
@@ -233,7 +233,7 @@ The ladder compares progressively richer audit designs against the full audit:
 - **Single published-configuration run** (1 cell, no uncertainty): 19/24 match direction, 5/24 oppose.
 - **Seed-only audit:** all 24 Unresolved; agrees with the full audit on 14/24.
 - **Single-axis L1 matched-block audit:** available for 15 records; disagrees with the full audit on 10/15 (post-hoc matched-block diagnostic).
-- **Full audit:** **10 Sustained / 14 Unresolved / 0 Reversed** within audited scope; all 9 software-stack claims Sustained.
+- **Full audit:** **10 Sustained / 14 Unresolved / 0 Not preserved** within audited scope; all 9 software-stack claims Sustained.
 
 Evidence:
 
@@ -256,7 +256,7 @@ these are locked evidence cells, while the qiskit-heavy generators are not bundl
 - **L3-C1 / L3-C2 / L3-C3** (six-regime simulator-noise diagnostic on fixed-angle MaxCut QAOA; 45 ER random graphs; $N=270$): **3 U**.
 - **ALGO-C1 / ALGO-C2 / ALGO-C3** (optimized QAOA over 30 ER graphs; $N=900$): **3 U**.
 - **COMB-C1 / COMB-C2 / COMB-C3** (joint L1$\times$L2$\times$L3 stress on 20 ER graphs at $n{=}10$; $N=1440$): **3 U**.
-- Aggregate: **0 Sustained / 13 Unresolved / 2 Reversed within audited scope.**
+- Aggregate: **0 Sustained / 13 Unresolved / 2 Not preserved within audited scope.**
 - Cluster bootstrap on `instance_id`: **1000 / 1000 agreement per claim** across all 15 diagnostics.
 
 Evidence:
@@ -291,7 +291,7 @@ $\tau=0.99$. The specific sensitivity and evidence-boundary cases are recorded i
 [external_audit/tier1_robustness/](external_audit/tier1_robustness/).
 
 - **Threshold $\tau$.** Tier-1 labels are unchanged at $\tau \in \{0.90, 0.95\}$; at
-  $\tau=0.99$ the finite-$N$ extreme labels (EX-C1/EX-C2 Sustained, EX-C7/EX-C8 Reversed)
+  $\tau=0.99$ the finite-$N$ extreme labels (EX-C1/EX-C2 Sustained, EX-C7/EX-C8 Not preserved)
   soften to Unresolved. The canonical check shifts 10 of 24 borderline claims to
   Unresolved at $\tau=0.99$.
 - **Dependence-aware grouping.** The 47-claim union (24 canonical $+$ 8 external $+$
@@ -303,12 +303,12 @@ $\tau=0.99$. The specific sensitivity and evidence-boundary cases are recorded i
   label). **EX-C2 and EX-C4 are unavailable for this check** because their per-cell
   traces are not materialized.
 - **Tie handling.** **EX-C7 has 0 preserved cells (0/80 primary; 62 contradictions,
-  18 ties) and remains contradicted-dominated**, but its categorical *Reversed* label is
+  18 ties) and remains contradicted-dominated**, but its categorical *Not preserved* label is
   policy-bounded: it softens to Unresolved if ties are excluded (0/62) or counted as
   half-preserving (9/80). Records without per-cell traces (EX-C2, EX-C4) are unavailable
   for this check.
 - **Budget / seed-count expansion.** All replayable Tier-1 compiler records keep their
-  primary labels through $N=320$; **EX-C7 remains 0/320 preserved** (Reversed). The
+  primary labels through $N=320$; **EX-C7 remains 0/320 preserved** (Not preserved). The
   canonical audit-budget sensitivity over $N \in \{40, 80, 120, 160, 240, 320\}$ yields
   $10 / 1 / 1 / 0 / 0 / 0$ reclassifications.
 - **Practical-effect $\epsilon$ and ALGO bookkeeping.** No classification changes among
@@ -332,7 +332,7 @@ The RQ4 alignment is also verified by
 
 This artifact includes a qiskit-free verdict-core subset of CLAIMSTAB-QC under
 [src/claimstab/](src/claimstab/). The bundled tests in [tests/](tests/) exercise the
-Wilson S/U/R rule, relation checkers, funnel-count consistency, and manifest-loading
+Wilson S/U/NP rule, relation checkers, funnel-count consistency, and manifest-loading
 logic used to verify the paper's reported results. The artifact ships locked outputs
 and lightweight verification scripts; the qiskit-heavy execution adapters and the
 long-run simulation pipeline are intentionally not bundled.
@@ -349,7 +349,7 @@ long-run simulation pipeline are intentionally not bundled.
 
 The artifact uses the manuscript's verdict and design vocabulary throughout.
 
-- **Sustained / Unresolved / Reversed** — the three-state verdict against threshold $\tau$.
+- **Sustained / Unresolved / Not preserved** — the three-state verdict against threshold $\tau$.
 - **Declared audit design** — the per-claim enumerated or balanced-sampled design over the source-supported audit axes; $N$ denotes the size of this design and is per-claim.
 - **Materialized external audit surface** — the 8 T1 artifact-backed claims that pass both screens in RQ1.
 - **Controlled audit-space validation** — the RQ3 five-diagnostic suite that exercises the framework over L1 / L2 / L3 / ALGO / combined surfaces with the remaining axes pinned.

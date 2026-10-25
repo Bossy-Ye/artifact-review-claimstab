@@ -65,7 +65,7 @@ support this distinction at the claim level.
 
 ## Scope of This Note
 
-- This note is interpretive. It does not assign S/U/R verdicts to T3
+- This note is interpretive. It does not assign S/U/NP verdicts to T3
   claims, does not introduce a new evidence stream, and does not
   modify Section V's classification outcomes.
 - No new counts are claimed beyond those already verified in

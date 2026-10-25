@@ -8,7 +8,7 @@ from enum import Enum
 class ClaimStatus(str, Enum):
     SUSTAINED = "Sustained"
     UNRESOLVED = "Unresolved"
-    REVERSED = "Reversed within audited scope"
+    NOT_PRESERVED = "Not preserved within audited scope"
 
 
 def classify_direction_preservation(
@@ -24,5 +24,5 @@ def classify_direction_preservation(
     if wilson_lower >= tau:
         return ClaimStatus.SUSTAINED
     if wilson_upper <= 1.0 - tau:
-        return ClaimStatus.REVERSED
+        return ClaimStatus.NOT_PRESERVED
     return ClaimStatus.UNRESOLVED

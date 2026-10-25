@@ -55,7 +55,7 @@ EXPECTED_FILES: list[ExpectedFile] = [
     ExpectedFile("coding validity", "artifact/data/corpus/coding_validity/confusion_matrices.csv", True, "120-item confusion matrices"),
     ExpectedFile("coding validity", "artifact/data/corpus/coding_validity/adjudication_records.csv", True, "120-item disagreement adjudication records"),
     ExpectedFile("coding validity", "artifact/data/corpus/coding_validity/recode_labels_120.csv", True, "120-item recode labels"),
-    ExpectedFile("library bundle", "artifact/src/claimstab/inference/policies.py", True, "Wilson interval + S/U/R policy (verdict-core)"),
+    ExpectedFile("library bundle", "artifact/src/claimstab/inference/policies.py", True, "Wilson interval + S/U/NP policy (verdict-core)"),
     ExpectedFile("library bundle", "artifact/src/claimstab/statistics/wilson.py", True, "wilson_ci (verdict-core)"),
     ExpectedFile("library bundle", "artifact/src/claimstab/audit/relation_checkers.py", True, "relation checkers (verdict-core)"),
     ExpectedFile("library bundle", "artifact/src/README.md", True, "verdict-core bundle guide"),

@@ -210,7 +210,7 @@ not in numeric order.
 - `per_claim_perturbations.csv` row `ext_2409_08844v2_claim1`.
 - `artifact/external_audit/tier1_robustness/per_cell_inputs/ext_2409_08844v2_claim1_measurements.csv` (per-cell timing pairs and `outcome` values; 80 rows).
 - `artifact/claim_cards/EX-C8.yaml` (claim text, narrowing rationale, host-timing boundary, and locked result pointer).
-- `external_forest_data.csv` row EX-C8: $\hat{s}=0.000$, CI [0.000, 0.0458], Reversed, N=80, k=0.
+- `external_forest_data.csv` row EX-C8: $\hat{s}=0.000$, CI [0.000, 0.0458], Not preserved, N=80, k=0.
 - Manuscript: Section V-C "Classification outcomes" paragraph; Table IV row EX-C8.
 
 ### 9. EVIDENCE-GAP
@@ -343,8 +343,8 @@ not in numeric order.
 ### 8. Evidence pointers
 - `per_claim_perturbations.csv` row `ext_2409_08844v2_claim3`.
 - `artifact/claim_cards/EX-C7.yaml` (narrowing rationale and admissible variation candidates).
-- `artifact/results/paper/output/figures/section5/external_forest_data.csv` row EX-C7 (Reversed aggregate).
-- `external_forest_data.csv` row EX-C7: $\hat{s}=0.000$, CI [0.000, 0.0458], Reversed, N=80, k=0.
+- `artifact/results/paper/output/figures/section5/external_forest_data.csv` row EX-C7 (Not preserved aggregate).
+- `external_forest_data.csv` row EX-C7: $\hat{s}=0.000$, CI [0.000, 0.0458], Not preserved, N=80, k=0.
 - Manuscript: Section V-C worked case study, Table V representative cells, Table IV row EX-C7.
 
 ### 9. Admissibility verdict

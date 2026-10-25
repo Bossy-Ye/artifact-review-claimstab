@@ -31,10 +31,10 @@ def _scalar(k: int, n: int) -> RelationCheckOutput:
     )
 
 
-def test_scalar_sustained_unresolved_reversed():
+def test_scalar_sustained_unresolved_not_preserved():
     assert _scalar(80, 80).outcome == "Sustained"
     assert _scalar(44, 80).outcome == "Unresolved"
-    assert _scalar(0, 80).outcome.startswith("Reversed")
+    assert _scalar(0, 80).outcome.startswith("Not preserved")
 
 
 def test_scalar_zero_cells_is_boundary():
@@ -51,7 +51,7 @@ def test_scalar_string_boolean_values_are_parsed_strictly():
             params={"outcomes": ["False"] * 80},
         )
     )
-    assert out.outcome.startswith("Reversed")
+    assert out.outcome.startswith("Not preserved")
     assert out.quantitative_statistic["k"] == 0
 
 
@@ -74,13 +74,13 @@ def test_scalar_invalid_counts_are_rejected(k, n):
 
 
 def test_exc_distribution_is_2_4_2():
-    counts = {"Sustained": 0, "Unresolved": 0, "Reversed": 0}
+    counts = {"Sustained": 0, "Unresolved": 0, "Not preserved": 0}
     with open(FOREST) as fh:
         for r in csv.DictReader(fh):
             out = _scalar(int(r["k_preserved"]), int(r["n_cells"]))
-            key = "Reversed" if out.outcome.startswith("Reversed") else out.outcome
+            key = "Not preserved" if out.outcome.startswith("Not preserved") else out.outcome
             counts[key] += 1
-    assert counts == {"Sustained": 2, "Unresolved": 4, "Reversed": 2}
+    assert counts == {"Sustained": 2, "Unresolved": 4, "Not preserved": 2}
 
 
 def test_aggregate_toy_geomean_preserved():

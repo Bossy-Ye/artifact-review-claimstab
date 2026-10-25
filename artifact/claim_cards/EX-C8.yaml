@@ -54,10 +54,10 @@ N: 80
 k: 0
 direction_preservation_rate: 0.0
 wilson_ci: "[0.000, 0.046]"
-wilson_verdict: "Reversed within audited scope"
+wilson_verdict: "Not preserved within audited scope"
 bootstrap_or_dependence_check: "Cluster bootstrap agrees with Wilson classification (part of 47/47 agreement); see artifact/results/paper/output/figures/section5/cluster_bootstrap_47.csv"
 evidence_boundary: >-
-  Reversed over this card: Cirq-vs-Qiskit circuit-construction time on Hamiltonian-simulation-like
+  Not preserved over this card: Cirq-vs-Qiskit circuit-construction time on Hamiltonian-simulation-like
   circuits, 4 sizes x 20 timing repetitions (80 cells), on a local constructor-timing surface.
   Construction time is host-sensitive; the verdict holds on the locked host-timing surface, not the
   exact Benchpress DTC100 test or a host-independent guarantee. This is a scoped local audit design,

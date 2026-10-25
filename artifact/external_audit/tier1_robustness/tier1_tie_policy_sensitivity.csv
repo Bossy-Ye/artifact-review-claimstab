@@ -15,9 +15,9 @@ EX-C5,ties_half_preserving,80,51.5,0.64375,Unresolved,False,SENSITIVITY PROJECTI
 EX-C6,main_ties_nonpreserving,80,34.0,0.425,Unresolved,False,locked primary rule
 EX-C6,ties_excluded,54,34.0,0.62963,Unresolved,False,tied cells removed from denominator
 EX-C6,ties_half_preserving,80,47.0,0.5875,Unresolved,False,SENSITIVITY PROJECTION: non-integer successes; not a standard binomial model
-EX-C7,main_ties_nonpreserving,80,0.0,0.0,Reversed,False,locked primary rule
+EX-C7,main_ties_nonpreserving,80,0.0,0.0,Not preserved,False,locked primary rule
 EX-C7,ties_excluded,62,0.0,0.0,Unresolved,True,tied cells removed from denominator
 EX-C7,ties_half_preserving,80,9.0,0.1125,Unresolved,True,SENSITIVITY PROJECTION: non-integer successes; not a standard binomial model
-EX-C8,main_ties_nonpreserving,80,0.0,0.0,Reversed,False,locked primary rule
-EX-C8,ties_excluded,80,0.0,0.0,Reversed,False,tied cells removed from denominator
-EX-C8,ties_half_preserving,80,0.0,0.0,Reversed,False,SENSITIVITY PROJECTION: non-integer successes; not a standard binomial model
+EX-C8,main_ties_nonpreserving,80,0.0,0.0,Not preserved,False,locked primary rule
+EX-C8,ties_excluded,80,0.0,0.0,Not preserved,False,tied cells removed from denominator
+EX-C8,ties_half_preserving,80,0.0,0.0,Not preserved,False,SENSITIVITY PROJECTION: non-integer successes; not a standard binomial model

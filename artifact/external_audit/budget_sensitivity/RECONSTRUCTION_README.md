@@ -68,7 +68,7 @@ the **actually re-sampled** `k/N` from new seeds, so `s_hat` can move.
 | EX-C3 | 62/80 (ŝ=0.775) | 124/160 (0.775) | 184/240 (0.767) | 243/320 (0.759) | Unresolved throughout |
 | EX-C5 | 44/80 (0.550) | 91/160 (0.569) | 136/240 (0.567) | 180/320 (0.563) | Unresolved throughout |
 | EX-C6 | 34/80 (0.425) | 69/160 (0.431) | 106/240 (0.442) | 144/320 (0.450) | Unresolved throughout |
-| EX-C7 | 0/80 (0.000) | 0/160 (0.000) | 0/240 (0.000) | 0/320 (0.000) | Reversed throughout |
+| EX-C7 | 0/80 (0.000) | 0/160 (0.000) | 0/240 (0.000) | 0/320 (0.000) | Not preserved throughout |
 
 **0/4 records change verdict** at any expanded budget. `s_hat` stays within a narrow
 band of its N=80 value for the three Unresolved records, and EX-C7 preserves the
@@ -89,7 +89,7 @@ cells remain entirely ties (0 contradictions) at every budget.
   adds N>80 evidence and does not alter the protected N=80 verdicts.
 - Protected N=80 values are unchanged: EX-C3 62/80, EX-C5 44/80, EX-C6 34/80,
   EX-C7 0/80 (62 contradictions, 18 ties); verdicts Unresolved / Unresolved /
-  Unresolved / Reversed.
+  Unresolved / Not preserved.
 
 ## Files
 

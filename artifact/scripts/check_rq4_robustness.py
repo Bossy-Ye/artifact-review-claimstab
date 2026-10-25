@@ -83,19 +83,19 @@ def main(argv: list[str] | None = None) -> int:
     check("not-available" in clu["EX-C4"]["cluster_status"].lower(),
           "EX-C4 dependence check unavailable (per-cell trace not materialized)")
 
-    # ---- 4. Tie handling: EX-C7 0 preserved all policies; Reversed policy-bounded ----
+    # ---- 4. Tie handling: EX-C7 0 preserved all policies; Not preserved policy-bounded ----
     tie = [r for r in rows(T1 / "tier1_tie_policy_sensitivity.csv") if r["record_id"] == "EX-C7"]
     main = next(r for r in tie if r["tie_policy"] == "main_ties_nonpreserving")
     excl = next(r for r in tie if r["tie_policy"] == "ties_excluded")
     half = next(r for r in tie if r["tie_policy"] == "ties_half_preserving")
-    check(main["verdict_projection"] == "Reversed" and float(main["preserved_effective"]) == 0.0,
-          "EX-C7 main tie policy: Reversed, 0 preserved")
+    check(main["verdict_projection"] == "Not preserved" and float(main["preserved_effective"]) == 0.0,
+          "EX-C7 main tie policy: Not preserved, 0 preserved")
     check(float(main["preserved_effective"]) == 0.0 and float(excl["preserved_effective"]) == 0.0,
           "EX-C7 has 0 actual preserved cells under main and ties-excluded (contradicted-dominated)")
     check(float(half["preserved_effective"]) == 9.0,
           "EX-C7 ties-half-preserving is a projection (18 ties x 0.5 = 9 effective, not actual preserved)")
     check(excl["changed_from_primary"] == "True" and half["changed_from_primary"] == "True",
-          "EX-C7 categorical Reversed label is policy-bounded (softens under alt. tie handling)")
+          "EX-C7 categorical Not preserved label is policy-bounded (softens under alt. tie handling)")
 
     # ---- 5. Threshold tau: Tier-1 finite-N extreme labels soften at 0.99 only ----
     thr = rows(T1 / "tier1_threshold_sensitivity.csv")

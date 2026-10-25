@@ -115,9 +115,9 @@ summary is in
 
 | Claim | $k/N$ | $\hat{s}$ | Wilson 95% CI | Class. | Bootstrap |
 |---|---|---:|---|---|---|
-| **L1Q-C1** (two-qubit gate count, A=opt3/sabre < B=opt0/trivial) | 0/1200 | 0.000 | [0.000, 0.003] | **Reversed** (100% ties) | 1000/1000 |
+| **L1Q-C1** (two-qubit gate count, A=opt3/sabre < B=opt0/trivial) | 0/1200 | 0.000 | [0.000, 0.003] | **Not preserved** (100% ties) | 1000/1000 |
 | **L1Q-C2** (depth, A < B) | 400/1200 | 0.333 | [0.307, 0.360] | Unresolved (33% ties) | 1000/1000 |
-| **L1Q-C3** (two-qubit depth, A < B) | 0/1200 | 0.000 | [0.000, 0.003] | **Reversed** (100% ties) | 1000/1000 |
+| **L1Q-C3** (two-qubit depth, A < B) | 0/1200 | 0.000 | [0.000, 0.003] | **Not preserved** (100% ties) | 1000/1000 |
 | **L2-C1** (p=2 > p=1, δ=0.00) | 1074/1800 | 0.597 | [0.574, 0.619] | Unresolved | 1000/1000 |
 | **L2-C2** (p=2 > p=1, δ=0.01) | 1057/1800 | 0.587 | [0.564, 0.610] | Unresolved | 1000/1000 |
 | **L2-C3** (p=2 > p=1, δ=0.05) | 941/1800 | 0.523 | [0.500, 0.546] | Unresolved | 1000/1000 |
@@ -150,7 +150,7 @@ expanded six-regime L3 claims.
   on every cell for two-qubit gate count and two-qubit depth (100%
   tie rate) — both regimes produce the same structural 2q counts on
   these linear-arch-friendly circuits. Total depth shows a 33/33/33
-  split. The L1Q-C1 and L1Q-C3 Reversed verdicts are tie-driven;
+  split. The L1Q-C1 and L1Q-C3 Not preserved verdicts are tie-driven;
   the evidence supports structural neutrality on this pool.
 - **L2 sampling**: fixed-angle QAOA $p{=}2$ beats $p{=}1$ in about
   60% of cells across the 45-graph pool at low δ; the rate falls to

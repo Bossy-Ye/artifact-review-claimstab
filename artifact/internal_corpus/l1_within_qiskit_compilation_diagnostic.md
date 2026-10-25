@@ -48,9 +48,9 @@ transpiler seed, the same coupling map, and the same basis gates.
 
 | Claim | $k/N$ | $\hat{s}$ | Wilson 95% CI | Class. | Cluster bootstrap |
 |---|---|---:|---|---|---|
-| L1Q-C1 | 0/1200 | 0.000 | [0.000, 0.003] | **Reversed** | 1000/1000 |
+| L1Q-C1 | 0/1200 | 0.000 | [0.000, 0.003] | **Not preserved** | 1000/1000 |
 | L1Q-C2 | 400/1200 | 0.333 | [0.307, 0.360] | **Unresolved** | 1000/1000 |
-| L1Q-C3 | 0/1200 | 0.000 | [0.000, 0.003] | **Reversed** | 1000/1000 |
+| L1Q-C3 | 0/1200 | 0.000 | [0.000, 0.003] | **Not preserved** | 1000/1000 |
 
 ### Tie analysis
 
@@ -62,7 +62,7 @@ transpiler seed, the same coupling map, and the same basis gates.
 
 ## Interpretation
 
-- **L1Q-C1 (two-qubit count)** and **L1Q-C3 (two-qubit depth)**: Baseline A and Baseline B produce **identical** structural 2q-count / 2q-depth values on every single cell — a 100% tie rate. The high-opt regime (opt=3, sabre) and the low-opt regime (opt=0, trivial) yield the same 2q structure on this instance pool, because GHZ-style linear-CX entanglement and the hardware-efficient circuits used here are already 2q-minimal under either coupling topology and either basis. The Reversed verdict is driven entirely by ties + the strict-inequality direction-preservation rule, not by Baseline B beating Baseline A. Evidence-supported interpretation: **"on this instance pool, Qiskit's L1 regime does not change the structural 2q-count or 2q-depth"**.
+- **L1Q-C1 (two-qubit count)** and **L1Q-C3 (two-qubit depth)**: Baseline A and Baseline B produce **identical** structural 2q-count / 2q-depth values on every single cell — a 100% tie rate. The high-opt regime (opt=3, sabre) and the low-opt regime (opt=0, trivial) yield the same 2q structure on this instance pool, because GHZ-style linear-CX entanglement and the hardware-efficient circuits used here are already 2q-minimal under either coupling topology and either basis. The Not preserved verdict is driven entirely by ties + the strict-inequality direction-preservation rule, not by Baseline B beating Baseline A. Evidence-supported interpretation: **"on this instance pool, Qiskit's L1 regime does not change the structural 2q-count or 2q-depth"**.
 - **L1Q-C2 (total depth)**: a clean three-way split — Baseline A wins 33.3%, ties 33.3%, loses 33.3%. The Wilson CI [0.307, 0.360] sits below $\tau = 0.95$ and above $1 - \tau = 0.05$, yielding Unresolved within audited scope. The high-opt regime does not consistently produce shorter total circuit depth on this pool: opt=3 may reorder 1q gates and add 1q decompositions that lengthen the depth on some instances.
 
 The verdicts are scope-relative to the chosen instance pool and the linear / ring topology targets; a different pool (e.g., with non-linear connectivity needs) would likely show non-trivial 2q-count differences between the L1 regimes.
@@ -93,4 +93,4 @@ summary rows. The original qiskit-heavy generator is not bundled.
 1. **Tie-dominated regime on 2q metrics**. For 2q-count and 2q-depth, the chosen instance pool produces 100% ties; the diagnostic does not distinguish the two L1 regimes on those metrics. A pool with non-linear connectivity requirements (e.g., random ER graphs, all-to-all-coupled QAOA) would expose L1-regime differences more directly.
 2. **Two L1 regimes only**. The diagnostic compares the extreme cases (opt=3+sabre vs opt=0+trivial); the combined-layer COMB-C1..C3 diagnostic covers additional joint L1 settings.
 3. **Instance pool excludes QFT** to keep the controlled structural pool within the simulator budget.
-4. **Scope-relative verdicts**. Verdicts are reported as Reversed within audited scope; they are not generalizations about Qiskit's L1 behavior outside the audited pool / topologies / basis regimes.
+4. **Scope-relative verdicts**. Verdicts are reported as Not preserved within audited scope; they are not generalizations about Qiskit's L1 behavior outside the audited pool / topologies / basis regimes.
