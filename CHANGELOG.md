@@ -17,4 +17,4 @@ Review snapshot: commit `d68fa5e`. No new experiments; counts unchanged.
 - Added `check_admissibility_sensitivity.py` (RQ1, 79 planning records).
 - Removed unused `inference/status_remap.py`.
 - De-anonymized README and manifest.
-- EX-C5, EX-C7, EX-C8 cards: venue note cites the published Benchpress version.
+- Claim-card venue notes match the paper's bibliography (Benchpress, QCE 2025, JSS 2025).

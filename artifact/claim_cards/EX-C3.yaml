@@ -2,7 +2,7 @@ claim_id: EX-C3
 domain: compilation
 source_identifier: "arXiv:2304.08814, claim ext_2304_08814v2_claim5"
 source_title: "A Comparison of Quantum Compilers using a DAG-based or phase polynomial-based Intermediate Representation"
-source_venue: "arXiv 2023 (peer-reviewed status not yet verified)"
+source_venue: "Journal of Systems and Software 221, 112224 (2025), doi:10.1016/j.jss.2024.112224"
 source_artifact: "https://github.com/Aerylia/pauliopt/tree/paper/reverse-traversal"
 source_sentence_or_claim_summary: >-
   Verbatim: "Qiskit and TKET have a similar runtime, where TKET is slightly slower with much

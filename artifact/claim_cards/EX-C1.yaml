@@ -2,7 +2,7 @@ claim_id: EX-C1
 domain: compilation
 source_identifier: "arXiv:2202.14025 (Arline Benchmarks), claim ext_2202_14025v1_legacy_claim12"
 source_title: "Arline Benchmarks: Automated Benchmarking Platform for Quantum Compilers"
-source_venue: "arXiv 2022 (arxiv_only; no peer-reviewed version found, see docs/related_work_matrix.csv)"
+source_venue: "arXiv 2022 (no peer-reviewed version found)"
 source_artifact: "https://github.com/ArlineQ/arline_benchmarks"
 source_sentence_or_claim_summary: >-
   Verbatim: "We found that Pytket with the backend implemented in C++ showed the best

@@ -2,7 +2,7 @@ claim_id: EX-C4
 domain: optimization
 source_identifier: "arXiv:2411.00518 (v2), claim ext_2411_00518v2_claim3"
 source_title: "Quantum tree generator improves QAOA state-of-the-art for the knapsack problem"
-source_venue: "arXiv 2024/2025 (peer-reviewed status not verified)"
+source_venue: "IEEE QCE 2025 (accepted version: arXiv:2411.00518v2)"
 source_artifact: "artifact/field_study/claims/extracted_claims_457.csv (claim ext_2411_00518v2_claim3)"
 source_sentence_or_claim_summary: >-
   Verbatim: "It should be noted, however, that it achieves significantly better probability values
