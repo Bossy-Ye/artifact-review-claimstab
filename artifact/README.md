@@ -68,8 +68,8 @@ Source text → claim card → audited scope → 80 matched cells → outcome.
 
 ## Terms
 
-- **S/U/NP**: Sustained if the Wilson lower bound ≥ τ; Not preserved if the upper bound ≤ 1 − τ; Unresolved otherwise (τ = 0.95). Not preserved does not assert the opposite order. Review-version files may say `Reversed`; the rule and counts are the same.
-- **Tiers**: Tier 1 is proxy-free scoped, from matched cells with no substituted baseline, metric definition, setting, or rule. Tier 2 covers source-materialized, source-rule, extension, and sensitivity outputs. Tier 3 means nothing is lockable, so there is no verdict.
+- **S/U/NP**: Sustained if the Wilson lower bound ≥ τ; Not preserved if the upper bound ≤ 1 − τ; Unresolved otherwise (τ = 0.95). Ties alone can reach Not preserved; tie and contradiction counts are reported per record. Review-version files may say `Reversed`; the rule and counts are the same.
+- **Tiers**: Tier 1 is proxy-free scoped: matched cells with source-supported baselines, metric, settings, and rule. Tier 2 covers source-materialized, source-rule, extension, and sensitivity outputs. Tier 3: the design, evidence object, or outcome rule cannot be locked; no verdict.
 - In CSVs and code, `exact` means proxy-free scoped.
 - Review-version baseline labels (`A vs B` … `A vs I`) map to tools via [source_mapping_anonymized.csv](external_audit/mapping/source_mapping_anonymized.csv).
 - Verdict core: [src/claimstab/](src/claimstab/), pure Python.

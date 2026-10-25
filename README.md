@@ -37,14 +37,14 @@ The checks verify the shipped evidence. They do not rerun the quantum experiment
   - the qiskit-heavy generators;
   - the SD/BD files marked `[not bundled]` in `artifact/dry_run_visibility/evidence_inventory.csv`.
 - **Not reconstructable:** the search-to-250 step, and the steps from the 119 papers to the 457 extraction records.
-- **Circuits:** the Tier-1 compiler audits (EX-C3, EX-C5, EX-C7) use auditor-constructed circuits, not the sources' suites.
+- **Circuits:** the Tier-1 compiler audits (EX-C3, EX-C5, EX-C7) use auditor-constructed circuits.
 
 ## Labels
 
 `Not preserved`: Wilson upper bound ≤ 1 − τ. It was `Reversed` in the review
-version; same rule, same counts. It does not assert the opposite ordering; ties and
-contradictions are reported per record. `reporting_status` in
-`artifact/results/data/synthetic/calibration_results.csv` is a legacy field, not this
-rule; coverage uses `ci_contains_s_true`.
+version; same rule, same counts. Ties alone can reach it; tie and contradiction
+counts are reported per record. `reporting_status` in
+`artifact/results/data/synthetic/calibration_results.csv` is a legacy field; coverage
+uses `ci_contains_s_true`.
 
 Changes since review: [CHANGELOG.md](CHANGELOG.md). License: Apache-2.0.

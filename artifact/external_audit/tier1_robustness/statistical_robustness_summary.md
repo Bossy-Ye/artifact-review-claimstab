@@ -95,7 +95,7 @@ whose dependence structure materially moves the verdict — see Q1.)
 
 **6. EX-C8 contrast.** EX-C8 is the tie-free Not preserved record: 0 preserved, **0 ties**,
 80 contradictions. It is Not preserved under the main and (identical) tie-excluded/half
-policies and under cluster resampling; it is threshold-sensitive (R→U at 0.99) and
+policies and under cluster resampling; it is threshold-sensitive (NP→U at 0.99) and
 budget-unavailable. The EX-C7 vs EX-C8 contrast shows tie-policy sensitivity is
 specifically a *tie-mass* phenomenon, not a generic property of Not preserved verdicts.
 
