@@ -1,0 +1,13 @@
+{
+  "title": "CLAIMSTAB-QC: Audit Evidence Package",
+  "upload_type": "software",
+  "description": "Artifact for \"When 'A Beats B' Needs Evidence: CLAIMSTAB-QC for Auditing Comparative Claims in Quantum Software\" (ICSE 2027). Locked audit evidence and read-only checks.",
+  "creators": [
+    {"name": "Ye, Boshuai", "affiliation": "University of Oulu"},
+    {"name": "Liang, Peng", "affiliation": "Wuhan University"},
+    {"name": "Tavassoli Sabzevari, Maryam", "affiliation": "University of Oulu"},
+    {"name": "Khan, Arif Ali", "affiliation": "University of Oulu"}
+  ],
+  "license": "apache-2.0",
+  "keywords": ["quantum software engineering", "empirical comparison", "artifact"]
+}

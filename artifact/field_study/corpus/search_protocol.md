@@ -29,5 +29,9 @@ The fixed RQ1 evidence chain is:
 - 455 final accepted claims after correction in [../../corrected_headline_counts.csv](../../corrected_headline_counts.csv) and [../../source_grounded_claim_adjudication.csv](../../source_grounded_claim_adjudication.csv);
 - the six-row Table III disposition summary in [../rq1_materialization_barrier_taxonomy.csv](../rq1_materialization_barrier_taxonomy.csv), with all 79 supporting records in `../rq1_materialization_barrier_records_79.csv`.
 
+Not reconstructable from the artifact: the search-to-250 step, and the steps from the
+119 papers to the 457 extraction records (no row-level 630/628 candidate sets, no
+628 → 457 deduplication worksheet, no per-paper worksheets).
+
 See also [inclusion_exclusion_criteria.md](inclusion_exclusion_criteria.md) for the
 screening protocol, exclusion taxonomy, and paper-level funnel.

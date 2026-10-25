@@ -30,6 +30,7 @@ class ExpectedFile:
 EXPECTED_FILES: list[ExpectedFile] = [
     ExpectedFile("root", "README.md", True, "artifact entry point"),
     ExpectedFile("root", "LICENSE", True, "artifact license"),
+    ExpectedFile("root", ".zenodo.json", True, "archive metadata (authors, license)"),
     ExpectedFile("environment", "requirements.txt", True, "compatible reviewer dependency ranges"),
     ExpectedFile("environment", "requirements-lock.txt", True, "tested Python 3.12 reviewer environment"),
     ExpectedFile("artifact docs", "artifact/ARTIFACT_MANIFEST.md", True, "top-level artifact map"),
@@ -118,8 +119,8 @@ EXPECTED_FILES: list[ExpectedFile] = [
     ExpectedFile("figures/tables", "paper/output/figures/section5/two_tier_barrier.pdf", True, "Figure: two-tier barrier"),
     ExpectedFile("figures/tables", "paper/output/figures/section5/field_protocol_summary.csv", True, "extraction funnel (Fig. 2) source data"),
     ExpectedFile("figures/tables", "paper/output/figures/section5/field_protocol_summary.tex", True, "extraction funnel LaTeX (review version)"),
-    ExpectedFile("figures/tables", "paper/output/figures/section5/per_claim_external_audit.csv", True, "Table IV source data"),
-    ExpectedFile("figures/tables", "paper/output/figures/section5/per_claim_external_audit.tex", True, "Table IV LaTeX"),
+    ExpectedFile("figures/tables", "paper/output/figures/section5/per_claim_external_audit.csv", True, "Tier-1 summary, review-version labels"),
+    ExpectedFile("figures/tables", "paper/output/figures/section5/per_claim_external_audit.tex", True, "Tier-1 summary LaTeX, review-version labels"),
     ExpectedFile("figures/tables", "paper/output/figures/section5/materialization_funnel.csv", True, "materialization funnel source data"),
     ExpectedFile("figures/tables", "paper/output/figures/section5/materialization_funnel.tex", True, "materialization funnel LaTeX"),
     ExpectedFile("figures/tables", "paper/output/figures/section5/practical_stability_results.tex", True, "practical stability LaTeX"),
@@ -131,6 +132,7 @@ EXPECTED_FILES: list[ExpectedFile] = [
     ExpectedFile("scripts", "artifact/scripts/check_markdown_links.py", True, "Markdown link checker"),
     ExpectedFile("scripts", "artifact/scripts/check_rq4_robustness.py", True, "RQ4 robustness alignment checker"),
     ExpectedFile("scripts", "artifact/scripts/check_admissibility_sensitivity.py", True, "RQ1 admissibility sensitivity"),
+    ExpectedFile("scripts", "artifact/scripts/worked_example_exc7.py", True, "EX-C7 worked example (paper Figs. 4-5)"),
     ExpectedFile("scripts", "artifact/data/corpus/coding_validity/recompute_agreement.py", True, "coding-validity agreement recompute"),
     ExpectedFile("scripts", "artifact/external_audit/tier1_robustness/tier1_robustness_analysis.py", True, "Tier-1 robustness analysis (re-runnable)"),
 ]

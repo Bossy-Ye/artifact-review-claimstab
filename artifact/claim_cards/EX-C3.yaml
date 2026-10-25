@@ -11,7 +11,7 @@ source_sentence_or_claim_summary: >-
 source_context: "Page-24 DAG-based compiler comparison stating TKET has much better CNOT counts than Qiskit."
 P:
   family: DAG-based quantum compilation
-  instance_distribution: deterministic connectivity-stress circuits (linear_3_remote_cx, linear_4_bidirectional_mix, linear_4_crossing_ladder, linear_4_repeated_remote)
+  instance_distribution: auditor-constructed connectivity-stress circuits (linear_3_remote_cx, linear_4_bidirectional_mix, linear_4_crossing_ladder, linear_4_repeated_remote)
   algorithmic_spec: none (deterministic compile + CNOT count; no classical optimization loop)
   resource_constraints: 4-node line architecture; Qiskit optimization-level/seed grid
 B_A: TKET
@@ -23,7 +23,7 @@ environment_dimensions: L1 = Qiskit optimization level (0-3) x qiskit seed (0-4)
 axis_status:
   S_scope:
     status: ACTIVE
-    reason: "Source-supported circuit instances within the DAG-compilation family; CNOT count varies across circuits and the claim quantifies over them."
+    reason: "Auditor-constructed circuit instances (not the source's benchmark circuits) within the DAG-compilation family; CNOT count varies across them. The verdict covers these circuits only."
   L1:
     status: ACTIVE
     reason: "Qiskit optimization level and seed transform the circuit before the CNOT count is measured; artifact-supported, metric-affecting, claim-preserving."

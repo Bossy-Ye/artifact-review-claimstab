@@ -532,7 +532,7 @@ def collect_checks() -> list[Check]:
 
     # RQ3 controlled diagnostic grids. These checks derive each summary's N and
     # preserved count directly from the shipped row-level grid, then verify the
-    # paper-facing 0 S / 13 U / 2 R aggregate.
+    # paper-facing 0 S / 13 U / 2 NP aggregate.
     diagnostics = {
         "l1_within_qiskit": {
             "L1Q-C1": (1200, 0, "Not preserved"),

@@ -11,7 +11,7 @@ source_sentence_or_claim_summary: >-
 source_context: "Benchpress transpilation resource benchmarking; multi-tool statement narrowed to Tket-vs-Qiskit."
 P:
   family: transpilation resource benchmarking
-  instance_distribution: deterministic connectivity-stress circuits (linear_3_remote_cx, linear_4_bidirectional_mix, linear_4_crossing_ladder, linear_4_repeated_remote)
+  instance_distribution: auditor-constructed connectivity-stress circuits (linear_3_remote_cx, linear_4_bidirectional_mix, linear_4_crossing_ladder, linear_4_repeated_remote)
   algorithmic_spec: none (deterministic compile + structural depth; no classical optimization loop)
   resource_constraints: 4-node line architecture; Qiskit optimization-level/seed grid
 B_A: Tket
@@ -23,7 +23,7 @@ environment_dimensions: L1 = Qiskit optimization level (0-3) x qiskit seed (0-4)
 axis_status:
   S_scope:
     status: ACTIVE
-    reason: "Source-supported circuit instances within the benchmark family; 2Q depth varies across circuits and the claim quantifies over them."
+    reason: "Auditor-constructed circuit instances (not Benchpress circuits) within the benchmark family; 2Q depth varies across them. The verdict covers these circuits only."
   L1:
     status: ACTIVE
     reason: "Qiskit optimization level and seed transform the circuit before the depth is measured; artifact-supported, metric-affecting, claim-preserving."

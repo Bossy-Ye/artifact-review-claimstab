@@ -18,6 +18,7 @@ python3 artifact/scripts/build_rq1_claim_decisions.py
 python3 artifact/scripts/check_headline_numbers.py
 python3 artifact/scripts/check_artifact_files.py
 python3 artifact/scripts/check_admissibility_sensitivity.py
+python3 artifact/scripts/worked_example_exc7.py
 python3 artifact/data/corpus/coding_validity/recompute_agreement.py
 python3 artifact/scripts/check_markdown_links.py
 python3 artifact/scripts/check_rq4_robustness.py
@@ -28,10 +29,15 @@ The checks verify the shipped evidence. They do not rerun the quantum experiment
 
 ## Scope
 
-Not bundled: raw search-result pages, Stage-1/Stage-2 candidate rows (summary counts
-only), the row-level 628 → 457 deduplication worksheet, per-paper worksheets, the
-qiskit-heavy generators, and the SD/BD files marked `[not bundled]` in
-`artifact/dry_run_visibility/evidence_inventory.csv`.
+- **Not bundled:**
+  - raw search-result pages;
+  - the row-level 630 and 628 candidate sets (counts only);
+  - the 628 → 457 deduplication worksheet;
+  - per-paper worksheets;
+  - the qiskit-heavy generators;
+  - the SD/BD files marked `[not bundled]` in `artifact/dry_run_visibility/evidence_inventory.csv`.
+- **Not reconstructable:** the search-to-250 step, and the steps from the 119 papers to the 457 extraction records.
+- **Circuits:** the Tier-1 compiler audits (EX-C3, EX-C5, EX-C7) use auditor-constructed circuits, not the sources' suites.
 
 ## Labels
 

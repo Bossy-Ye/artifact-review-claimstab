@@ -3,9 +3,8 @@
 This file documents how the RQ1 paper corpus was built and screened. It covers
 (1) the construction/search protocol, (2) the screened-pool schema, (3) the
 inclusion rule, (4) the exclusion taxonomy with realized counts, and (5) the
-paper-level funnel. The retrieval log, candidate records, screened pool, and
-inclusion/exclusion decisions are all archived (Sections 1, 2, and 6); counts that
-are not derivable from a materialized file are not fabricated.
+paper-level funnel. The retrieval log, the 250-paper screened pool, and its
+inclusion/exclusion decisions are archived (Sections 1, 2, and 6).
 
 ## 1. Construction / search protocol
 
@@ -172,3 +171,5 @@ accepted count after Layer-1 adjudication is 455 (`../../corrected_headline_coun
   stored, and none are inferred. There is no separate intended-query-window record
   beyond the realized publication span. The complete row-level claim-deduplication
   worksheet (Stage 2 → Stage 3) is not part of the archive.
+- Not reconstructable from the artifact: the search-to-250 step, and the steps from
+  the 119 papers to the 457 extraction records.

@@ -12,7 +12,7 @@ source_sentence_or_claim_summary: >-
 source_context: "Arline Section-4 routing/mapping comparison on densely connected graphs (k >~ 8)."
 P:
   family: routing/mapping on densely connected graphs
-  instance_distribution: dense 10-qubit synthetic coupling graph (degree 8) with random CX circuits (random_seed swept)
+  instance_distribution: auditor-constructed dense 10-qubit synthetic coupling graph (degree 8) with random CX circuits (random_seed swept)
   algorithmic_spec: none (deterministic routing + structural overhead; no classical optimization loop)
   resource_constraints: dense degree-8 10-qubit coupling target; Qiskit optimization-level grid
 B_A: Qiskit Transpile
