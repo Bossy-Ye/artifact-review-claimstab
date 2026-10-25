@@ -1,13 +1,11 @@
-# CLAIMSTAB-QC Anonymous Submission Artifact
+# CLAIMSTAB-QC Artifact
 
 This artifact supports the paper:
 
 **When "A Beats B" Needs Evidence: CLAIMSTAB-QC for Auditing Comparative Claims in Quantum Software.**
 
 It provides the data, locked outputs, and lightweight verification scripts needed to
-inspect and verify the committed evidence for the paper's main results. The package is anonymized for
-double-anonymous review; a permanent public archival link will be provided after
-acceptance.
+inspect and verify the committed evidence for the paper's main results.
 
 Start here:
 
@@ -17,7 +15,7 @@ Start here:
 
 ## Reproduction scope and paths
 
-This anonymous artifact ships **locked outputs, row-level RQ1/RQ3 evidence, and
+This artifact ships **locked outputs, row-level RQ1/RQ3 evidence, and
 lightweight verification scripts**, not the complete long-run simulation pipeline.
 Two conventions apply throughout:
 
@@ -40,6 +38,7 @@ python3 -m pytest artifact/tests/ -q
 python3 artifact/scripts/build_rq1_claim_decisions.py
 python3 artifact/scripts/check_headline_numbers.py
 python3 artifact/scripts/check_artifact_files.py
+python3 artifact/scripts/check_admissibility_sensitivity.py
 python3 artifact/data/corpus/coding_validity/recompute_agreement.py
 python3 artifact/scripts/check_markdown_links.py
 python3 artifact/scripts/check_rq4_robustness.py
@@ -51,7 +50,8 @@ What each command does:
 - [tests/](tests/) — verdict-core + funnel/RQ smoke tests.
 - [scripts/build_rq1_claim_decisions.py](scripts/build_rq1_claim_decisions.py) — verifies that the derived row-level decision crosscheck and 119-paper rollup match the raw extraction plus the 16-row source-grounded crosscheck (use `--write` only to regenerate them).
 - [scripts/check_headline_numbers.py](scripts/check_headline_numbers.py) — RQ1–RQ4 headline numbers from locked CSVs, including the RQ1 materialization-disposition sums (Table III: 79 = 53 + 26).
-- [scripts/check_artifact_files.py](scripts/check_artifact_files.py) — required-file availability.
+- [scripts/check_artifact_files.py](scripts/check_artifact_files.py) — required files; every evidence-inventory path present or marked `[not bundled]`.
+- [scripts/check_admissibility_sensitivity.py](scripts/check_admissibility_sensitivity.py) — RQ1 admissibility sensitivity: seed/opt level admissible leaves 8 (+0); the other 71 by category; none blocked by settings alone.
 - [data/corpus/coding_validity/recompute_agreement.py](data/corpus/coding_validity/recompute_agreement.py) — coding-validity agreement / kappa.
 - [scripts/check_markdown_links.py](scripts/check_markdown_links.py) — local Markdown links.
 - [scripts/check_rq4_robustness.py](scripts/check_rq4_robustness.py) — RQ4 robustness alignment.
@@ -86,7 +86,7 @@ search-and-screen protocol** with artifact-side normalized provenance. The searc
 initially run on 2026-01-28 using 13 predefined query strings combining
 quantum-software terms with comparison terms; per-query results were deduplicated by
 title and available identifiers such as DOI or arXiv ID, and capped at 250 candidates
-for manual screening. The artifact records the archived retrieval/export timestamp as
+for screening. The artifact records the archived retrieval/export timestamp as
 `2026-04-28T19:33:02`. Raw Google Scholar result pages are not bundled; the artifact
 preserves normalized reviewer-facing provenance (see
 [field_study/corpus/search_protocol.md](field_study/corpus/search_protocol.md)). The
@@ -274,7 +274,7 @@ Evidence:
 
 The headline checker recomputes each claim's $N$ and preserved-cell count from these
 grids and crosschecks all 15 summary rows. The qiskit-heavy grid generators remain
-outside this anonymous package. The six-regime L3 is the manuscript-facing L3
+outside this package. The six-regime L3 is the manuscript-facing L3
 diagnostic; an earlier four-regime diagnostic is excluded and not double-counted.
 
 ### RQ4 — Stability and robustness
@@ -357,17 +357,10 @@ The artifact uses the manuscript's verdict and design vocabulary throughout.
 - **Controlled audit-space validation** — the RQ3 five-diagnostic suite that exercises the framework over L1 / L2 / L3 / ALGO / combined surfaces with the remaining axes pinned.
 - **Canonical family-diversity contrast** — the C1–C24 paradigm-controlled supporting surface.
 
-## Anonymity
+## Source labels
 
-- No submission-author names, institutions, ORCID, or contact information appear in this artifact.
-- No public GitHub / GitLab / Zenodo / DOI URLs identifying the authors appear in the manuscript or in artifact-facing documents.
-- Verbatim corpus evidence may contain names, affiliations, or contact strings of
-  **third-party subject-paper authors**. Those public bibliographic details are
-  retained only where needed for source traceability and do not identify the
-  submission authors.
-- The manuscript's anonymized EX-C baseline labels are crosswalked to the public
-  third-party source evidence through
-  [external_audit/mapping/source_mapping_anonymized.csv](external_audit/mapping/source_mapping_anonymized.csv).
+[external_audit/mapping/source_mapping_anonymized.csv](external_audit/mapping/source_mapping_anonymized.csv)
+maps the P1–P4 source groups and the review-version baseline labels to the sources.
 
 ## Scope notes
 

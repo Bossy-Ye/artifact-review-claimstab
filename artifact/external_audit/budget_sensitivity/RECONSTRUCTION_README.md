@@ -12,7 +12,7 @@ EX-C4, EX-C8 are out of scope here (Class A / proxy / host-sensitive — see
 - Locked dependencies: qiskit 2.3.1 and pytket 2.16.0.
 - Driver: `recon_driver.py`. It contains the locked transpilation and metric logic
   used for this reconstruction. The earlier long-run orchestration driver is not
-  included in the anonymous package; the shipped driver, raw JSONL, per-cell
+  included in the package; the shipped driver, raw JSONL, per-cell
   inputs, and gate outputs are sufficient to rerun the consolidation check.
 - Execution note: each cell is isolated in a subprocess. Running many pytket calls
   in one long-lived process triggers native instability, so the

@@ -62,5 +62,5 @@ evidence_boundary: >-
   Construction time is host-sensitive; the verdict holds on the locked host-timing surface, not the
   exact Benchpress DTC100 test or a host-independent guarantee. This is a scoped local audit design,
   not full source-study replication.
-manuscript_locations: "Section 6/RQ2 (Table per_claim_external_audit, Fig external_forest); EX-C8 reads analogously to EX-C7. Manuscript anonymizes baselines as 'A vs I'."
+manuscript_locations: "RQ2 (per-claim audit table, Tier-1 forest figure)"
 provenance_notes: "Real baselines from locked inventory. EX-C8 host/thread/load/timer/repetition status recorded as a source-check requirement; resource_budget = SOURCE-CHECK REQUIRED. N=80 confirmed: locked log has 80 rows."

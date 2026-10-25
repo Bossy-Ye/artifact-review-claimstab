@@ -1,6 +1,6 @@
 # CLAIMSTAB-QC Artifact Manifest
 
-Short top-level map of the anonymous reviewer artifact. The per-claim
+Short top-level map of the artifact. The per-claim
 evidence-to-file mapping is in `PAPER_CLAIMS_TO_EVIDENCE.md`; reviewer
 verification commands and the RQ1–RQ4 evidence summary are in `README.md`;
 dependencies and the pinned toolchain are in `ENVIRONMENT.md`.
@@ -67,10 +67,7 @@ artifact records its row-selection and convention boundary — the manuscript-fa
 value follows the source-rule row selection, while alternative formal ratios are
 documented in `rq2_relation_checker_alignment.csv`.
 
-## Anonymization
+## Source labels
 
-The submission authors are not identified. `external_audit/mapping/source_mapping_anonymized.csv`
-uses P1–P4 source groups to crosswalk the manuscript's anonymized baseline labels;
-public third-party paper titles, arXiv stems, and source-artifact URLs are retained
-where required for evidence traceability. No submission-author identities,
-institutions, or unblinding keys are included.
+`external_audit/mapping/source_mapping_anonymized.csv` maps the P1–P4 source groups and
+the review-version baseline labels to the sources.

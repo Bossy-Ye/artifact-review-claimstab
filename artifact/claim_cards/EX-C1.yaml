@@ -60,5 +60,5 @@ evidence_boundary: >-
   4 sizes x 4 Qiskit optimization levels x 5 timing repetitions (80 cells). Runtime is host-sensitive;
   the verdict holds on the locked host-timing surface, not as a host-independent runtime guarantee.
   This is a scoped local audit design, not full source-study replication.
-manuscript_locations: "Section 6/RQ2 (Table per_claim_external_audit, Fig external_forest). Manuscript anonymizes baselines as 'A vs B'."
+manuscript_locations: "RQ2 (per-claim audit table, Tier-1 forest figure)"
 provenance_notes: "Real baselines from locked inventory. EX-C1 runtime host/timing/resource-budget status recorded as a source-check requirement; resource_budget = SOURCE-CHECK REQUIRED (host policy undocumented)."

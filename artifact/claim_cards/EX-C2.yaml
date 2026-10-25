@@ -56,7 +56,7 @@ evidence_boundary: >-
   Sustained over this card: QTG-QAOA-vs-Copula-QAOA approximation ratio over the audited knapsack
   instances and ALGO sweep (80 cells). The per-cell log is not present in the repo, so the cell-level
   basis of the verdict is not independently inspectable from the artifact (aggregate-only).
-manuscript_locations: "Section 6/RQ2 (Table per_claim_external_audit, Fig external_forest). Manuscript anonymizes baselines as 'A vs C'."
+manuscript_locations: "RQ2 (per-claim audit table, Tier-1 forest figure)"
 provenance_notes: >-
   Evidence boundary: this is one of two external claims (with EX-C4) lacking a per-cell measurements CSV; N/k/Wilson/verdict
   copied from the locked external_forest_data.csv. L2/L3 marked SOURCE-CHECK REQUIRED (exact/statevector

@@ -37,7 +37,7 @@ import pandas as pd
 # ----------------------------------------------------------------------------
 ROOT = Path(__file__).resolve().parents[3]
 OUTDIR = ROOT / "artifact/external_audit/tier1_robustness"
-# Self-contained in the anonymous artifact: the 6 per-cell measurement CSVs are
+# Self-contained in the artifact: the 6 per-cell measurement CSVs are
 # vendored locally under per_cell_inputs/ (EX-C2/EX-C4 are intentionally absent --
 # their per-cell traces are not materialized). Aggregate and seed-expansion
 # evidence are reused from their locked artifact locations.

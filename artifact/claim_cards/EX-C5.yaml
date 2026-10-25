@@ -57,5 +57,5 @@ evidence_boundary: >-
   Unresolved over this card: Tket-vs-Qiskit two-qubit gate depth on 4 connectivity-stress circuits x
   4 Qiskit optimization levels x 5 seeds on a 4-node line (80 cells). Narrowed connectivity-stress
   surface. This is a scoped local audit design, not full source-study replication.
-manuscript_locations: "Section 6/RQ2 (Table per_claim_external_audit, Fig external_forest). Manuscript anonymizes baselines as 'A vs F'."
+manuscript_locations: "RQ2 (per-claim audit table, Tier-1 forest figure)"
 provenance_notes: "Real baselines from the locked inventory. N=80 is confirmed from the shipped 80-row Tier-1 per-cell trace."

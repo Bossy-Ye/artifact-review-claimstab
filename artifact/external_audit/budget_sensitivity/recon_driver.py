@@ -11,7 +11,7 @@ Modes:
 
 The metric/transpilation logic is the locked reconstruction used for the
 reported expansion. The original long-run driver is not included in this
-anonymous package; consolidation is independently re-runnable from the shipped
+package; consolidation is independently re-runnable from the shipped
 raw JSONL and Tier-1 per-cell inputs.
 """
 import sys, csv, json, math, random, itertools, glob, os

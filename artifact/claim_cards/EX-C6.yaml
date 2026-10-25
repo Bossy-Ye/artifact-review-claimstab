@@ -58,5 +58,5 @@ evidence_boundary: >-
   Unresolved over this card: Qiskit-Transpile-vs-Pytket-DefaultMapping CX depth overhead on a dense
   degree-8 10-qubit synthetic graph, 4 Qiskit optimization levels x 20 random seeds (80 cells).
   This synthetic dense-routing surface is a scoped local audit design, not full source-study replication.
-manuscript_locations: "Section 6/RQ2 (Table per_claim_external_audit, Fig external_forest). Manuscript anonymizes baselines as 'A vs G'."
+manuscript_locations: "RQ2 (per-claim audit table, Tier-1 forest figure)"
 provenance_notes: "Real baselines from the locked inventory. N=80 is confirmed from the shipped 80-row Tier-1 per-cell trace."

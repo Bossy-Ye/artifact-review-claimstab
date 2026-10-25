@@ -587,7 +587,7 @@ metric-irrelevant for EX-C1 and EX-C8.
 as a timing-repetition axis, not as a finite-shot sampling axis. The
 authoritative per-cell evidence is in the corresponding
 `artifact/external_audit/tier1_robustness/per_cell_inputs/<claim_id>_measurements.csv`
-file. The original execution adapters are not bundled in the anonymous artifact.
+file. The original execution adapters are not bundled in the artifact.
 
 No CSV columns are renamed and no CSV data is altered in this pass. The
 schema note is documentation of the existing legacy schema, not a data

@@ -62,5 +62,5 @@ evidence_boundary: >-
   4-node line architecture (80 cells). It is a narrowed pairwise/connectivity-stress surface,
   a scoped local audit design rather than full source-study replication, and not a global statement
   about the source paper.
-manuscript_locations: "Section 2 (running example); Section 6/RQ2 (Table per_claim_external_audit, Fig external_forest). Manuscript anonymizes baselines as 'A vs H'."
+manuscript_locations: "Running example; RQ2 (per-claim audit table, Tier-1 forest figure, EX-C7 cell grid)"
 provenance_notes: "Real baselines from the locked inventory. N=80 is confirmed from the shipped 80-row Tier-1 per-cell trace."

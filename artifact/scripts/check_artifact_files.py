@@ -130,6 +130,7 @@ EXPECTED_FILES: list[ExpectedFile] = [
     ExpectedFile("scripts", "artifact/scripts/build_rq1_claim_decisions.py", True, "row-level final RQ1 registry verifier/generator"),
     ExpectedFile("scripts", "artifact/scripts/check_markdown_links.py", True, "Markdown link checker"),
     ExpectedFile("scripts", "artifact/scripts/check_rq4_robustness.py", True, "RQ4 robustness alignment checker"),
+    ExpectedFile("scripts", "artifact/scripts/check_admissibility_sensitivity.py", True, "RQ1 admissibility sensitivity"),
     ExpectedFile("scripts", "artifact/data/corpus/coding_validity/recompute_agreement.py", True, "coding-validity agreement recompute"),
     ExpectedFile("scripts", "artifact/external_audit/tier1_robustness/tier1_robustness_analysis.py", True, "Tier-1 robustness analysis (re-runnable)"),
 ]
