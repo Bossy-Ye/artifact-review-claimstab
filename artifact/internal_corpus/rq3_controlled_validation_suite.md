@@ -173,7 +173,7 @@ iteration.
 1. **Simulator only**. No live-hardware execution; no provider
    calibration. The L3 noise family is depolarizing + readout,
    intentionally simple; amplitude/phase damping, crosstalk, and
-   asymmetric readout are out of scope. Section VII Threats already
+   asymmetric readout are out of scope. Section VI (Threats) already
    disclaims live hardware as future work.
 2. **L1Q uses two architectures (linear, ring)** as joint coupling-topology
    axis. Verdicts are scope-relative to those two targets; other

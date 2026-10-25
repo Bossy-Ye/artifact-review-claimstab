@@ -1,14 +1,14 @@
 # Canonical C1–C24 Audit-Space Construction
 
 This file is the reviewer-facing audit-space construction record for the
-24 canonical / internal-corpus claims that appear in Section V-D as part of the
+24 canonical / internal-corpus claims that appear in Section V-C as part of the
 RQ3 controlled-validation evidence. C1–C24 are **canonical
 internal-corpus claims, not synthetic claims and not external published
 claims**. They are designed to exercise specific CLAIMSTAB-QC
 audit-space constructions $\mathcal{S}_{\textit{audit}} =
 \mathcal{S}_{\textit{scope}} \times \mathcal{E}_{\textit{env}}$ under
 controlled conditions. The synthetic calibration corpus described in
-Section V-D is a separate Wilson / S-U/R classifier test; it does not
+Section V-C is a separate Wilson / S/U/NP classifier test; it does not
 exercise L1/L2/L3/INSTANCE coverage.
 
 ## 1. Purpose

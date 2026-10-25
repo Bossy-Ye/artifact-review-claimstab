@@ -1,7 +1,7 @@
 # External Audit-Space Contracts (EX-C1--EX-C8)
 
 Per-claim contracts that document, for every external T1 audit reported in
-Section V-C: claim identity, five-tuple, metric-to-axis
+Section V-B: claim identity, five-tuple, metric-to-axis
 reasoning, the active and inactive perturbation axes, exact instance scope
 and cell construction, evidence pointers, and an admissibility verdict.
 This file is limited to EX-C1--EX-C8 scalar-directional audit-space
@@ -92,7 +92,7 @@ not in numeric order.
 - Anonymized source mapping (P4): `artifact/external_audit/mapping/source_mapping_anonymized.csv`.
 - Per-claim perturbations: `artifact/results/paper/output/figures/section5/per_claim_perturbations.csv`.
 - Per-claim audit result: `artifact/results/paper/output/figures/section5/external_forest_data.csv` (row EX-C4: $\hat{s}=0.5625$, CI [0.4534, 0.6659], Unresolved, N=80, k=45).
-- Manuscript: Section V-C "Classification outcomes" paragraph; Table IV row EX-C4.
+- Manuscript: Section V-B "Classification outcomes" paragraph; Table IV row EX-C4.
 
 ### 9. Admissibility verdict
 **NEEDS-MANUSCRIPT-CLARIFICATION.** The probability value metric in this audit is **parser-backed** (read from repository result CSVs), not recomputed by fresh quantum simulation. The omitted L1/L2/L3 axes are honestly omitted because the metric is not regenerated; this is correct, but the manuscript currently labels EX-C4 perturbations as "alg + scope" without explicitly stating that the value source is paper-published per-cell results. A one-sentence note in Table IV (see "Manuscript additions" below) closes this gap.
@@ -150,7 +150,7 @@ not in numeric order.
 ### 8. Evidence pointers
 - Same set as EX-C4 (anonymized source group P4; source-paper repository indirection via `artifact/external_audit/mapping/source_mapping_anonymized.csv`; `materialization_tier_report.md` row `ext_2411_00518v2_claim1`).
 - Per-claim audit result: `external_forest_data.csv` row EX-C2: $\hat{s}=1.000$, CI [0.9542, 1.000], Sustained, N=80, k=80.
-- Manuscript: Section V-C; Table IV row EX-C2.
+- Manuscript: Section V-B; Table IV row EX-C2.
 
 ### 9. Admissibility verdict
 **NEEDS-MANUSCRIPT-CLARIFICATION.** Same structural issue as EX-C4: the approximation ratio is parser-backed, and L1/L2/L3 are honestly METRIC-IRRELEVANT under the materialized audit path. The Table IV label "alg + scope" is correct but does not flag the parser-backed evidence path. A single Table IV note (below) is sufficient; no manuscript number changes.
@@ -211,7 +211,7 @@ not in numeric order.
 - `artifact/external_audit/tier1_robustness/per_cell_inputs/ext_2409_08844v2_claim1_measurements.csv` (per-cell timing pairs and `outcome` values; 80 rows).
 - `artifact/claim_cards/EX-C8.yaml` (claim text, narrowing rationale, host-timing boundary, and locked result pointer).
 - `external_forest_data.csv` row EX-C8: $\hat{s}=0.000$, CI [0.000, 0.0458], Not preserved, N=80, k=0.
-- Manuscript: Section V-C "Classification outcomes" paragraph; Table IV row EX-C8.
+- Manuscript: Section V-B "Classification outcomes" paragraph; Table IV row EX-C8.
 
 ### 9. EVIDENCE-GAP
 **Resolved.** Earlier versions of this contract flagged the "per-cell timing aggregation rule" as an EVIDENCE-GAP. The adapter source and per-cell measurements file (cited above) establish that no per-cell aggregation occurs — each `(circuit_size, repetition)` tuple is its own cell with a single `cirq_time` and `qiskit_time` measurement.
@@ -280,7 +280,7 @@ not in numeric order.
 - `artifact/results/paper/output/figures/section5/external_forest_data.csv` row EX-C1 (Sustained aggregate).
 - `artifact/external_audit/tier1_robustness/per_cell_inputs/ext_2202_14025v1_legacy_claim12_measurements.csv` (per-cell timing pairs and `outcome` values; 80 rows).
 - `external_forest_data.csv` row EX-C1: $\hat{s}=1.000$, CI [0.9542, 1.000], Sustained, N=80, k=80.
-- Manuscript: Section V-C "Classification outcomes" paragraph; Table IV row EX-C1.
+- Manuscript: Section V-B "Classification outcomes" paragraph; Table IV row EX-C1.
 
 ### 9. EVIDENCE-GAP
 **Resolved (cell-construction part).** The adapter source and the per-cell measurements file (cited above) establish that each `(circuit_size, repetition, qiskit_optimization_level)` triple is its own audit cell with a single per-process timing measurement, and that the row in `per_claim_perturbations.csv` labeled `L2_perturbation: repetition: 0,1,2,3,4` is a *legacy-column timing-axis entry*, not an L2 sampling perturbation. The schema note below makes the reading rule explicit. No invented values are introduced.
@@ -298,7 +298,7 @@ not in numeric order.
 - **Domain:** transpiler / compiler
 - **Original claim text:** "First, we see that, as a whole, Qiskit outperforms BQSKit, Staq, and Tket in terms of 2Q gate count; a trend clearly seen in the BQSKit and Tket data."
 - **Formalized (narrowed) claim:** "For transpilation resource benchmarks, Qiskit yields lower two-qubit gate count than Tket on the connectivity-stress surface."
-- This is the worked-case study used in Section V-C.
+- This is the worked example in Section V-B.
 
 ### 2. Five-tuple
 - **P_fam:** transpilation resource benchmarking on deterministic connectivity-stress circuits.
@@ -337,7 +337,7 @@ not in numeric order.
 
 ### 7. Cell construction
 - **N = 80** (per `external_forest_data.csv` row EX-C7).
-- **Axis product:** 4 circuits × 4 `qiskit_optimization_level` × 5 `qiskit_seed` = 80 cells. **This matches the manuscript Section V-C "Worked case study: EX-C7" statement** "80 cells (4 circuits × 4 Qiskit optimization levels × 5 seeds)" — verified against `per_claim_perturbations.csv`.
+- **Axis product:** 4 circuits × 4 `qiskit_optimization_level` × 5 `qiskit_seed` = 80 cells. **This matches the manuscript's worked example (Section V-B, Fig. 4):** "4 circuits × 4 Qiskit opt. levels × 5 seeds = 80 cells" — verified against `per_claim_perturbations.csv`.
 - **Axis values:** circuits as enumerated; `qiskit_optimization_level ∈ {0,1,2,3}`; `qiskit_seed ∈ {0,1,2,3,4}`.
 
 ### 8. Evidence pointers
@@ -345,10 +345,10 @@ not in numeric order.
 - `artifact/claim_cards/EX-C7.yaml` (narrowing rationale and admissible variation candidates).
 - `artifact/results/paper/output/figures/section5/external_forest_data.csv` row EX-C7 (Not preserved aggregate).
 - `external_forest_data.csv` row EX-C7: $\hat{s}=0.000$, CI [0.000, 0.0458], Not preserved, N=80, k=0.
-- Manuscript: Section V-C worked case study, Table V representative cells, Table IV row EX-C7.
+- Manuscript: Section V-B worked example, Fig. 4 (claim card), Fig. 5 (cell grid), Table IV row EX-C7.
 
 ### 9. Admissibility verdict
-**CLEAR.** The 4 × 4 × 5 = 80 construction in the manuscript is exactly recoverable from `per_claim_perturbations.csv`. The L2 / L3 / runtime / additional-comparator exclusions are each justified by an explicit reason code with an artifact pointer. Table V already shows representative cells from this audit.
+**CLEAR.** The 4 × 4 × 5 = 80 construction in the manuscript is exactly recoverable from `per_claim_perturbations.csv`. The L2 / L3 / runtime / additional-comparator exclusions are each justified by an explicit reason code with an artifact pointer. Fig. 5 of the paper shows the cell grid.
 
 ---
 
@@ -404,7 +404,7 @@ not in numeric order.
 - `artifact/results/paper/output/figures/section5/external_forest_data.csv` row EX-C3 (Unresolved aggregate).
 - `artifact/external_audit/tier1_robustness/per_cell_inputs/ext_2304_08814v2_claim5_measurements.csv` (80-row per-cell log).
 - `external_forest_data.csv` row EX-C3: $\hat{s}=0.775$, CI [0.6721, 0.8527], Unresolved, N=80, k=62.
-- Manuscript: Section V-C; Table IV row EX-C3.
+- Manuscript: Section V-B; Table IV row EX-C3.
 
 ### 9. Admissibility verdict
 **CLEAR.** Same axis structure as EX-C7 with all reasons resolved via existing artifact pointers.
@@ -456,7 +456,7 @@ not in numeric order.
 - `artifact/claim_cards/EX-C5.yaml` (source claim, narrowing, and result pointer).
 - `artifact/results/paper/output/figures/section5/external_forest_data.csv` row EX-C5 (Unresolved aggregate).
 - `external_forest_data.csv` row EX-C5: $\hat{s}=0.550$, CI [0.4412, 0.6542], Unresolved, N=80, k=44.
-- Manuscript: Section V-C; Table IV row EX-C5.
+- Manuscript: Section V-B; Table IV row EX-C5.
 
 ### 9. Admissibility verdict
 **CLEAR.** Same axis structure as EX-C3 / EX-C7; all reasons resolved via existing artifact pointers.
@@ -512,7 +512,7 @@ not in numeric order.
 - `artifact/claim_cards/EX-C6.yaml` (source claim, narrowing, and result pointer).
 - `artifact/results/paper/output/figures/section5/external_forest_data.csv` row EX-C6 (Unresolved aggregate).
 - `external_forest_data.csv` row EX-C6: $\hat{s}=0.425$, CI [0.3226, 0.5343], Unresolved, N=80, k=34.
-- Manuscript: Section V-C; Table IV row EX-C6.
+- Manuscript: Section V-B; Table IV row EX-C6.
 
 ### 9. Admissibility verdict
 **CLEAR.** Axis product 4 × 20 = 80 is recoverable from the perturbation log. `random_seed` is correctly treated jointly with L1 transpiler stochasticity (S_scope at the random-circuit instance level), not as a separate algorithmic axis, because the underlying graph is value-fixed.

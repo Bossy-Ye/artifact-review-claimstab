@@ -56,4 +56,4 @@ between-instance-dominated regime either.
 
 Same as the legacy L3 diagnostic: controlled simulator only, no live
 hardware, no amplitude/phase damping, no crosstalk, no calibration
-drift. Section VII Threats already disclaims these as future work.
+drift. Section VI (Threats) already disclaims these as future work.
