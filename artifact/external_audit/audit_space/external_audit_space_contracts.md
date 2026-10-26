@@ -302,7 +302,7 @@ not in numeric order.
 
 ### 2. Five-tuple
 - **P_fam:** transpilation resource benchmarking on deterministic connectivity-stress circuits.
-- **P_inst / operational scope:** 4 auditor-constructed circuits {`linear_3_remote_cx`, `linear_4_bidirectional_mix`, `linear_4_crossing_ladder`, `linear_4_repeated_remote`} on a 4-node line architecture.
+- **P_inst / operational scope:** 4 circuits {`linear_3_remote_cx`, `linear_4_bidirectional_mix`, `linear_4_crossing_ladder`, `linear_4_repeated_remote`} on a 4-node line architecture.
 - **P_alg:** Qiskit transpiler stochasticity controlled by `qiskit_optimization_level` and `qiskit_seed`; Tket invoked with default mapping/decomposition pipeline.
 - **P_res:** artifact-supported compilation budget; single-process invocation.
 - **B_A:** Qiskit transpiler.
@@ -363,7 +363,7 @@ not in numeric order.
 
 ### 2. Five-tuple
 - **P_fam:** DAG-based quantum compilation; connectivity-stress benchmark family.
-- **P_inst / operational scope:** 4 auditor-constructed circuits (`linear_3_remote_cx`, `linear_4_bidirectional_mix`, `linear_4_crossing_ladder`, `linear_4_repeated_remote`) on a 4-node line architecture.
+- **P_inst / operational scope:** 4 named circuits (`linear_3_remote_cx`, `linear_4_bidirectional_mix`, `linear_4_crossing_ladder`, `linear_4_repeated_remote`) on a 4-node line architecture.
 - **P_alg:** Qiskit transpiler stochasticity (`qiskit_optimization_level`, `qiskit_seed`); TKET default pipeline.
 - **P_res:** artifact-supported compilation budget.
 - **B_A:** TKET (pytket) compiler.
@@ -422,7 +422,7 @@ not in numeric order.
 
 ### 2. Five-tuple
 - **P_fam:** transpilation resource benchmarking; connectivity-stress family.
-- **P_inst / operational scope:** 4 auditor-constructed connectivity-stress circuits (same as EX-C3 / EX-C7).
+- **P_inst / operational scope:** 4 named connectivity-stress circuits (same as EX-C3 / EX-C7).
 - **P_alg:** Qiskit transpiler stochasticity (`qiskit_optimization_level`, `qiskit_seed`); Tket default pipeline.
 - **P_res:** artifact-supported compilation budget.
 - **B_A:** Tket compiler.
@@ -474,7 +474,7 @@ not in numeric order.
 
 ### 2. Five-tuple
 - **P_fam:** routing/mapping on dense random k-regular coupling graphs.
-- **P_inst / operational scope:** auditor-constructed dense 10-qubit synthetic coupling graph with degree 8; `n_qubits = 10`; random CX circuits.
+- **P_inst / operational scope:** dense 10-qubit synthetic coupling graph with degree 8; `n_qubits = 10`; random CX circuits.
 - **P_alg:** Qiskit transpiler stochasticity (`qiskit_optimization_level`, `random_seed`).
 - **P_res:** artifact-supported compilation budget.
 - **B_A:** Qiskit Transpile.

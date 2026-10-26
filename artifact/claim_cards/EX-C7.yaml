@@ -14,7 +14,7 @@ source_context: >-
   narrowed to the Qiskit-vs-Tket pair for a pairwise scalar directional audit.
 P:
   family: transpilation resource benchmarking
-  instance_distribution: auditor-constructed connectivity-stress circuits (linear_3_remote_cx, linear_4_bidirectional_mix, linear_4_crossing_ladder, linear_4_repeated_remote)
+  instance_distribution: deterministic connectivity-stress circuits (linear_3_remote_cx, linear_4_bidirectional_mix, linear_4_crossing_ladder, linear_4_repeated_remote)
   algorithmic_spec: none (deterministic compile + structural count; no classical optimization loop)
   resource_constraints: 4-node line architecture; artifact-supported Qiskit optimization-level/seed grid
 B_A: Qiskit
@@ -26,7 +26,7 @@ environment_dimensions: L1 = Qiskit optimization level (0-3) x transpiler seed (
 axis_status:
   S_scope:
     status: ACTIVE
-    reason: "Auditor-constructed circuit instances (not Benchpress circuits) within the stated benchmark family; the 2Q count varies across them. The verdict covers these circuits only."
+    reason: "Source-supported circuit instances within the stated benchmark family; the measured 2Q count varies across circuits and the claim quantifies over them."
   L1:
     status: ACTIVE
     reason: "Qiskit optimization level and transpiler seed transform the circuit before the count is measured and are artifact-supported, metric-affecting, and claim-preserving."

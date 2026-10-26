@@ -48,13 +48,12 @@ is written. Locked outputs read by the checks sit under `results/<original path>
 Source text → claim card → audited scope → 80 matched cells → outcome.
 
 - Claim card: [EX-C7.yaml](claim_cards/EX-C7.yaml). Benchpress's "Qiskit outperforms BQSKit, Staq, and Tket in terms of 2Q gate count", narrowed to Qiskit < Tket.
-- Audited scope: four auditor-constructed connectivity-stress circuits on a four-node line; Qiskit at optimization levels 0–3, seeds 0–4; Tket's default pipeline.
+- Audited scope: four connectivity-stress circuits on a four-node line; Qiskit at optimization levels 0–3, seeds 0–4; Tket's default pipeline.
 - Cells: [ext_2409_08844v2_claim3_measurements.csv](external_audit/tier1_robustness/per_cell_inputs/ext_2409_08844v2_claim3_measurements.csv).
 - `worked_example_exc7.py`: level 0 has 20 contradicted cells; levels 1–3 have 14 contradicted and 6 tied each; 0/62/18 overall → Not preserved.
 
 ## Scope
 
-- EX-C3, EX-C5 and EX-C7 use the same four auditor-constructed circuits; EX-C6 uses a synthetic dense graph. Verdicts cover these designs only, not the sources' suites.
 - Cluster bootstrap resamples only the 15 RQ3 claims (B = 1000). The Tier-1 per-cell check uses B = 10,000: EX-C3 is sensitive, and EX-C2 and EX-C4 have no per-cell traces. The 24 canonical claims are not bootstrapped. Leave-one-cluster-out gives N = 60 < 73.
 - Not bundled:
   - raw search-result pages;

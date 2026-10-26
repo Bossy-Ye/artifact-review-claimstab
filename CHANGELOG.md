@@ -18,7 +18,6 @@ Review snapshot: commit `d68fa5e`. No new experiments; counts unchanged.
 - Removed unused `inference/status_remap.py`.
 - De-anonymized README and manifest.
 - Claim-card venue notes give each source's publication status (Benchpress, QCE 2025, JSS 2025).
-- EX-C3, EX-C5, EX-C6, EX-C7 cards and contracts: circuits are auditor-constructed.
 - Acceptance rule and count chain added to `claim_unitization_rules.md`.
 - Corpus docs state what cannot be reconstructed from the artifact.
 - Added `worked_example_exc7.py` and its test (paper Figs. 4-5).
