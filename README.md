@@ -4,6 +4,8 @@ Artifact for B. Ye, P. Liang, M. Tavassoli Sabzevari, A. A. Khan,
 *When "A Beats B" Needs Evidence: CLAIMSTAB-QC for Auditing Comparative Claims in
 Quantum Software*, ICSE 2027.
 
+Archived: [10.5281/zenodo.23659820](https://doi.org/10.5281/zenodo.23659820).
+
 Start at [`artifact/README.md`](artifact/README.md). Every reported number maps to a
 file and a check in [`artifact/PAPER_CLAIMS_TO_EVIDENCE.md`](artifact/PAPER_CLAIMS_TO_EVIDENCE.md).
 
